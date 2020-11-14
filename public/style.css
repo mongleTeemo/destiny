@@ -1,0 +1,846 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+body {
+    height: 100%;
+    font-family: NotoSansKR;
+}
+li {
+    list-style: none;
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+}
+.h-100 {
+    height: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+.navbar-default {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.navbar-brand img {
+    width: 130px;
+}
+.baner {
+    height: 937px;
+    display: flex;
+    align-items: center;
+}
+.baner .baner-content {
+    display: flex;
+    align-items: center;
+}
+.baner .baner-content h1 {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.baner .baner-content .button-fill {
+    background: #fe5955;
+    border-radius: 50px;
+    color: #fff;
+    padding: 17px 50px;
+    border: none;
+    margin-right: 24px;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+.baner .baner-content .button-line {
+    background: #fff;
+    border-radius: 50px;
+    color: #fe5955;
+    padding: 17px 50px;
+    border: 1px solid #fe5955;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+.baner .baner-content .button-line a {
+    color: #fe5955;
+}
+.baner .baner-content img {
+    width: 100%;
+}
+.friend {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+.friend h3 {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    margin-top: 0;
+    color: #000;
+}
+.friend h3 span {
+    position: relative;
+    z-index: 2;
+}
+.friend h3 span::before {
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 21px;
+    background-color: rgba(255, 78, 90, 0.7);
+    right: 24px;
+    bottom: 0px;
+    z-index: -1;
+}
+.friend p {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.89;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 0;
+    color: #3c3c3c;
+}
+.game {
+    padding: 120px 0;
+}
+.game-sm {
+    display: none;
+}
+.game h3 {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    text-align: center;
+}
+.game p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5c5c5c;
+}
+.game .game-content .content-point {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff4e5a;
+    margin-bottom: 8px;
+}
+.game .game-content .content-title {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    margin-bottom: 12px;
+    position: relative;
+    color: #000;
+}
+.game .game-content .content-title span {
+    position: relative;
+    z-index: 1;
+}
+.game .game-content li:nth-child(2n) {
+    padding-left: 0;
+}
+.game .game-content li:nth-child(2n) .content-right {
+    padding-left: 100px;
+}
+.game .game-content li:nth-child(1) .content-title span::before {
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 21px;
+    background-color: rgba(255, 78, 90, 0.7);
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+.game .game-content li:nth-child(2) .content-title span:before {
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    width: 267px;
+    height: 21px;
+    background-color: rgba(255, 78, 90, 0.7);
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+.game .game-content li:nth-child(3) .content-title span::before {
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 21px;
+    background-color: rgba(255, 78, 90, 0.7);
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.game .game-content .content-sub {
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3c3c3c;
+}
+.game .game-content li {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    margin-bottom: 100px;
+}
+.mini {
+    height: 560px;
+    background-color: rgba(255, 193, 192, 0.5);
+    padding-top: 60px;
+    margin-bottom: 320px;
+}
+.mini .container-fluid {
+    overflow: hidden;
+}
+.mini .point {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff4e5a;
+}
+.mini h3 {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 12px 0;
+    color: #000;
+}
+.mini h3 span {
+    position: relative;
+}
+.mini h3 span::before {
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 21px;
+    background-color: rgba(255, 78, 90, 0.7);
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+.mini p {
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #3c3c3c;
+}
+.mini ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proceeding {
+    margin-bottom: 160px;
+}
+.proceeding h3 {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    text-align: center;
+}
+.proceeding p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5c5c5c;
+    margin-bottom: 60px;
+}
+.proceeding .card {
+    border-radius: 36px;
+    box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 80px;
+    padding-bottom: 56px;
+    height: 450px;
+    text-align: center;
+}
+.proceeding .card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    color: #000;
+}
+.proceeding .card .card-sub {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #3c3c3c;
+}
+.launching {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+.launching h3 {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+}
+.launching h3 span {
+    position: relative;
+    z-index: 2;
+}
+.launching h3 span::before {
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 21px;
+    background-color: rgba(255, 78, 90, 0.7);
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+.launching p {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3c3c3c;
+}
+.launching .agree {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #b2b2b2;
+    margin-bottom: 24px;
+}
+.launching .agree a {
+    color: #b2b2b2;
+    text-decoration: underline;
+}
+.launching .launching-form input {
+    margin-right: 20px;
+    padding: 12px 0;
+    width: 300px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    border: solid 1px #aaaaaa;
+    color: #b2b2b2;
+    border-radius: 50px;
+}
+.launching .launching-form button {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fe5955;
+    border-radius: 50px;
+    border: solid 1px #fe5955;
+    padding: 12px 50px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #e76765;
+    padding: 45px 0;
+}
+footer .footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+footer .footer-menu a {
+    color: #fff;
+    margin-right: 16px;
+}
+footer .company-info {
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 6px;
+}
+footer .copyright {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+@media (max-width: 766px) {
+    .baner .baner-content .button-line.sm-on a {
+        color: #fe5955;
+    }
+    .navbar-brand {
+        padding: 7px 15px !important;
+    }
+    .baner {
+        height: 550px;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    .baner .baner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .baner .baner-content h1 {
+        font-size: 28px;
+        line-height: 44px;
+        margin-bottom: 60px;
+    }
+    .baner .baner-content .button-line,
+    .baner .baner-content .button-fill {
+        display: none;
+    }
+    .baner .baner-content .button-line.sm-on,
+    .baner .baner-content .button-fill.sm-on {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 12px;
+        width: 242px;
+        padding: 17px 0px;
+        font-size: 15px;
+    }
+    .baner .baner-content .button-fill.sm-on {
+        margin-top: 80px;
+    }
+    .baner .baner-content .button-line.sm-on {
+        margin-bottom: 0;
+    }
+    .friend h3 {
+        font-size: 24px;
+    }
+    .friend h3 span::before {
+        border-radius: 50px;
+        width: 170px;
+        height: 14px;
+    }
+    .friend p {
+        font-size: 13px;
+    }
+    .game {
+        display: none;
+    }
+    .game-sm {
+        display: block;
+        padding-top: 60px;
+    }
+    .game-sm h3 {
+        font-size: 24px;
+    }
+    .game-sm p {
+        font-size: 12px;
+    }
+    .game-sm .game-content li {
+        display: block;
+        padding-left: 0;
+        text-align: center;
+    }
+    .game-sm .game-content li:nth-child(2n) .content-right {
+        padding-left: 15px;
+    }
+    .game-sm .game-content li .content-right img {
+        width: 228px;
+    }
+    .game-sm .game-content .content-point,
+    .game-sm .game-content .content-title,
+    .game-sm .game-content .content-sub {
+        text-align: center;
+    }
+    .game-sm h3 {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000;
+        text-align: center;
+    }
+    .game-sm p {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #5c5c5c;
+        margin-bottom: 80px;
+    }
+    .game-sm .game-content .content-point {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ff4e5a;
+        margin-bottom: 8px;
+    }
+    .game-sm .game-content .content-title {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .game-sm .game-content .content-sub {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .game-sm .game-content .content-title span {
+        position: relative;
+        z-index: 1;
+    }
+    .game-sm .game-content li:nth-child(1) .content-title span::before {
+        border-radius: 50px;
+        position: absolute;
+        content: "";
+        width: 110px;
+        height: 21px;
+        background-color: rgba(255, 78, 90, 0.7);
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
+    .game-sm .game-content li:nth-child(2) .content-title span:before {
+        border-radius: 50px;
+        position: absolute;
+        content: "";
+        width: 185px;
+        height: 21px;
+        background-color: rgba(255, 78, 90, 0.7);
+        right: 0;
+        bottom: 0px;
+        z-index: -1;
+    }
+    .game-sm .game-content li:nth-child(3) .content-title span::before {
+        border-radius: 50px;
+        position: absolute;
+        content: "";
+        width: 46px;
+        height: 21px;
+        background-color: rgba(255, 78, 90, 0.7);
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
+    .proceeding .card {
+        width: 300px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    .mini p {
+        word-break: keep-all;
+        padding: 0 15px;
+    }
+    .mini p br {
+        display: none;
+    }
+    .proceeding {
+        margin-bottom: 80px;
+    }
+    .proceeding .card img {
+        width: 100%;
+    }
+    .proceeding .card .card-sub {
+        word-break: keep-all;
+    }
+    .proceeding .card .card-sub br {
+        display: none;
+    }
+    .launching .launching-form input {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    footer .footer-menu {
+        display: block;
+    }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+    .baner {
+        height: 800px;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    .baner .baner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .baner .baner-content h1 {
+        font-size: 28px;
+        line-height: 44px;
+        margin-bottom: 60px;
+    }
+    .baner .baner-content .button-line,
+    .baner .baner-content .button-fill {
+        display: none;
+    }
+    .baner .baner-content .button-line.sm-on,
+    .baner .baner-content .button-fill.sm-on {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 12px;
+        width: 242px;
+        padding: 17px 0px;
+        font-size: 15px;
+    }
+    .baner .baner-content .button-line.sm-on a {
+        color: #fe5955;
+    }
+    .baner .baner-content .button-fill.sm-on {
+        margin-top: 80px;
+    }
+    .baner .baner-content .button-line.sm-on {
+        margin-bottom: 0;
+    }
+    .friend h3 {
+        font-size: 24px;
+    }
+    .friend h3 span::before {
+        border-radius: 50px;
+        width: 170px;
+        height: 14px;
+    }
+    .friend p {
+        font-size: 13px;
+    }
+    .game {
+        display: none;
+    }
+    .game-sm {
+        display: block;
+        padding-top: 60px;
+    }
+    .game-sm h3 {
+        font-size: 24px;
+    }
+    .game-sm p {
+        font-size: 12px;
+    }
+    .game-sm .game-content li {
+        display: block;
+        padding-left: 0;
+        text-align: center;
+    }
+    .game-sm .game-content li:nth-child(2n) .content-right {
+        padding-left: 15px;
+    }
+    .game-sm .game-content li .content-right img {
+        width: 228px;
+    }
+    .game-sm .game-content .content-point,
+    .game-sm .game-content .content-title,
+    .game-sm .game-content .content-sub {
+        text-align: center;
+    }
+    .game-sm h3 {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000;
+        text-align: center;
+    }
+    .game-sm p {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #5c5c5c;
+        margin-bottom: 80px;
+    }
+    .game-sm .game-content .content-point {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ff4e5a;
+        margin-bottom: 8px;
+    }
+    .game-sm .game-content .content-title {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .game-sm .game-content .content-sub {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .game-sm .game-content .content-title span {
+        position: relative;
+        z-index: 1;
+    }
+    .game-sm .game-content li:nth-child(1) .content-title span::before {
+        border-radius: 50px;
+        position: absolute;
+        content: "";
+        width: 110px;
+        height: 21px;
+        background-color: rgba(255, 78, 90, 0.7);
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
+    .game-sm .game-content li:nth-child(2) .content-title span:before {
+        border-radius: 50px;
+        position: absolute;
+        content: "";
+        width: 185px;
+        height: 21px;
+        background-color: rgba(255, 78, 90, 0.7);
+        right: 0;
+        bottom: 0px;
+        z-index: -1;
+    }
+    .game-sm .game-content li:nth-child(3) .content-title span::before {
+        border-radius: 50px;
+        position: absolute;
+        content: "";
+        width: 46px;
+        height: 21px;
+        background-color: rgba(255, 78, 90, 0.7);
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
+    .proceeding .card {
+        width: 300px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    .proceeding {
+        margin-bottom: 80px;
+    }
+    .proceeding .card img {
+        width: 100%;
+    }
+    .proceeding .card .card-sub {
+        word-break: keep-all;
+    }
+    .proceeding .card .card-sub br {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .sm-on {
+        display: none;
+    }
+}

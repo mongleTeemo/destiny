@@ -1,0 +1,214 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+body {
+    height: 100%;
+    font-family: NotoSansKR;
+}
+li {
+    list-style: none;
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+}
+.h-100 {
+    height: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+.is-show {
+    display: block;
+}
+.is-hide {
+    display: none;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 15px;
+    max-width: 500px;
+    width: 100%;
+}
+.navbar-default {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.navbar-brand img {
+    width: 130px;
+}
+
+.destiny-main {
+    text-align: center;
+}
+
+.destiny-main .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 41px;
+    text-align: center;
+    margin-top: 50px;
+}
+.destiny-main img {
+    margin: 60px 0px;
+    width: 100%;
+}
+.destiny-main .mongle-kakao {
+    width: 242px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+.destiny-main .mongle-kakao a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    background: #fe5955;
+    border-radius: 50px;
+    width: 100%;
+    padding: 17px 0;
+    display: block;
+}
+.destiny-main .mongle-instagram {
+    width: 242px;
+    margin: 0 auto;
+}
+.destiny-main .mongle-instagram a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #fe5955;
+    background: #ffffff;
+    border-radius: 50px;
+    width: 100%;
+    border: 1px solid #fe5955;
+    padding: 17px 0;
+    display: block;
+}
+
+.swiper-slide .game-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.swiper-slide .game-head .head-questions {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000;
+}
+.swiper-slide .game-head .head-progress {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #3c3c3c;
+}
+.swiper-slide .game-body .body-questions {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 80px;
+}
+.body-choice ul li {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 0;
+    color: #5c5c5c;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #5c5c5c;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+
+.body-choice ul li:active {
+    color: #ffffff;
+    background-color: #fe5955;
+    border: none;
+}
+.body-choice ul li:visited {
+    color: #ffffff;
+    background-color: #fe5955;
+    border: none;
+}
+
+.type-zone .question {
+    color: #3c3c3c;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+}
+.type-zone .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000;
+}
+.type-zone .point {
+    color: #fe5955;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+}
+.type-zone .discription li {
+    text-align: justify;
+    letter-spacing: -0.03em;
+    color: #3c3c3c;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        padding: 7px 15px !important;
+    }
+}
+@media (min-width: 767px) {
+    .wrapper {
+        margin: 100px auto;
+    }
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #fff;
+    z-index: 1000; /* 이 값으로 레이어의 위치를 조정합니다. */
+}
