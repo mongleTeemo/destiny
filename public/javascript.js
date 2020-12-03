@@ -70,7 +70,22 @@ function shareFacebook() {
             encodeURIComponent(window.location.href)
     );
 }
-function shareKakao() {}
+function shareKakao() {
+    const shareButton = document.querySelector("#kakaoLink");
+    shareButton.addEventListener("click", (event) => {
+        if (navigator.share) {
+            navigator
+                .share({
+                    title: "mongle - 카카오톡 유형 검사(KTTI)",
+                    url: "https://mongle.io/ktti.html",
+                })
+                .then(() => {
+                    console.log("Thanks for sharing!");
+                })
+                .catch(console.error);
+        }
+    });
+}
 function shareCopy(val) {
     var t = document.createElement("textarea");
     document.body.appendChild(t);

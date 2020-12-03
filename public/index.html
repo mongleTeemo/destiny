@@ -47,6 +47,7 @@
         ></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script data-ad-client=“ca-pub-3989114371383675” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -94,8 +95,7 @@
                                 Store
                             </button>
                             <button class="button-down">
-                                <img src="images/appstore_icon.png" />Apple
-                                Store
+                                <img src="images/appstore_icon.png" />App Store
                             </button>
                         </div>
                         <div class="col-md-7">
@@ -105,8 +105,7 @@
                                 Store
                             </button>
                             <button class="button-down sm-on">
-                                <img src="images/appstore_icon.png" />Apple
-                                Store
+                                <img src="images/appstore_icon.png" />App Store
                             </button>
                         </div>
                     </div>
@@ -263,36 +262,41 @@
                         질문까지<br />
                         나와 성향, 가치관이 잘 맞는 친구들을 찾을 수 있어요
                     </p>
-                    <div class="mini_frame">
-                        <img src="images/frame_mini.png" />
-                    </div>
-                    <div class="mini-card">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="images/mini1.png" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/mini2.png" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/mini3.png" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/mini4.png" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/mini5.png" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/mini6.png" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/mini7.png" />
-                                </div>
-                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-phone">
+            <div class="mini_frame">
+                <img src="images/frame_mini.png" />
+            </div>
+            <div class="mini-card">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/mini1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mini2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mini3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mini4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mini5.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mini6.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mini7.png" />
                         </div>
                     </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
@@ -353,16 +357,29 @@
                         <p data-aos="fade-up">몽글 최신 소식을 확인해보세요</p>
                         <ul data-aos="fade-up">
                             <li class="col-md-3">
-                                <img src="./images/instagram_1.png" />
+                                <a
+                                    href="https://www.instagram.com/p/CHkeC69pHBd/"
+                                >
+                                    <img src="./images/instagram_4.png"
+                                /></a>
                             </li>
                             <li class="col-md-3">
-                                <img src="./images/instagram_1.png" />
+                                <a
+                                    href="https://www.instagram.com/p/CHpoed0pLAj/"
+                                    ><img src="./images/instagram_3.png"
+                                /></a>
                             </li>
                             <li class="col-md-3">
-                                <img src="./images/instagram_1.png" />
+                                <a
+                                    href="https://www.instagram.com/p/CHuiDw1pMKZ/"
+                                    ><img src="./images/instagram_2.png"
+                                /></a>
                             </li>
                             <li class="col-md-3">
-                                <img src="./images/instagram_1.png" />
+                                <a
+                                    href="https://www.instagram.com/p/CHz-vKHJhbT/"
+                                    ><img src="./images/instagram_1.png"
+                                /></a>
                             </li>
                         </ul>
                     </div>
@@ -373,7 +390,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 footer-logo">
                         <img src="images/footer-logo.png" />
                     </div>
                     <div class="col-md-10">
@@ -431,21 +448,26 @@
                 slidesPerView: 1,
                 spaceBetween: 10,
                 loop: true,
+                grabCursor: true,
                 // init: false,
 
                 breakpoints: {
-                    640: {
+                    766: {
                         slidesPerView: 3,
                         spaceBetween: 20,
                     },
-                    768: {
-                        slidesPerView: 3,
+                    1166: {
+                        slidesPerView: 5,
                         spaceBetween: 30,
                     },
-                    1024: {
-                        slidesPerView: 5,
+                    1577: {
+                        slidesPerView: 7,
                         spaceBetween: 50,
                     },
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
             });
         </script>

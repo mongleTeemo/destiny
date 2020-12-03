@@ -1,10 +1,17 @@
+img {
+    image-rendering: -moz-;
+    image-rendering: -o-;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: auto;
+    -ms-interpolation-mode: nearest-neighbor;
+}
 ul {
     list-style: none;
     padding: 0;
 }
 body {
     height: 100%;
-    font-family: NotoSansKR;
+    font-family: NotoSansKR, Roboto !important;
 }
 li {
     list-style: none;
@@ -24,7 +31,6 @@ li {
 }
 .navbar-default .navbar-nav > li > a {
     color: #000;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -45,48 +51,41 @@ li {
     align-items: center;
 }
 .baner .baner-content h1 {
-    font-family: Noto Sans KR;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 71px;
     margin: 0;
     margin-bottom: 30px;
+    word-break: keep-all;
 }
-.baner .baner-content .button-fill {
-    background: #fe5955;
-    border-radius: 50px;
-    color: #fff;
-    padding: 17px 50px;
-    border: none;
-    margin-right: 24px;
-    font-family: Noto Sans KR;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-}
-.baner .baner-content .button-line {
+
+.baner .baner-content .button-down {
     background: #fff;
     border-radius: 50px;
-    color: #fe5955;
-    padding: 17px 50px;
-    border: 1px solid #fe5955;
-    font-family: Noto Sans KR;
+    color: #000;
+    padding: 12px 0;
+    width: 200px;
+    border: 1px solid #aaaaaa;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
+    margin-right: 20px;
+}
+.baner .baner-content .button-down img {
+    max-width: 24px;
+    margin-right: 10px;
 }
 .baner .baner-content .button-line a {
     color: #fe5955;
 }
-.baner .baner-content img {
+.baner .baner-content .baner-img {
     width: 100%;
 }
 .friend {
     background-color: #f4f4f4;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 .friend h3 {
     font-size: 36px;
@@ -98,6 +97,7 @@ li {
     text-align: center;
     margin-top: 0;
     color: #000;
+    word-break: keep-all;
 }
 .friend h3 span {
     position: relative;
@@ -107,7 +107,7 @@ li {
     border-radius: 50px;
     position: absolute;
     content: "";
-    width: 100%;
+    width: 93%;
     height: 21px;
     background-color: rgba(255, 78, 90, 0.7);
     right: 24px;
@@ -124,7 +124,17 @@ li {
     text-align: center;
     margin-bottom: 0;
     color: #3c3c3c;
+    word-break: keep-all;
+    margin-bottom: 60px;
 }
+.friend iframe {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 996px;
+    height: 560px;
+}
+
 .game {
     padding: 120px 0;
 }
@@ -132,6 +142,7 @@ li {
     display: none;
 }
 .game h3 {
+    word-break: keep-all;
     font-size: 36px;
     font-weight: bold;
     font-stretch: normal;
@@ -142,7 +153,6 @@ li {
     text-align: center;
 }
 .game p {
-    font-family: Roboto;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
@@ -152,8 +162,8 @@ li {
     text-align: center;
     color: #5c5c5c;
 }
+
 .game .game-content .content-point {
-    font-family: Roboto;
     font-size: 18px;
     font-weight: bold;
     font-stretch: normal;
@@ -219,17 +229,16 @@ li {
     bottom: 0px;
     z-index: -1;
 }
-
-.game .game-content .content-sub {
-    font-size: 17px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    text-align: left;
-    color: #3c3c3c;
+.game .game-content li:nth-child(1) .content-right img {
+    max-width: 468px;
 }
+.game .game-content li:nth-child(2) .content-left img {
+    max-width: 421px;
+}
+.game .game-content li:nth-child(3) .content-right img {
+    max-width: 454px;
+}
+
 .game .game-content li {
     display: flex;
     align-items: center;
@@ -237,16 +246,13 @@ li {
     margin-bottom: 100px;
 }
 .mini {
+    position: relative;
     height: 560px;
     background-color: rgba(255, 193, 192, 0.5);
     padding-top: 60px;
-    margin-bottom: 320px;
 }
-.mini .container-fluid {
-    overflow: hidden;
-}
+
 .mini .point {
-    font-family: Roboto;
     font-size: 18px;
     font-weight: bold;
     font-stretch: normal;
@@ -257,6 +263,7 @@ li {
     color: #ff4e5a;
 }
 .mini h3 {
+    word-break: keep-all;
     font-size: 36px;
     font-weight: bold;
     font-stretch: normal;
@@ -292,13 +299,34 @@ li {
     margin-bottom: 60px;
     color: #3c3c3c;
 }
+.mini-card {
+    top: -640px;
+    position: relative;
+}
+.mini-card img {
+    max-width: 214px;
+}
 .mini ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.mini_frame {
+    top: -200px;
+    position: relative;
+    text-align: center;
+
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+}
+.mini_frame img {
+    max-width: 290px;
+}
+.slide-phone {
+    height: 430px;
+    position: relative;
+}
 .proceeding {
-    margin-bottom: 160px;
+    margin-bottom: 150px;
 }
 .proceeding h3 {
     font-size: 36px;
@@ -311,7 +339,6 @@ li {
     text-align: center;
 }
 .proceeding p {
-    font-family: Roboto;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
@@ -356,6 +383,7 @@ li {
     padding: 60px 0;
 }
 .launching h3 {
+    word-break: keep-all;
     font-size: 36px;
     font-weight: bold;
     font-stretch: normal;
@@ -372,7 +400,7 @@ li {
     border-radius: 50px;
     position: absolute;
     content: "";
-    width: 220px;
+    width: 165px;
     height: 21px;
     background-color: rgba(255, 78, 90, 0.7);
     right: 0;
@@ -387,6 +415,7 @@ li {
     line-height: normal;
     letter-spacing: normal;
     color: #3c3c3c;
+    margin-bottom: 60px;
 }
 .launching .agree {
     font-weight: normal;
@@ -425,7 +454,15 @@ li {
     padding: 12px 50px;
     background-color: #fff;
 }
-
+.launching ul {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+}
+.launching ul li img {
+    width: 300px;
+}
 footer {
     background-color: #e76765;
     padding: 45px 0;
@@ -460,8 +497,118 @@ footer .copyright {
     letter-spacing: normal;
 }
 
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+    z-index: 10;
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+    color: #ff4c59;
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+}
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+    content: "prev";
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+}
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+    content: "next";
+}
+.swiper-button-prev.swiper-button-white,
+.swiper-button-next.swiper-button-white {
+    --swiper-navigation-color: #ffffff;
+}
+.swiper-button-prev.swiper-button-black,
+.swiper-button-next.swiper-button-black {
+    --swiper-navigation-color: #000000;
+}
+.swiper-button-lock {
+    display: none;
+}
+:root {
+    --swiper-pagination-color: #ff4c59;
+}
+.menu-sns img {
+    max-width: 44px;
+}
+.footer-logo img {
+    max-width: 100px;
+}
 @media (max-width: 766px) {
-    .baner .baner-content .button-line.sm-on a {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: flex !important;
+    }
+    .launching ul li:nth-child(3) {
+        display: none;
+    }
+    .launching ul li:nth-child(4) {
+        display: none;
+    }
+    .launching ul li:nth-child(1) img {
+        width: 150px;
+    }
+    .launching ul li:nth-child(2) img {
+        width: 150px;
+    }
+
+    .friend iframe {
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        height: 300px;
+    }
+    .baner .baner-content .button-down.sm-on a {
         color: #fe5955;
     }
     .navbar-brand {
@@ -469,7 +616,7 @@ footer .copyright {
     }
     .baner {
         height: 550px;
-        margin-top: 70px;
+        margin-top: 130px;
         margin-bottom: 40px;
     }
     .baner .baner-content {
@@ -480,26 +627,25 @@ footer .copyright {
         font-size: 28px;
         line-height: 44px;
         margin-bottom: 60px;
+        word-break: keep-all;
     }
-    .baner .baner-content .button-line,
-    .baner .baner-content .button-fill {
+    .baner .baner-img {
+        margin-bottom: 50px;
+    }
+
+    .baner .baner-content .button-down {
         display: none;
     }
-    .baner .baner-content .button-line.sm-on,
-    .baner .baner-content .button-fill.sm-on {
+
+    .baner .baner-content .button-down.sm-on {
         display: block;
         margin: 0 auto;
         margin-bottom: 12px;
         width: 242px;
-        padding: 17px 0px;
+
         font-size: 15px;
     }
-    .baner .baner-content .button-fill.sm-on {
-        margin-top: 80px;
-    }
-    .baner .baner-content .button-line.sm-on {
-        margin-bottom: 0;
-    }
+
     .friend h3 {
         font-size: 24px;
     }
@@ -551,7 +697,6 @@ footer .copyright {
         text-align: center;
     }
     .game-sm p {
-        font-family: Roboto;
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
@@ -563,7 +708,6 @@ footer .copyright {
         margin-bottom: 80px;
     }
     .game-sm .game-content .content-point {
-        font-family: Roboto;
         font-size: 12px;
         font-weight: bold;
         font-stretch: normal;
@@ -634,6 +778,7 @@ footer .copyright {
     .mini p {
         word-break: keep-all;
         padding: 0 15px;
+        height: 100px;
     }
     .mini p br {
         display: none;
@@ -657,6 +802,19 @@ footer .copyright {
     footer .footer-menu {
         display: block;
     }
+    footer .footer-menu .menu-link {
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    footer .footer-menu .menu-sns {
+        margin-bottom: 5px;
+    }
+    footer .company-info {
+        font-size: 12px;
+    }
+    footer .copyright {
+        font-size: 12px;
+    }
 }
 @media (min-width: 767px) and (max-width: 991px) {
     .baner {
@@ -673,28 +831,22 @@ footer .copyright {
         line-height: 44px;
         margin-bottom: 60px;
     }
-    .baner .baner-content .button-line,
-    .baner .baner-content .button-fill {
+    .baner .baner-img {
+        margin-bottom: 50px;
+    }
+    .baner .baner-content .button-down {
         display: none;
     }
-    .baner .baner-content .button-line.sm-on,
-    .baner .baner-content .button-fill.sm-on {
+
+    .baner .baner-content .button-down.sm-on {
         display: block;
         margin: 0 auto;
         margin-bottom: 12px;
-        width: 242px;
-        padding: 17px 0px;
+        width: 241px;
+
         font-size: 15px;
     }
-    .baner .baner-content .button-line.sm-on a {
-        color: #fe5955;
-    }
-    .baner .baner-content .button-fill.sm-on {
-        margin-top: 80px;
-    }
-    .baner .baner-content .button-line.sm-on {
-        margin-bottom: 0;
-    }
+
     .friend h3 {
         font-size: 24px;
     }
@@ -746,7 +898,6 @@ footer .copyright {
         text-align: center;
     }
     .game-sm p {
-        font-family: Roboto;
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
@@ -758,7 +909,6 @@ footer .copyright {
         margin-bottom: 80px;
     }
     .game-sm .game-content .content-point {
-        font-family: Roboto;
         font-size: 12px;
         font-weight: bold;
         font-stretch: normal;

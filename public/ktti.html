@@ -44,6 +44,11 @@
         ></script>
         <!-- Kakao API -->
         <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+        <script
+            data-ad-client="ca-pub-3989114371383675"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -661,17 +666,15 @@
                             테스트 다시하기
                         </div>
                         <div class="btn-mongle">나와 비슷한 유형 찾아보기</div>
-                        <div class="share-text">
-                            친구에게 결과 링크 공유하기
-                        </div>
+                        <div class="share-text">친구에게 링크 공유하기</div>
                         <ul class="share-btn">
                             <li onclick="shareFacebook();">
                                 <img src="images/share-facebook.png" />
                             </li>
-                            <li onclick="shareKakao();">
-                                <a id="kakaoLink"
-                                    ><img src="images/share-kakao.png"
-                                /></a>
+                            <li>
+                                <a id="kakaoLink" onclick="shareKakao();">
+                                    <img src="images/share-kakao.png" />
+                                </a>
                             </li>
                             <li onclick="shareCopy();" id="copy">
                                 <img src="images/share-copy.png" />
