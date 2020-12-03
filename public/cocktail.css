@@ -1,0 +1,388 @@
+img {
+    image-rendering: -moz-;
+    image-rendering: -o-;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: auto;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+body {
+    height: 100%;
+    font-family: NotoSansKR, Roboto !important;
+}
+li {
+    list-style: none;
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+}
+.h-100 {
+    height: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+.is-show {
+    display: block;
+}
+.is-hide {
+    display: none;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 15px;
+    max-width: 500px;
+    width: 100%;
+}
+.navbar-default {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.navbar-brand img {
+    width: 130px;
+}
+
+.ktti-main {
+    text-align: center;
+}
+
+.ktti-main .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 41px;
+    text-align: center;
+    margin-top: 50px;
+}
+.ktti-main img {
+    margin: 60px 0px;
+    max-width: 169px;
+}
+.ktti-main .mongle-kakao {
+    width: 242px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    outline: none;
+}
+.ktti-main .mongle-kakao a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    background: #fe5955;
+    border-radius: 50px;
+    width: 100%;
+    padding: 17px 0;
+    display: block;
+    outline: none;
+}
+.ktti-main .mongle-instagram {
+    width: 242px;
+    margin: 0 auto;
+    outline: none;
+}
+
+.ktti-main .mongle-instagram a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #fe5955;
+    background: #ffffff;
+    border-radius: 50px;
+    width: 100%;
+    border: 1px solid #fe5955;
+    padding: 17px 0;
+    display: block;
+    outline: none;
+}
+
+.swiper-slide .game-head {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.swiper-slide .game-head .head-questions {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000;
+}
+.swiper-slide .game-head .head-progress {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #3c3c3c;
+}
+.swiper-slide .game-body .body-questions {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 80px;
+}
+.body-choice ul li {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 0;
+    color: #5c5c5c;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #5c5c5c;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.body-choice ul li:active {
+    color: #ffffff;
+    background-color: #fe5955;
+    border: none;
+}
+.body-choice ul li:visited {
+    color: #ffffff;
+    background-color: #fe5955;
+    border: none;
+}
+
+.type-zone .question {
+    margin-top: 50px;
+    color: #3c3c3c;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+}
+.type-zone .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000;
+}
+.type-zone .point {
+    color: #fe5955;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+}
+.type-zone .type-image {
+    text-align: center;
+    margin: 20px 0;
+}
+.type-zone .discription {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.type-zone .discription li {
+    position: relative;
+    text-align: justify;
+    letter-spacing: -0.03em;
+    color: #3c3c3c;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+.type-zone .discription li::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    left: 0px;
+    top: 7px;
+
+    background-color: #fe5955;
+}
+.loading-content {
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loading-content img {
+    max-width: 169px;
+}
+
+.loading-text {
+    color: #fe5955;
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bottom-default {
+    margin-top: 60px;
+    text-align: center;
+}
+.bottom-default .btn-reset {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    width: 242px;
+    background: #fe5955;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 50px;
+    padding: 14px 0;
+    margin-bottom: 12px;
+}
+.bottom-default .btn-mongle {
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fe5955;
+    border-radius: 50px;
+    padding: 14px 0;
+    border: 1px solid #fe5955;
+}
+.bottom-default .share-text {
+    font-size: 14px;
+    line-height: 28px;
+    color: #3c3c3c;
+    margin-top: 60px;
+}
+.bottom-default .share-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.bottom-default .share-btn img {
+    max-width: 70px;
+}
+.emoji-title {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: -0.42px;
+    color: #3c3c3c;
+}
+.emoji-title span {
+    padding-left: 5px;
+}
+
+@media (min-width: 992px) {
+    .navbar-header {
+        height: 64px;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-11-14 21:40:2
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shake-vertical
+ * ----------------------------------------
+ */
+.shake-vertical {
+    -webkit-animation: shake-vertical 3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        both;
+    animation: shake-vertical 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+@-webkit-keyframes shake-vertical {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    80% {
+        -webkit-transform: translateY(6.4px);
+        transform: translateY(6.4px);
+    }
+    90% {
+        -webkit-transform: translateY(-6.4px);
+        transform: translateY(-6.4px);
+    }
+}
+@keyframes shake-vertical {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    80% {
+        -webkit-transform: translateY(6.4px);
+        transform: translateY(6.4px);
+    }
+    90% {
+        -webkit-transform: translateY(-6.4px);
+        transform: translateY(-6.4px);
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        padding: 7px 15px !important;
+    }
+}
+@media (min-width: 500px) {
+    .wrapper {
+        margin: 100px auto;
+    }
+}
