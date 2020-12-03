@@ -57,11 +57,11 @@ li {
     width: 130px;
 }
 
-.ktti-main {
+.cocktail-main {
     text-align: center;
 }
 
-.ktti-main .title {
+.cocktail-main .title {
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -69,17 +69,17 @@ li {
     text-align: center;
     margin-top: 50px;
 }
-.ktti-main img {
+.cocktail-main img {
     margin: 60px 0px;
     max-width: 169px;
 }
-.ktti-main .mongle-kakao {
+.cocktail-main .mongle-kakao {
     width: 242px;
     margin: 0 auto;
     margin-bottom: 12px;
     outline: none;
 }
-.ktti-main .mongle-kakao a {
+.cocktail-main .mongle-kakao a {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -92,13 +92,13 @@ li {
     display: block;
     outline: none;
 }
-.ktti-main .mongle-instagram {
+.cocktail-main .mongle-instagram {
     width: 242px;
     margin: 0 auto;
     outline: none;
 }
 
-.ktti-main .mongle-instagram a {
+.cocktail-main .mongle-instagram a {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
