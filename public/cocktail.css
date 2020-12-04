@@ -59,6 +59,7 @@ li {
 
 .cocktail-main {
     text-align: center;
+    margin-top: 20vh;
 }
 
 .cocktail-main .title {
@@ -69,9 +70,14 @@ li {
     text-align: center;
     margin-top: 50px;
 }
-.cocktail-main img {
-    margin: 60px 0px;
-    max-width: 169px;
+.cocktail-main .sub {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #5c5c5c;
+    margin: 20px 0 100px 0;
 }
 .cocktail-main .mongle-kakao {
     width: 242px;
@@ -115,7 +121,7 @@ li {
 
 .swiper-slide .game-head {
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 .swiper-slide .game-head .head-questions {
     font-style: normal;
@@ -134,10 +140,11 @@ li {
 .swiper-slide .game-body .body-questions {
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 28px;
     color: #000;
     margin-bottom: 80px;
+    text-align: center;
 }
 .body-choice ul li {
     width: 100%;

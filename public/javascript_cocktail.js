@@ -12,6 +12,7 @@ const SHOW_CL = "is-show",
     loadingArea = document.querySelector(".loding-area");
 let count = 0;
 let loadingCount = 1;
+
 function countUp() {
     count = count + 1;
     console.log(count);
