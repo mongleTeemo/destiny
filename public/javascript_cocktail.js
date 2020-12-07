@@ -2,20 +2,39 @@ const SHOW_CL = "is-show",
     HIDE_CL = "is-hide",
     swipeZone = document.querySelector(".swipe-zone"),
     typeZone = document.querySelector(".type-zone"),
-    result1 = document.querySelector(".result.type1"),
-    result2 = document.querySelector(".result.type2"),
-    result3 = document.querySelector(".result.type3"),
-    result4 = document.querySelector(".result.type4"),
-    result5 = document.querySelector(".result.type5"),
-    result6 = document.querySelector(".result.type6"),
+    resultA = document.querySelector(".result.typeA"),
+    resultB = document.querySelector(".result.typeB"),
+    resultC = document.querySelector(".result.typeC"),
+    resultD = document.querySelector(".result.typeD"),
+    resultE = document.querySelector(".result.typeE"),
+    resultF = document.querySelector(".result.typeF"),
     bottomDefault = document.querySelector(".bottom-default"),
     loadingArea = document.querySelector(".loding-area");
-let count = 0;
+let countA = 0,
+    countB = 0,
+    countC = 0,
+    countD = 0,
+    countE = 0,
+    countF = 0;
 let loadingCount = 1;
 
-function countUp() {
-    count = count + 1;
-    console.log(count);
+function countUpTypeA() {
+    countA = countA + 1;
+}
+function countUpTypeB() {
+    countB = countB + 1;
+}
+function countUpTypeC() {
+    countC = countC + 1;
+}
+function countUpTypeD() {
+    countD = countD + 1;
+}
+function countUpTypeE() {
+    countE = countE + 1;
+}
+function countUpTypeF() {
+    countF = countF + 1;
 }
 
 function loadingf() {
@@ -27,40 +46,42 @@ function loadingf() {
             loadingf();
         } else {
             loadingArea.classList.add(HIDE_CL);
-            type();
+            typeCheck();
         }
     }, 1000);
 }
 
 function countRset() {
-    count = 0;
-    console.log(count);
+    countA = 0;
+    countB = 0;
+    countC = 0;
+    countD = 0;
+    countE = 0;
+    countF = 0;
+    console.log(countA, countB, countC, countD, countE, countF);
     location.reload();
 }
 
-function type() {
-    let typeCurrent = count;
+function typeCheck() {
+    let typeCurrent = Math.max(countA, countB, countC, countD, countE, countF);
 
-    if (typeCurrent <= 1) {
-        result1.classList.remove(HIDE_CL);
+    if (typeCurrent == countA) {
+        resultA.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 2) {
-        result2.classList.remove(HIDE_CL);
+    } else if (typeCurrent == countB) {
+        resultB.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 3) {
-        result3.classList.remove(HIDE_CL);
+    } else if (typeCurrent == countC) {
+        resultC.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 4 || typeCurrent == 5) {
-        result4.classList.remove(HIDE_CL);
+    } else if (typeCurrent == countD) {
+        resultD.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 6) {
-        result5.classList.remove(HIDE_CL);
+    } else if (typeCurrent == countE) {
+        resultE.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 7) {
-        result6.classList.remove(HIDE_CL);
-        bottomDefault.classList.remove(HIDE_CL);
-    } else {
-        result6.classList.remove(HIDE_CL);
+    } else if (typeCurrent == countF) {
+        resultF.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
     }
 }
@@ -77,8 +98,8 @@ function shareKakao() {
         if (navigator.share) {
             navigator
                 .share({
-                    title: "mongle - 카카오톡 유형 검사(KTTI)",
-                    url: "https://mongle.io/ktti.html",
+                    title: "mongle - 칵테일로 알아보는 나의 연애 스타일",
+                    url: "https://mongle.io/cocktail.html",
                 })
                 .then(() => {
                     console.log("Thanks for sharing!");
