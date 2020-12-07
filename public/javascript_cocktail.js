@@ -80,7 +80,7 @@ function typeCheck() {
     } else if (typeCurrent == countE) {
         resultE.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else (typeCurrent == countF) {
+    } else if (typeCurrent == countF) {
         resultF.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
     }
