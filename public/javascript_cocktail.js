@@ -20,27 +20,21 @@ let loadingCount = 1;
 
 function countUpTypeA() {
     countA = countA + 1;
-    console.log(countA);
 }
 function countUpTypeB() {
     countB = countB + 1;
-    console.log(countB);
 }
 function countUpTypeC() {
     countC = countC + 1;
-    console.log(countC);
 }
 function countUpTypeD() {
     countD = countD + 1;
-    console.log(countD);
 }
 function countUpTypeE() {
     countE = countE + 1;
-    console.log(countE);
 }
 function countUpTypeF() {
     countF = countF + 1;
-    console.log(countF);
 }
 
 function loadingf() {
@@ -52,7 +46,7 @@ function loadingf() {
             loadingf();
         } else {
             loadingArea.classList.add(HIDE_CL);
-            type();
+            typeCheck();
         }
     }, 1000);
 }
@@ -68,28 +62,25 @@ function countRset() {
     location.reload();
 }
 
-function type() {
-    let typeCurrent = count;
+function typeCheck() {
+    let typeCurrent = Math.max(countA, countB, countC, countD, countE, countF);
 
-    if (typeCurrent <= 1) {
+    if (typeCurrent == countA) {
         resultA.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 2) {
+    } else if (typeCurrent == countB) {
         resultB.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 3) {
+    } else if (typeCurrent == countC) {
         resultC.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 4 || typeCurrent == 5) {
+    } else if (typeCurrent == countD) {
         resultD.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 6) {
+    } else if (typeCurrent == countE) {
         resultE.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
-    } else if (typeCurrent == 7) {
-        resultF.classList.remove(HIDE_CL);
-        bottomDefault.classList.remove(HIDE_CL);
-    } else {
+    } else (typeCurrent == countF) {
         resultF.classList.remove(HIDE_CL);
         bottomDefault.classList.remove(HIDE_CL);
     }
