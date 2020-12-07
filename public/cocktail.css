@@ -302,7 +302,24 @@ li {
 .emoji-title span {
     padding-left: 5px;
 }
-
+.result.typeA .type-image {
+    max-width: 124px;
+}
+.result.typeB .type-image {
+    max-width: 151px;
+}
+.result.typeC .type-image {
+    max-width: 156px;
+}
+.result.typeD .type-image {
+    max-width: 187px;
+}
+.result.typeE .type-image {
+    max-width: 150px;
+}
+.result.typeF .type-image {
+    max-width: 191px;
+}
 @media (min-width: 992px) {
     .navbar-header {
         height: 64px;
