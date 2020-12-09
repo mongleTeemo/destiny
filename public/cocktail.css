@@ -302,22 +302,22 @@ li {
 .emoji-title span {
     padding-left: 5px;
 }
-.result.typeA .type-image {
+.result.typeA .type-image img {
     max-width: 124px;
 }
-.result.typeB .type-image {
+.result.typeB .type-image img {
     max-width: 151px;
 }
-.result.typeC .type-image {
+.result.typeC .type-image img {
     max-width: 156px;
 }
-.result.typeD .type-image {
+.result.typeD .type-image img {
     max-width: 187px;
 }
-.result.typeE .type-image {
+.result.typeE .type-image img {
     max-width: 150px;
 }
-.result.typeF .type-image {
+.result.typeF .type-image img {
     max-width: 191px;
 }
 @media (min-width: 992px) {
