@@ -69,6 +69,7 @@ li {
     line-height: 41px;
     text-align: center;
     margin-top: 50px;
+    font-family: "Noto Serif KR", serif;
 }
 .cocktail-main .sub {
     font-style: normal;
@@ -146,6 +147,13 @@ li {
     margin-bottom: 80px;
     text-align: center;
 }
+.swiper-slide .game-body .body-questions-icon {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.swiper-slide .game-body .body-questions-icon img {
+    max-width: 36px;
+}
 .body-choice ul li {
     width: 100%;
     font-style: normal;
@@ -191,6 +199,11 @@ li {
     line-height: 36px;
     text-align: center;
     color: #000;
+    margin-bottom: 20px;
+    font-family: "Noto Serif KR", serif;
+}
+.type-zone .title span {
+    color: #fe5955;
 }
 .type-zone .point {
     color: #fe5955;
@@ -226,6 +239,48 @@ li {
     top: 7px;
 
     background-color: #fe5955;
+}
+.result .partner {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+.result .partner .partner-best-title {
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.result .partner .partner-best-discription {
+    font-family: Noto Serif KR;
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.result .partner .partner-best-discription span {
+    color: #fe5955;
+}
+.result .partner .partner-worst-title {
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.result .partner .partner-worst-discription {
+    font-family: Noto Serif KR;
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.result .partner .partner-worst-discription span {
+    color: #fe5955;
+}
+.result .partner .partner-best-img img {
+    max-width: 152px;
+}
+.result .partner .partner-worst-img img {
+    max-width: 152px;
 }
 .loading-content {
     text-align: center;
@@ -320,6 +375,7 @@ li {
 .result.typeF .type-image img {
     max-width: 191px;
 }
+
 @media (min-width: 992px) {
     .navbar-header {
         height: 64px;
