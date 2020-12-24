@@ -124,10 +124,14 @@ function DownLoad() {
     console.log(checkMobile());
     const userOs = checkMobile();
     if (userOs === "android") {
-        location.href("market://details?id=io.mongle.app&hl=ko");
+        location.href(
+            "https://play.google.com/store/apps/details?id=io.mongle.app"
+        );
     } else if (userOs === "ios") {
         alert("IOS 2021 1월 말 출시예정 입니다.");
     } else {
-        location.href("market://details?id=io.mongle.app&hl=ko");
+        location.href(
+            "https://play.google.com/store/apps/details?id=io.mongle.app"
+        );
     }
 }

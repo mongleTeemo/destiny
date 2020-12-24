@@ -127,3 +127,39 @@ $("#copy").click(function () {
     shareCopy("https://mongle.io/destiny.html");
     alert("복사되었습니다.");
 });
+
+function checkMobile() {
+    let varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+
+    if (varUA.indexOf("android") > -1) {
+        //안드로이드
+        return "android";
+    } else if (
+        varUA.indexOf("iphone") > -1 ||
+        varUA.indexOf("ipad") > -1 ||
+        varUA.indexOf("ipod") > -1
+    ) {
+        //IOS
+        return "ios";
+    } else {
+        //아이폰, 안드로이드 외
+        return "other";
+    }
+}
+
+function DownLoad() {
+    checkMobile();
+    console.log(checkMobile());
+    const userOs = checkMobile();
+    if (userOs === "android") {
+        location.href(
+            "https://play.google.com/store/apps/details?id=io.mongle.app"
+        );
+    } else if (userOs === "ios") {
+        alert("IOS 2021 1월 말 출시예정 입니다.");
+    } else {
+        location.href(
+            "https://play.google.com/store/apps/details?id=io.mongle.app"
+        );
+    }
+}
