@@ -118,9 +118,10 @@ function checkMobile() {
         return "other";
     }
 }
-console.log(checkMobile());
 
 function DownLoad() {
+    checkMobile();
+    console.log(checkMobile());
     const userOs = checkMobile();
     if (userOs === "android") {
         location.href("market://details?id=io.mongle.app&hl=ko");
