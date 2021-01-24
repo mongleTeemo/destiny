@@ -26,6 +26,12 @@ li {
 .w-100 {
     width: 100%;
 }
+.privacy {
+    width: 800px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #eee;
+}
 .navbar-default {
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1) !important;
 }
