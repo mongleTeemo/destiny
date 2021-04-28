@@ -26,6 +26,10 @@ li {
 .w-100 {
     width: 100%;
 }
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
 .privacy {
     width: 800px;
     margin: 100px auto;
@@ -48,7 +52,6 @@ li {
     width: 130px;
 }
 .baner {
-    height: 937px;
     display: flex;
     align-items: center;
 }
@@ -56,14 +59,39 @@ li {
     display: flex;
     align-items: center;
 }
-.baner .baner-content h1 {
+.baner .baner-text {
+    display: flex;
+    justify-content: center;
+}
+.baner .baner-content img {
+    width: 100%;
+}
+.baner .baner-content__logo {
+    text-align: right;
+}
+.baner .baner-content__bar {
+    width: 10px;
+    height: 100px;
+    background-color: #6916ff;
+    margin: 0 20px;
+    border-radius: 50px;
+}
+.baner .baner-content__logo img {
+    width: 300px;
+}
+
+.baner .baner-content__text h1 {
+    color: #6916ff;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 48px;
-    line-height: 71px;
+    line-height: 50px;
     margin: 0;
     margin-bottom: 30px;
     word-break: keep-all;
+}
+.baner .baner-content__text h1 span {
+    font-weight: bold;
 }
 
 .baner .baner-content .button-down {
@@ -84,7 +112,7 @@ li {
     margin-right: 10px;
 }
 .baner .baner-content .button-line a {
-    color: #fe5955;
+    color: #6916ff;
 }
 .baner .baner-content .baner-img {
     width: 100%;
@@ -115,7 +143,7 @@ li {
     content: "";
     width: 93%;
     height: 21px;
-    background-color: rgba(255, 78, 90, 0.7);
+    background-color: rgb(105, 22, 255, 0.7);
     right: 24px;
     bottom: 0px;
     z-index: -1;
@@ -177,7 +205,7 @@ li {
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #ff4e5a;
+    color: #6916ff;
     margin-bottom: 8px;
 }
 .game .game-content .content-title {
@@ -208,7 +236,7 @@ li {
     content: "";
     width: 170px;
     height: 21px;
-    background-color: rgba(255, 78, 90, 0.7);
+    background-color: rgb(105, 22, 255, 0.7);
     right: 0px;
     bottom: 0px;
     z-index: -1;
@@ -219,7 +247,7 @@ li {
     content: "";
     width: 267px;
     height: 21px;
-    background-color: rgba(255, 78, 90, 0.7);
+    background-color: rgb(105, 22, 255, 0.7);
     right: 0;
     bottom: 0px;
     z-index: -1;
@@ -230,7 +258,7 @@ li {
     content: "";
     width: 66px;
     height: 21px;
-    background-color: rgba(255, 78, 90, 0.7);
+    background-color: rgb(105, 22, 255, 0.7);
     right: 0px;
     bottom: 0px;
     z-index: -1;
@@ -266,7 +294,7 @@ li {
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #ff4e5a;
+    color: #6916ff;
 }
 .mini h3 {
     word-break: keep-all;
@@ -289,7 +317,7 @@ li {
     content: "";
     width: 140px;
     height: 21px;
-    background-color: rgba(255, 78, 90, 0.7);
+    background-color: rgb(105, 22, 255, 0.7);
     right: 0;
     bottom: 0px;
     z-index: -1;
@@ -408,7 +436,7 @@ li {
     content: "";
     width: 165px;
     height: 21px;
-    background-color: rgba(255, 78, 90, 0.7);
+    background-color: rgb(105, 22, 255, 0.7);
     right: 0;
     bottom: 0px;
     z-index: -1;
@@ -454,9 +482,9 @@ li {
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #fe5955;
+    color: #6916ff;
     border-radius: 50px;
-    border: solid 1px #fe5955;
+    border: solid 1px #6916ff;
     padding: 12px 50px;
     background-color: #fff;
 }
@@ -470,7 +498,7 @@ li {
     width: 300px;
 }
 footer {
-    background-color: #e76765;
+    background-color: #6916ff;
     padding: 45px 0;
 }
 footer .footer-menu {
@@ -534,7 +562,7 @@ footer .copyright {
 
     align-items: center;
     justify-content: center;
-    color: #ff4c59;
+    color: #6916ff;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -582,7 +610,7 @@ footer .copyright {
     display: none;
 }
 :root {
-    --swiper-pagination-color: #ff4c59;
+    --swiper-pagination-color: #6916ff;
 }
 .menu-sns img {
     max-width: 44px;
@@ -591,6 +619,19 @@ footer .copyright {
     max-width: 100px;
 }
 @media (max-width: 766px) {
+    .baner-text {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .baner .baner-content__bar {
+        width: 100px;
+        height: 10px;
+        margin: 40px 0;
+    }
+    .baner .baner-content__logo {
+        text-align: center;
+    }
     .swiper-button-prev,
     .swiper-button-next {
         display: flex !important;
@@ -615,14 +656,14 @@ footer .copyright {
         height: 300px;
     }
     .baner .baner-content .button-down.sm-on a {
-        color: #fe5955;
+        color: #6916ff;
     }
     .navbar-brand {
         padding: 7px 15px !important;
     }
     .baner {
         height: 550px;
-        margin-top: 130px;
+        margin-top: 80px;
         margin-bottom: 40px;
     }
     .baner .baner-content {
@@ -720,7 +761,7 @@ footer .copyright {
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        color: #ff4e5a;
+        color: #6916ff;
         margin-bottom: 8px;
     }
     .game-sm .game-content .content-title {
@@ -747,7 +788,7 @@ footer .copyright {
         content: "";
         width: 110px;
         height: 21px;
-        background-color: rgba(255, 78, 90, 0.7);
+        background-color: rgb(105, 22, 255, 0.7);
         right: 0px;
         bottom: 0px;
         z-index: -1;
@@ -758,7 +799,7 @@ footer .copyright {
         content: "";
         width: 185px;
         height: 21px;
-        background-color: rgba(255, 78, 90, 0.7);
+        background-color: rgb(105, 22, 255, 0.7);
         right: 0;
         bottom: 0px;
         z-index: -1;
@@ -769,7 +810,7 @@ footer .copyright {
         content: "";
         width: 46px;
         height: 21px;
-        background-color: rgba(255, 78, 90, 0.7);
+        background-color: rgb(105, 22, 255, 0.7);
         right: 0px;
         bottom: 0px;
         z-index: -1;
@@ -921,7 +962,7 @@ footer .copyright {
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        color: #ff4e5a;
+        color: #6916ff;
         margin-bottom: 8px;
     }
     .game-sm .game-content .content-title {
@@ -948,7 +989,7 @@ footer .copyright {
         content: "";
         width: 110px;
         height: 21px;
-        background-color: rgba(255, 78, 90, 0.7);
+        background-color: rgb(105, 22, 255, 0.7);
         right: 0px;
         bottom: 0px;
         z-index: -1;
@@ -959,7 +1000,7 @@ footer .copyright {
         content: "";
         width: 185px;
         height: 21px;
-        background-color: rgba(255, 78, 90, 0.7);
+        background-color: rgb(105, 22, 255, 0.7);
         right: 0;
         bottom: 0px;
         z-index: -1;
@@ -970,7 +1011,7 @@ footer .copyright {
         content: "";
         width: 46px;
         height: 21px;
-        background-color: rgba(255, 78, 90, 0.7);
+        background-color: rgb(105, 22, 255, 0.7);
         right: 0px;
         bottom: 0px;
         z-index: -1;

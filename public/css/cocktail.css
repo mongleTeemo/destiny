@@ -92,7 +92,7 @@ li {
     line-height: 24px;
     text-align: center;
     color: #ffffff;
-    background: #fe5955;
+    background: #6916ff;
     border-radius: 50px;
     width: 100%;
     padding: 17px 0;
@@ -110,11 +110,11 @@ li {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #fe5955;
+    color: #6916ff;
     background: #ffffff;
     border-radius: 50px;
     width: 100%;
-    border: 1px solid #fe5955;
+    border: 1px solid #6916ff;
     padding: 17px 0;
     display: block;
     outline: none;
@@ -173,12 +173,12 @@ li {
 
 .body-choice ul li:active {
     color: #ffffff;
-    background-color: #fe5955;
+    background-color: #6916ff;
     border: none;
 }
 .body-choice ul li:visited {
     color: #ffffff;
-    background-color: #fe5955;
+    background-color: #6916ff;
     border: none;
 }
 
@@ -203,10 +203,10 @@ li {
     font-family: "Noto Serif KR", serif;
 }
 .type-zone .title span {
-    color: #fe5955;
+    color: #6916ff;
 }
 .type-zone .point {
-    color: #fe5955;
+    color: #6916ff;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -238,7 +238,7 @@ li {
     left: 0px;
     top: 7px;
 
-    background-color: #fe5955;
+    background-color: #6916ff;
 }
 .result .partner {
     display: flex;
@@ -259,7 +259,7 @@ li {
     font-weight: 700;
 }
 .result .partner .partner-best-discription span {
-    color: #fe5955;
+    color: #6916ff;
 }
 .result .partner .partner-worst-title {
     color: #000000;
@@ -274,7 +274,7 @@ li {
     font-weight: 700;
 }
 .result .partner .partner-worst-discription span {
-    color: #fe5955;
+    color: #6916ff;
 }
 .result .partner .partner-best-img img {
     max-width: 152px;
@@ -295,7 +295,7 @@ li {
 }
 
 .loading-text {
-    color: #fe5955;
+    color: #6916ff;
     font-size: 18px;
     line-height: 31px;
     font-weight: bold;
@@ -313,7 +313,7 @@ li {
     font-size: 16px;
     line-height: 24px;
     width: 242px;
-    background: #fe5955;
+    background: #6916ff;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -326,10 +326,10 @@ li {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    color: #fe5955;
+    color: #6916ff;
     border-radius: 50px;
     padding: 14px 0;
-    border: 1px solid #fe5955;
+    border: 1px solid #6916ff;
 }
 .bottom-default .share-text {
     font-size: 14px;
@@ -466,4 +466,28 @@ li {
     .wrapper {
         margin: 100px auto;
     }
+}
+
+.temp_poc {
+    margin-top: 70px;
+}
+.temp_poc ul {
+    display: flex;
+    flex-direction: column;
+}
+.temp_poc ul li {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.temp_poc ul li h1 {
+    font-size: 22px;
+}
+.temp_poc ul li p {
+    color: #999;
+    margin-bottom: 0;
+}
+.temp_poc ul li img {
+    max-width: 100%;
 }

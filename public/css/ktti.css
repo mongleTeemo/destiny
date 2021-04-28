@@ -87,7 +87,7 @@ li {
     line-height: 24px;
     text-align: center;
     color: #ffffff;
-    background: #fe5955;
+    background: #6916ff;
     border-radius: 50px;
     width: 100%;
     padding: 17px 0;
@@ -106,11 +106,11 @@ li {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #fe5955;
+    color: #6916ff;
     background: #ffffff;
     border-radius: 50px;
     width: 100%;
-    border: 1px solid #fe5955;
+    border: 1px solid #6916ff;
     padding: 17px 0;
     display: block;
     outline: none;
@@ -162,12 +162,12 @@ li {
 
 .body-choice ul li:active {
     color: #ffffff;
-    background-color: #fe5955;
+    background-color: #6916ff;
     border: none;
 }
 .body-choice ul li:visited {
     color: #ffffff;
-    background-color: #fe5955;
+    background-color: #6916ff;
     border: none;
 }
 
@@ -190,7 +190,7 @@ li {
     color: #000;
 }
 .type-zone .point {
-    color: #fe5955;
+    color: #6916ff;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -222,7 +222,7 @@ li {
     left: 0px;
     top: 7px;
 
-    background-color: #fe5955;
+    background-color: #6916ff;
 }
 .loading-content {
     text-align: center;
@@ -237,7 +237,7 @@ li {
 }
 
 .loading-text {
-    color: #fe5955;
+    color: #6916ff;
     font-size: 18px;
     line-height: 31px;
     font-weight: bold;
@@ -254,7 +254,7 @@ li {
     font-size: 16px;
     line-height: 24px;
     width: 242px;
-    background: #fe5955;
+    background: #6916ff;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -268,10 +268,10 @@ li {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    color: #fe5955;
+    color: #6916ff;
     border-radius: 50px;
     padding: 14px 0;
-    border: 1px solid #fe5955;
+    border: 1px solid #6916ff;
     cursor: pointer;
 }
 .bottom-default .share-text {
@@ -309,7 +309,7 @@ li {
 }
 .swiper-button-next:hover {
     border: none;
-    background-color: #fe5955;
+    background-color: #6916ff;
     color: #fff;
 }
 @media (min-width: 992px) {
