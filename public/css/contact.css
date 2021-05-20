@@ -1,0 +1,64 @@
+.contact {
+  margin-top: 32px;
+  margin-bottom: 80px;
+}
+select {
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 14px 20px;
+}
+input {
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 14px 20px;
+  transition: all 0.3s ease-in-out;
+}
+textarea {
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 14px 20px;
+  width: 100%;
+  height: 320px;
+  transition: all 0.3s ease-in-out;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 1pt 1pt #6916ff;
+}
+.email {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #a7a7a7;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.contact-btn {
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  background-color: #6916ff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  float: right;
+}
+.contact-btn:hover {
+  background-color: #fff;
+  color: #6916ff;
+  border: 1px solid #6916ff;
+}
+
+@media (max-width: 766px) {
+  .contact-btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

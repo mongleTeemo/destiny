@@ -20,27 +20,21 @@ let loadingCount = 1;
 
 function countUpTypeA() {
   countA = countA + 1;
-  console.log(countA, countB, countC, countD, countE, countF);
 }
 function countUpTypeB() {
   countB = countB + 1;
-  console.log(countA, countB, countC, countD, countE, countF);
 }
 function countUpTypeC() {
   countC = countC + 1;
-  console.log(countA, countB, countC, countD, countE, countF);
 }
 function countUpTypeD() {
   countD = countD + 1;
-  console.log(countA, countB, countC, countD, countE, countF);
 }
 function countUpTypeE() {
   countE = countE + 1;
-  console.log(countA, countB, countC, countD, countE, countF);
 }
 function countUpTypeF() {
   countF = countF + 1;
-  console.log(countA, countB, countC, countD, countE, countF);
 }
 
 function loadingf() {
