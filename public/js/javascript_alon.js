@@ -169,8 +169,8 @@ function shareKakao() {
     if (navigator.share) {
       navigator
         .share({
-          title: "mongle - 칵테일로 알아보는 나의 연애 스타일",
-          url: "https://mongle.io/cocktail.html",
+          title: "mongle - 자취력 테스트",
+          url: "https://mongle.io/alon.html",
         })
         .then(() => {
           console.log("Thanks for sharing!");
