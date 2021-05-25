@@ -214,6 +214,11 @@ footer .footer-menu a {
     touch-action: manipulation;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
+  .button:active,
+  .button:hover,
+  .button:focus {
+    outline: none;
+  }
   .icon-bar1,
   .icon-bar2,
   .icon-bar3 {

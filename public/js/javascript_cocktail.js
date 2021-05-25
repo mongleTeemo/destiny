@@ -118,7 +118,7 @@ function shareCopy(val) {
 }
 
 $("#copy").click(function () {
-  shareCopy("https://mongle.io/destiny.html");
+  shareCopy("https://mongle.io/cocktail.html");
   alert("복사되었습니다.");
 });
 

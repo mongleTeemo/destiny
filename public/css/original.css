@@ -25,10 +25,11 @@
 .original .original-list li img {
   /* border: 1px solid #dadada; */
   width: 328px;
-  height: 400px;
   box-sizing: border-box;
   border-radius: 16px;
   margin-bottom: 24px;
+  border: 1px solid #dadada;
+  padding-top: 64px;
 }
 .original .original-list li:nth-child(2n) {
   margin: 0 60px;
@@ -44,6 +45,10 @@
   font-size: 16px;
   line-height: 16px;
   color: #a7a7a7;
+}
+.modal-content {
+  padding: 20px 40px;
+  margin-top: 50%;
 }
 
 @media (max-width: 766px) {

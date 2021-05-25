@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width"
+    />
+    <meta property="og:url" content="https://mongle.io/alon.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="몽글 - 자취력 테스트" />
+    <meta property="og:description" content="내 자취력은 어느정도 일까?? " />
+    <meta property="og:image" content="./images/alon_og.jpg" />
+    <title>몽글 - 자취력 테스트</title>
+    <link rel="apple-touch-icon" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="./css/base.css" />
+    <link type="text/css" rel="stylesheet" href="./css/alon.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./bootstrap-3.3.2-dist/css/bootstrap.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Kakao API -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script
+      data-ad-client="ca-pub-3989114371383675"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <script
+      data-ad-client="ca-pub-3989114371383675"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Desctop Navgation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://mongle.io/">
+            <img src="images/logo.png"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="https://mongle.io">몽글을 알고싶어 🤔</a>
+            </li>
+            <li class="active">
+              <a href="./original.html">몽글 오리지널 콘텐츠 💜</a>
+            </li>
+            <li>
+              <a href="./contact.html">이런게 궁금해요 ❓</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Desctop Navgation  End-->
+    <!-- Mobile Navgation -->
+    <div class="page-nav">
+      <div id="nav-container">
+        <div class="bg"></div>
+        <div class="button" tabindex="0">
+          <span class="icon-bar1"></span>
+          <span class="icon-bar2"></span>
+          <span class="icon-bar3"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+          <ul>
+            <li><img src="images/menu-logo.png" alt="" /></li>
+            <li><a href="https://mongle.io">몽글을 알고싶어 🤔</a></li>
+            <li><a href="./original.html">몽글 오리지널 콘텐츠 💜</a></li>
+            <li><a href="./contact.html">이런게 궁금해요 ❓</a></li>
+          </ul>
+        </div>
+      </div>
+      <header tabindex="0"><img src="images/logo.png" /></header>
+      <div class="nav__right"></div>
+    </div>
+    <!-- Mobile Navgation End -->
+    <div class="container">
+      <div class="swipe-zone">
+        <div class="wrapper">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="alon-main">
+                  <div class="title">나의 자취력 테스트</div>
+                  <div class="sub">내가 자취를 한다면 어떨까? ( ͡• ͜ʖ ͡• )</div>
+                  <img src="./images/alon/thumnail.png" />
+                  <div class="mongle-kakao">
+                    <a href="#alonGame" class="swiper-button-next"
+                      >테스트시작하기</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_1">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>1/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 8%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      드디어 첫 자취 시작!<br />그런데 주말에 친구들이 놀러
+                      온다고 한다.
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeE();"
+                          class="swiper-button-next"
+                        >
+                          신나는 토요일! 불타는 이 밤~! 대환영이지!
+                        </li>
+                        <li
+                          onclick="countUpTypeI();"
+                          class="swiper-button-next"
+                        >
+                          어..? 음... 넷플릭스 봐야 되는데..
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_2">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>2/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 16%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      요일은 토요일로 정했는데,<br />
+                      친구들에게 몇 시에 오라고 하지?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeJ();"
+                          class="swiper-button-next"
+                        >
+                          밥은 먹어야 하니까.. (골똘)<br />
+                          점심은 이를 것 같고.. 오후가 낫겠네!<br />
+                          “4시 어때?”
+                        </li>
+                        <li
+                          onclick="countUpTypeP();"
+                          class="swiper-button-next"
+                        >
+                          “나 어차피 집에 있을 거니까~<br />
+                          알아서 오고 싶을때 와!”
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_3">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>3/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 24%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      친구들이 자취방에서<br />
+                      맛있는 음식을 시켜 먹자고 한다.
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeJ();"
+                          class="swiper-button-next"
+                        >
+                          “내가 주변에 배달 맛집 있는지 찾아볼게!”
+                        </li>
+                        <li
+                          onclick="countUpTypeP();"
+                          class="swiper-button-next"
+                        >
+                          “그 때의 우리가 정하지 않을까?<br />
+                          만나서 고르자~”
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_4">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>4/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 32%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      친구들이 자취방에 도착하기 한 시간 전,<br />
+                      내 방 상태를 스캔해보자!
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeJ();"
+                          class="swiper-button-next"
+                        >
+                          이럴 줄 알고 어제 청소 해놨지~<br />
+                          깔끔하게 친구들 맞이할 준비 완료!
+                        </li>
+                        <li
+                          onclick="countUpTypeP();"
+                          class="swiper-button-next"
+                        >
+                          음.. 30분이면 치우겠지?<br />
+                          (침대에서 뭉그적뭉그적)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_5">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>5/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 40%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      (띵동- 띵동-)<br />
+                      친구들이 집들이 선물을 들고 왔네!<br />
+                      선물들 중에 가장 마음에 드는 건...?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeS();"
+                          class="swiper-button-next"
+                        >
+                          집들이 선물 국룰!<br />
+                          실용성 끝판왕! ‘휴지 묶음 세트’<br />
+                          (30롤 1+1)
+                        </li>
+                        <li
+                          onclick="countUpTypeN();"
+                          class="swiper-button-next"
+                        >
+                          갬성탬 하나쯤은 있어야지~<br />
+                          ‘내가 감명 깊게 본 영화 포스터’<br />
+                          (감성 뿜뿜)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_6">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>6/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 48%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      받은 선물을 정리하는데,<br />
+                      친구가 물어본다.<br />
+                      “자취 하니까 어때?”
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeS();"
+                          class="swiper-button-next"
+                        >
+                          “아직 일주일밖에 안 살아봐서<br />
+                          잘 모르겠네...”
+                        </li>
+                        <li
+                          onclick="countUpTypeN();"
+                          class="swiper-button-next"
+                        >
+                          “혼자 살 생각하니까 좋기는 한데,<br />
+                          처음이라 또 막막하고..(복잡)”
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_7">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>7/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 56%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      드디어~ 주문한 음식 도착!<br />
+                      그런데 기사님이 오는 길에 작은 사고가<br />
+                      있었다고 하신다. 이 때 내 속마음은?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeT();"
+                          class="swiper-button-next"
+                        >
+                          기사님은 괜찮으신 것 같아서 다행이야..!<br />
+                          음.. 근데 내 떡볶이가.. (쥬륵)
+                        </li>
+                        <li
+                          onclick="countUpTypeF();"
+                          class="swiper-button-next"
+                        >
+                          헉! 어디 다치신거 아냐? 어떡해!
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_8">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>8/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 64%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      행복한 저녁타임!<br />
+                      그런데 친구가 괴성을 지른다.<br />
+                      (쳐다보니 음식을 옷에 흘렸나보다.)
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeF();"
+                          class="swiper-button-next"
+                        >
+                          “어떡해! 괜찮아? 다 묻었네?<br />
+                          아 진짜 속상하겠다..... 어떡해... (걱정)”
+                        </li>
+                        <li
+                          onclick="countUpTypeT();"
+                          class="swiper-button-next"
+                        >
+                          “헐! 갈아입을 거 줄까?<br />
+                          아니면 옷 세탁기에 돌릴래?”
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_9">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>9/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 72%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      식사를 한 후 뒷정리를 하려고 한다.<br />
+                      음.. 근데 이건 분리수거가 되는 건가?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeN();"
+                          class="swiper-button-next"
+                        >
+                          “음, 플라스틱처럼 생겼으니까 되겠지!<br />
+                          모아놓고 이따가 헹구자~”
+                        </li>
+                        <li
+                          onclick="countUpTypeS();"
+                          class="swiper-button-next"
+                        >
+                          “뒤에 재활용 마크 없어?<br />
+                          음.. 일단 씻어 두고 검색해봐야지.”
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_10">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>10/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 80%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      밥을 먹으니 이제 후식이 먹고 싶네~<br />
+                      어떡하지?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeF();"
+                          class="swiper-button-next"
+                        >
+                          오전에 봤던 카페 가야겠다.<br />
+                          “근처에 완전 예쁜 카페 있어~ 나가자!”
+                        </li>
+                        <li
+                          onclick="countUpTypeT();"
+                          class="swiper-button-next"
+                        >
+                          ㅎ.. 우리가 어떤 민족입니까...ㅎ(배달)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_11">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>11/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      갑자기 친구에게 전화가 왔다.<br />
+                      통화를 마친 친구 왈,<br />
+                      “(잘 모르는) 친구가 같이 놀자는데?”
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeI();"
+                          class="swiper-button-next"
+                        >
+                          응...? 어색하고 불편해...<br />
+                          “그냥 우리끼리 놀자~”
+                        </li>
+                        <li
+                          onclick="countUpTypeE();"
+                          class="swiper-button-next"
+                        >
+                          새로운 친구? 재밌겠다!<br />
+                          “올 때, 메로나~”
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="course_12">
+                  <div class="game-head">
+                    <div class="progress-round">
+                      <p>자취력</p>
+                      <p>12/12</p>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      즐거운 집들이 후,<br />
+                      친구들이 모두 돌아갔다.
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          onclick="countUpTypeI(); loadingf();"
+                          class="swiper-button-next"
+                        >
+                          큰 이벤트는 끝났군!<br />
+                          이제 본격적으로 주말을 즐겨볼까~<br />
+                          (남은 주말은 성실하게 집콕!)
+                        </li>
+                        <li
+                          onclick="countUpTypeE(); loadingf();"
+                          class="swiper-button-next"
+                        >
+                          아! 너무 재밌었어!<br />
+                          내일은 누구 부르지?<br />
+                          (새로운 집들이 약속을 잡는다.)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="type-zone is-hide">
+        <div class="wrapper" style="flex-direction: column">
+          <div class="loding-area">
+            <div class="loading-content">
+              <img class="shake-vertical" src="images/logo.png" />
+              <div class="loading-text">자취 에너지 측정 중...</div>
+            </div>
+          </div>
+          <div class="result estp is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/estp.png" />
+              </div>
+              <div class="title">야무진 아싸형</div>
+              <div class="question">“흘러가는대로~”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    은근히 계획적인 습관이 몸에 배인 유형으로 손재주도 좋아서
+                    직접 요리도 잘 해먹어요. 딱히 계획을 세우는 건 아니고
+                    흘러가는대로 살아가지만, 은근히 살림꾼이에요!
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    나가는 게 너~~~~무 귀찮아요! (근데 또 막상 나가면 야무지게
+                    놀고 들어와요.)하지만 그래도 나가는 것 보다는 집에서
+                    딩굴딩굴이 좋아요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/infj.png" />
+                </div>
+                <div class="partner-best-discription">멀린의 후예형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/infp.png" />
+                </div>
+                <div class="partner-worst-discription">꽃밭에 병아리형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result esfp is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/esfp.png" />
+              </div>
+              <div class="title">해맑은 파티러버형</div>
+              <div class="question">“우후~” ... (딩굴딩굴)</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    좋아하는 일은 바로바로 하는데, 하기 싫은 건 최~대~한~
+                    끝!까!지! 미뤄요. 홈 파티는 좋지만 뒷정리 너무 귀찮아!
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    여기 저기 관심이 많아요! 주변에 관심이 많아 소식통이에요.
+                    친화력도 너무 좋아서 이사온지 하루만에 동네 슈퍼 삼촌이랑 찐
+                    조카처럼 지내요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/intj.png" />
+                </div>
+                <div class="partner-best-discription">조용한 전략가형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/intp.png" />
+                </div>
+                <div class="partner-worst-discription">어디서든 잘살아형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result enfp is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/enfp.png" />
+              </div>
+              <div class="title">집념의 인싸형</div>
+              <div class="question">“난 한 곳만 판다!”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    하나에 꽂히면 계속 파고들어요. 집념 왕! 그런데 꽂히는 곳에만
+                    꽂혀요. 어느 날, 냉장고 청소에 꽂히면 냉장고는 반짝반짝~
+                    하지만 주방 바닥은...?
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    일단 관심이 있으면 활동적이게 변해요. 다만 중간중간 나만의
+                    시간을 가지고 싶을 때는 선택적으로 집콕 생활 유지!
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/istj.png" />
+                </div>
+                <div class="partner-best-discription">끈기의 해결사형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/istp.png" />
+                </div>
+                <div class="partner-worst-discription">똑똑한 야옹이형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result entp is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/entp.png" />
+              </div>
+              <div class="title">전혀 걱정 안돼형</div>
+              <div class="question">“만능 맥가이버!”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    빠빠빠빠~ 빠빠빠~ 왜인지 맥가이버 노래가 생각나는
+                    유형이에요. 임기응변이 좋아서 무엇이든 혼자서 척척! 혼자
+                    살아도 전~혀 걱정 안되는 유형이죠.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    집이 좋기는 좋은데... 그래도 나가야해요. 나가지 않고 집에만
+                    있는건 견디지 못해요. 며칠은 버텨보겠지만.. 그 이상은
+                    무리야.. 조용한 인싸 혹은 활발한 아싸라고 불리죠.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/isfj.png" />
+                </div>
+                <div class="partner-best-discription">게으른 완벽주의형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/isfp.png" />
+                </div>
+                <div class="partner-worst-discription">대청소 요정형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result infp is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/infp.png" />
+              </div>
+              <div class="title">꽃밭에 병아리형</div>
+              <div class="question">“맛있는 과자~”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    이왕 시작한 자취, 이것저것 시도는 해봐요. 하지만 햇병아리
+                    같이 귀엽게 쩔쩔 매는 편이죠. 청소 계획을 세우는 것은 잘
+                    못하지만, 그래도 한 번 시작하면 뭐든 열심히해요.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    침대와 물아일체! 누워있는게 제일 좋아요. 한 손에는 과자, 한
+                    손에는 리모콘을 끼고 누워서 TV를 시청할 때 가장 행복해요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/estj.png" />
+                </div>
+                <div class="partner-best-discription">확고한 알고리즘형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/estp.png" />
+                </div>
+                <div class="partner-worst-discription">야무진 아싸형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result intp is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/intp.png" />
+              </div>
+              <div class="title">어디서든 잘살아형</div>
+              <div class="question">“알잘딱깔센!”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    일단 미루고 봐요. 미루고 미루고 미루다가 집안일을 하는
+                    편이죠. 하지만 또 머리가 좋아서 그 미룬 집안일을 최대의
+                    효율로 하는 편! 본인만의 집안일 스타일이 확고해요.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    인생은 혼자 왔다가 혼자 가는 것이죠~ 옆 집에 친한 친구가
+                    살아도 별 일이 없으면 왕래 하지 않아요. ‘무소식이
+                    희소식이지!’
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/esfj.png" />
+                </div>
+                <div class="partner-best-discription">온기를 나눠드릴게형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/esfp.png" />
+                </div>
+                <div class="partner-worst-discription">해맑은 파티러버형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result isfp is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/isfp.png" />
+              </div>
+              <div class="title">대청소 요정형</div>
+              <div class="question">“한 번에 쓸어버린다!”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    일단 모든 집안일을 쌓아두고~ 넣어둬요. 하지만 한 번 청소 할
+                    때면 아주 싸-악 제대로! (청소 주기가 매우 긴 편인 것은
+                    안비밀이에요.)
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    사람 만나는 거 참 좋은데... 정말 싫어요! 약속이 갑자기
+                    취소되면 왠지 기분이 좋아하고, 집에서는 연락이 잘 안되는
+                    편이죠. 나만의 시간을 방해 받는게 제일 싫어요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/entj.png" />
+                </div>
+                <div class="partner-best-discription">모태 인싸형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/entp.png" />
+                </div>
+                <div class="partner-worst-discription">전혀 걱정안돼형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result istp is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/istp.png" />
+              </div>
+              <div class="title">똑똑한 야옹이형</div>
+              <div class="question">“취향 존중 해주세요!”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    내 몫은 확실히 챙기며 야무지게 살림하는 편! 하지만 극한의
+                    효율을 추구하기 때문에 반복적인 노동은 힘들어하고 외면해요.
+                    효율적인 일만 하려고 하는 편이예요.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    나의 생활은 오로지 나의 것! 본인의 생활 방식이 굉장히 뚜렷한
+                    편이예요. 이들의 사생활을 간섭했다간.. 조용히 손절당할 수도
+                    있어요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/enfj.png" />
+                </div>
+                <div class="partner-best-discription">빛나는 똑똑이형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/enfp.png" />
+                </div>
+                <div class="partner-worst-discription">집념의 인싸형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result estj is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/estj.png" />
+              </div>
+              <div class="title">확고한 알고리즘형</div>
+              <div class="question">“원칙대로 한다!”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    쓴 물건은 반드시 제자리에 두어야해요. 어지르는걸 굉장히
+                    싫어하죠. 일이든 생활이든 자로 잰 듯이 살아가요.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    남는 시간에는 뭐라도 배워야해요. 자기계발, 자기개발... 일단
+                    발전하는게 중요하죠. 노는 것도 좋지만 내가 발전할 때 더
+                    행복해요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/infp.png" />
+                </div>
+                <div class="partner-best-discription">꽃밭에 병아리형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/infj.png" />
+                </div>
+                <div class="partner-worst-discription">멀린의 후예형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result esfj is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/esfj.png" />
+              </div>
+              <div class="title">온기를 나눠드릴게형</div>
+              <div class="question">“어서오세요~”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    우리 집에 놀러오세요~ 집안일도 잘하고 요리도 잘하는 프로
+                    살림꾼! 심지어 다른 사람을 챙겨주는 것도 잘해요.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    인싸 중의 인싸로 항상 주변에 사람이 많아요. 혼자 휴식을 취할
+                    때 보다도 사람들하고 어울릴 때 에너지가 채워져요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/intp.png" />
+                </div>
+                <div class="partner-best-discription">어디서든 잘살아형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/intj.png" />
+                </div>
+                <div class="partner-worst-discription">조용한 전략가형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result enfj is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/enfj.png" />
+              </div>
+              <div class="title">빛나는 똑똑이형</div>
+              <div class="question">“아이 엠 스마트~”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    일의 우선 순위를 빠르게 결정하고 수행해요. ‘빨래 돌아가는
+                    동안, 바닥 닦고 설거지 하고 마트 다녀오자.’ 같은 생각이 한
+                    번에 가능해요.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    사람 자체를 좋아하기 때문에 자취방에 친구들을 데려와서
+                    신나게 놀아요! 주변 사람들에게 잘 맞추는 편이죠. 이들은 항상
+                    사람들 사이에 있어요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/istp.png" />
+                </div>
+                <div class="partner-best-discription">똑똑한 야옹이형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/istj.png" />
+                </div>
+                <div class="partner-worst-discription">끈기의 해결사형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result entj is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/entj.png" />
+              </div>
+              <div class="title">모태 인싸형</div>
+              <div class="question">“니꺼는 니꺼! 내꺼는 내꺼!”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    절대 남한테 도움을 청하는 일 없이, 모든 것을 스스로 하려고
+                    해요. 그렇기 때문에 나와 너를 칼 같이 구분하는 편이죠.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    일단 밖으로 나가야 해요. 나가서 사람 만나고, 만나서 내
+                    자랑도 하면서 수다떠는게 즐거워요. 태어날 때부터
+                    수다쟁이였을 것 같아요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/isfp.png" />
+                </div>
+                <div class="partner-best-discription">대청소 요정형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/isfj.png" />
+                </div>
+                <div class="partner-worst-discription">게으른 완벽주의형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result istj is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/istj.png" />
+              </div>
+              <div class="title">끈기의 해결사형</div>
+              <div class="question">“내가 해내고야 만다!”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    밥 먹고 설거지를 바로 해야하는 유형이에요. 가계부도 꼼꼼하게
+                    잘 쓰고, 무계획적인 지출은 절대 하지 않아요. 해야할 일은
+                    서툴어도 끝까지 해내고야 말죠!
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    혼자서 고민하고 계획짜는 시간이 필요해요. 휴식 시간도 절대
+                    허투로 보내지 않죠! 알차고 제대로 쉬기 위해 최선을 다해요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/enfp.png" />
+                </div>
+                <div class="partner-best-discription">집념의 인싸형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/enfj.png" />
+                </div>
+                <div class="partner-worst-discription">빛나는 똑똑이형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result isfj is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/isfj.png" />
+              </div>
+              <div class="title">게으른 완벽주의형</div>
+              <div class="question">“우움~ 지금은 때가 아니예요~”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    미뤄요! 계속 미뤄요! 그치만 다 이유가 있어요. 지금은 이 일을
+                    완벽히 해내지 못할 것 같거든요. 완벽하게 해낼 수 있을 때
+                    할거에요!
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    혼자 쉬는게 좋아요! 밥도 혼자 먹고 영화도 혼자 보는게 제일
+                    편해요. 혼자하면 내가 하고 싶은거 다~ 할 수 있잖아요!
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/entp.png" />
+                </div>
+                <div class="partner-best-discription">전혀 걱정안돼형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/entj.png" />
+                </div>
+                <div class="partner-worst-discription">모태 인싸형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result infj is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/infj.png" />
+              </div>
+              <div class="title">멀린의 후예형</div>
+              <div class="question">“윙가르디엄 레비오우사~”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    항상 깔끔하게 유지하는 완벽한 사람! 아침에 일어나면
+                    이부자리도 바로 정리해요. 옆집 사는 친구가 도움 요청해도
+                    바로 도와주죠.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    취미나 휴식이나 한 가지에만 집중해요. 멀티가 잘 안되는
+                    편이죠. 하지만 집중력이 높아 뭘해도 평균 이상은 가는
+                    능력자에요.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/estp.png" />
+                </div>
+                <div class="partner-best-discription">야무진 아싸형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/estj.png" />
+                </div>
+                <div class="partner-worst-discription">확고한 알고리즘형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result intj is-hide">
+            <div class="type">
+              <div class="type-image">
+                <img src="images/alon/intj.png" />
+              </div>
+              <div class="title">조용한 전략가형</div>
+              <div class="question">“체크메이트.”</div>
+              <ul class="discription">
+                <li>
+                  <div class="discription__title">집안일 에너지</div>
+                  <div class="discription__text">
+                    일어나서부터 잠 들기 전까지 계획대로 살아요. 오늘의 할 일에
+                    모두 체크를 한 날이면, 그만큼 행복한 하루도 없을거에요.
+                  </div>
+                </li>
+                <li>
+                  <div class="discription__title">휴식 에너지</div>
+                  <div class="discription__text">
+                    시끄러운 환경을 좋아하지 않아요. 조용히 혼자 생각할 수 있는
+                    시간이 있어야해요. 생각하는 시간이 곧 휴식이죠!
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="partner">
+              <div class="partner-best">
+                <div class="partner-best-title">소울메이트가 될 룸메이트</div>
+                <div class="partner-best-img">
+                  <img src="images/alon/esfp.png" />
+                </div>
+                <div class="partner-best-discription">해맑은 파티러버형</div>
+              </div>
+              <div class="partner-worst">
+                <div class="partner-worst-title">파국으로 치닫을 룸메이트</div>
+                <div class="partner-worst-img">
+                  <img src="images/alon/esfj.png" />
+                </div>
+                <div class="partner-worst-discription">온기를 나눠드릴게형</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-default is-hide">
+            <div class="share-text">친구에게 링크 공유하기</div>
+            <ul class="share-btn">
+              <li onclick="shareFacebook();">
+                <img src="images/share-facebook.png" />
+              </li>
+              <li>
+                <a id="kakaoLink" onclick="shareKakao();">
+                  <img src="images/share-kakao.png" />
+                </a>
+              </li>
+              <li onclick="shareCopy();" id="copy">
+                <img src="images/share-copy.png" />
+              </li>
+            </ul>
+            <div class="btn-reset" onclick="countRset();">테스트 다시하기</div>
+            <div class="btn-mongle" onclick="DownLoad();">
+              더 많은 테스트 하기
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/javascript_alon.js"></script>
+    <script
+      type="text/javascript"
+      src="./bootstrap-3.3.2-dist/js/bootstrap.min.js"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyD7-Vo_8DvdhuRC0-GfR9CNAUYYoga9ZpE",
+        authDomain: "mongle-mini.firebaseapp.com",
+        databaseURL: "https://mongle-mini.firebaseio.com",
+        projectId: "mongle-mini",
+        storageBucket: "mongle-mini.appspot.com",
+        messagingSenderId: "766276400309",
+        appId: "1:766276400309:web:3e4f884e3c13defce63afc",
+        measurementId: "G-P367933EVB",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="./swiper/swiper-bundle.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        allowTouchMove: false,
+      });
+    </script>
+  </body>
+</html>

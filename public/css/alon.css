@@ -1,0 +1,514 @@
+@font-face {
+  font-family: "Gmarket Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Gmarket Sans Bold"), local("GmarketSans-Bold"),
+    url("http://script.ebay.co.kr/fonts/GmarketSansBold.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("http://script.ebay.co.kr/fonts/GmarketSansBold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Gmarket Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gmarket Sans Medium"), local("GmarketSans-Medium"),
+    url("http://script.ebay.co.kr/fonts/GmarketSansMedium.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("http://script.ebay.co.kr/fonts/GmarketSansMedium.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Gmarket Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Gmarket Sans Light"), local("GmarketSans-Light"),
+    url("http://script.ebay.co.kr/fonts/GmarketSansLight.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("http://script.ebay.co.kr/fonts/GmarketSansLight.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.is-show {
+  display: block;
+}
+.is-hide {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.alon-main {
+  text-align: center;
+  /* margin-top: 20vh; */
+}
+.alon-main img {
+  width: 328px;
+}
+.alon-main .title {
+  font-style: normal;
+  font-size: 28px;
+  text-align: center;
+  /* margin-top: 50px; */
+  font-family: "Gmarket Sans";
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.alon-main .sub {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #5c5c5c;
+  /* margin: 0 0 100px 0; */
+  margin-bottom: 20px;
+}
+.alon-main .mongle-kakao {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  outline: none;
+  margin-top: 16px;
+}
+.alon-main .mongle-kakao a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  padding: 17px 0;
+  display: block;
+  outline: none;
+  background: #6916ff;
+  border-radius: 8px;
+}
+.alon-main .mongle-instagram {
+  width: 242px;
+  margin: 0 auto;
+  outline: none;
+}
+
+.alon-main .mongle-instagram a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #6916ff;
+  background: #ffffff;
+  border-radius: 50px;
+  width: 100%;
+  border: 1px solid #6916ff;
+  padding: 17px 0;
+  display: block;
+  outline: none;
+}
+
+.swiper-slide .game-head {
+  margin-bottom: 0px;
+}
+.swiper-slide .game-head .head-questions {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000;
+}
+.swiper-slide .game-head .progress-round {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-slide .game-head .progress-round p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #5c5c5c;
+}
+.swiper-slide .game-head .progress {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #3c3c3c;
+  margin-bottom: 24px;
+  height: 8px;
+}
+.swiper-slide .game-head .progress .progress-bar {
+  background-color: #6916ff;
+}
+.swiper-slide .game-body .body-questions {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 80px;
+  font-family: "Gmarket Sans";
+}
+.swiper-slide .game-body .body-questions-icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.swiper-slide .game-body .body-questions-icon img {
+  max-width: 36px;
+}
+.body-choice ul li {
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 0;
+  color: #5c5c5c;
+  text-align: center;
+  background: #ffffff;
+  margin-bottom: 12px;
+  outline: none;
+  border: 1px solid rgba(92, 92, 92, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(92, 92, 92, 0.1);
+  border-radius: 8px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-choice ul li:active {
+  color: #ffffff;
+  background-color: #6916ff;
+  border: none;
+}
+.body-choice ul li:visited {
+  color: #ffffff;
+  background-color: #6916ff;
+  border: none;
+}
+
+.type-zone .question {
+  margin-top: 8px;
+  color: #3c3c3c;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  /* line-height: 28px; */
+  text-align: center;
+  margin-bottom: 40px;
+}
+.type-zone .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000;
+  margin-top: 24px;
+  font-family: "Gmarket Sans";
+}
+.type-zone .title span {
+  color: #6916ff;
+}
+.type-zone .point {
+  color: #6916ff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  line-height: 36px;
+}
+.type-zone .type-image {
+  text-align: center;
+  margin: 20px 0;
+}
+.type-zone .type-image img {
+  width: 100%;
+}
+.type-zone .discription {
+  padding: 10px;
+  border-radius: 20px;
+}
+.type-zone .discription li {
+  margin-bottom: 24px;
+}
+.type-zone .discription .discription__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 8px;
+  color: #000000;
+}
+.type-zone .discription .discription__text {
+  font-size: 14px;
+  line-height: 26px;
+  color: #3c3c3c;
+}
+.type {
+  border: 1px solid rgba(92, 92, 92, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(92, 92, 92, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+}
+.result .partner {
+  display: flex;
+  text-align: center;
+  margin: 24px 0 0 0;
+  flex-direction: column;
+}
+.result .partner .partner-best {
+  margin-bottom: 24px;
+  border: 1px solid rgba(92, 92, 92, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(92, 92, 92, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+}
+.result .partner .partner-best-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #3c3c3c;
+}
+.result .partner .partner-best-discription {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  font-family: "Gmarket Sans";
+}
+.result .partner .partner-best-discription span {
+  color: #6916ff;
+}
+.result .partner .partner-worst {
+  margin-bottom: 24px;
+  border: 1px solid rgba(92, 92, 92, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(92, 92, 92, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+}
+.result .partner .partner-worst-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #3c3c3c;
+}
+.result .partner .partner-worst-discription {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  font-family: "Gmarket Sans";
+  font-weight: 700;
+}
+.result .partner .partner-worst-discription span {
+  color: #6916ff;
+}
+.result .partner .partner-best-img img {
+  /* max-width: 152px; */
+  margin-bottom: 24px;
+  width: 100%;
+}
+.result .partner .partner-worst-img img {
+  margin-bottom: 24px;
+  width: 100%;
+}
+.loading-content {
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loading-content img {
+  max-width: 169px;
+}
+
+.loading-text {
+  color: #6916ff;
+  font-size: 16px;
+  line-height: 31px;
+  font-weight: 700;
+  margin-top: 20px;
+  font-family: "Gmarket Sans";
+}
+
+.bottom-default {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.bottom-default .btn-reset {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  width: 242px;
+  background: #6916ff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 50px;
+  padding: 14px 0;
+  margin-bottom: 12px;
+}
+.bottom-default .btn-mongle {
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6916ff;
+  border-radius: 50px;
+  padding: 14px 0;
+  border: 1px solid #6916ff;
+}
+.bottom-default .share-text {
+  font-size: 14px;
+  line-height: 28px;
+  color: #3c3c3c;
+  margin-top: 30px;
+}
+.bottom-default .share-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.bottom-default .share-btn img {
+  max-width: 70px;
+}
+.emoji-title {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: -0.42px;
+  color: #3c3c3c;
+}
+.emoji-title span {
+  padding-left: 5px;
+}
+.result.typeA .type-image img {
+  max-width: 124px;
+}
+.result.typeB .type-image img {
+  max-width: 151px;
+}
+.result.typeC .type-image img {
+  max-width: 156px;
+}
+.result.typeD .type-image img {
+  max-width: 187px;
+}
+.result.typeE .type-image img {
+  max-width: 150px;
+}
+.result.typeF .type-image img {
+  max-width: 191px;
+}
+
+@media (min-width: 992px) {
+}
+
+/* ----------------------------------------------
+     * Generated by Animista on 2020-11-14 21:40:2
+     * Licensed under FreeBSD License.
+     * See http://animista.net/license for more info. 
+     * w: http://animista.net, t: @cssanimista
+     * ---------------------------------------------- */
+
+/**
+     * ----------------------------------------
+     * animation shake-vertical
+     * ----------------------------------------
+     */
+.shake-vertical {
+  -webkit-animation: shake-vertical 3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    both;
+  animation: shake-vertical 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+@-webkit-keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+@keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    padding: 7px 15px !important;
+  }
+}
+@media (min-width: 500px) {
+  .wrapper {
+    margin: 100px auto;
+  }
+}

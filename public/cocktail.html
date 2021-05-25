@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" href="./images/favicon.ico" />
 
     <link rel="icon" href="./images/favicon.ico" />
-
+    <link type="text/css" rel="stylesheet" href="./css/base.css" />
     <link type="text/css" rel="stylesheet" href="./css/cocktail.css" />
     <link
       type="text/css"
@@ -59,17 +59,52 @@
     ></script>
   </head>
   <body>
+    <!-- Desctop Navgation -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <a class="navbar-brand" href="./index.html">
-            <img src="images/logo.png" />
-          </a>
+          <a class="navbar-brand" href="https://mongle.io/">
+            <img src="images/logo.png"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="https://mongle.io">몽글을 알고싶어 🤔</a>
+            </li>
+            <li class="active">
+              <a href="./original.html">몽글 오리지널 콘텐츠 💜</a>
+            </li>
+            <li>
+              <a href="./contact.html">이런게 궁금해요 ❓</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- /.container-fluid -->
     </nav>
+    <!-- Desctop Navgation  End-->
+    <!-- Mobile Navgation -->
+    <div class="page-nav">
+      <div id="nav-container">
+        <div class="bg"></div>
+        <div class="button" tabindex="0">
+          <span class="icon-bar1"></span>
+          <span class="icon-bar2"></span>
+          <span class="icon-bar3"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+          <ul>
+            <li><img src="images/menu-logo.png" alt="" /></li>
+            <li><a href="https://mongle.io">몽글을 알고싶어 🤔</a></li>
+            <li><a href="./original.html">몽글 오리지널 콘텐츠 💜</a></li>
+            <li><a href="./contact.html">이런게 궁금해요 ❓</a></li>
+          </ul>
+        </div>
+      </div>
+      <header tabindex="0"><img src="images/logo.png" /></header>
+      <div class="nav__right"></div>
+    </div>
+    <!-- Mobile Navgation End -->
     <div class="container">
       <div class="swipe-zone">
         <div class="wrapper">
@@ -564,7 +599,7 @@
         <div class="wrapper" style="flex-direction: column">
           <div class="loding-area">
             <div class="loading-content">
-              <img class="shake-vertical" src="images/loading.png" />
+              <img class="shake-vertical" src="images/logo.png" />
               <div class="loading-text">분 석 중...</div>
             </div>
           </div>
