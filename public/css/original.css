@@ -23,13 +23,10 @@
   -o-transform: scale(1.1);
 }
 .original .original-list li img {
-  /* border: 1px solid #dadada; */
   width: 328px;
   box-sizing: border-box;
   border-radius: 16px;
   margin-bottom: 24px;
-  border: 1px solid #dadada;
-  padding-top: 64px;
 }
 .original .original-list li:nth-child(2n) {
   margin: 0 60px;
