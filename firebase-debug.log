@@ -1,0 +1,30 @@
+[debug] [2021-10-01T08:55:10.584Z] ----------------------------------------------------------------------
+[debug] [2021-10-01T08:55:10.586Z] Command:       /usr/local/bin/firebase /Users/iseungtae/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2021-10-01T08:55:10.586Z] CLI Version:   8.14.1
+[debug] [2021-10-01T08:55:10.586Z] Platform:      darwin
+[debug] [2021-10-01T08:55:10.586Z] Node Version:  v12.18.1
+[debug] [2021-10-01T08:55:10.587Z] Time:          Fri Oct 01 2021 17:55:10 GMT+0900 (GMT+09:00)
+[debug] [2021-10-01T08:55:10.587Z] ----------------------------------------------------------------------
+[debug] [2021-10-01T08:55:10.588Z] 
+[debug] [2021-10-01T08:55:10.597Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-01T08:55:10.597Z] > authorizing via signed-in user
+[debug] [2021-10-01T08:55:10.598Z] [iam] checking project mongle-mini for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-01T08:55:10.600Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mongle-mini:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-01T08:55:11.967Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 01 Oct 2021 08:55:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=817","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-01T08:55:11.969Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mongle-mini  
+ 
+[debug] [2021-10-01T08:55:12.699Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 01 Oct 2021 08:55:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'mongle-mini'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-10-01T08:55:12.703Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mongle-mini/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-01T08:55:14.577Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 01 Oct 2021 08:55:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[mongle-mini]: beginning deploy... 
+[info] i  hosting[mongle-mini]: found 503 files in public 
+[debug] [2021-10-01T08:55:14.693Z] [hosting] hash cache [cHVibGlj] stored for 503 files
+[debug] [2021-10-01T08:55:14.693Z] [hosting][hash queue][FINAL] {"max":37,"min":0,"avg":1.567701302712316,"active":0,"complete":503,"success":503,"errored":0,"retried":0,"total":503,"elapsed":42}
+[debug] [2021-10-01T08:55:14.693Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mongle-mini/versions/e4e8d82eb50c90b1:populateFiles  
+ <request body omitted>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width"
+    />
+    <meta property="og:url" content="https://mongle.io/place.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="몽글 - 나랑 찰떡인 핫플" />
+    <meta property="og:description" content="내 분위기와 찰떡인 곳은??? " />
+    <meta property="og:image" content="./images/place/place_og.png" />
+    <title>몽글 - 나랑 찰떡인 핫플</title>
+    <link rel="apple-touch-icon" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="./css/base.css" />
+    <link type="text/css" rel="stylesheet" href="./css/place.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./bootstrap-3.3.2-dist/css/bootstrap.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Desctop Navgation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://mongle.io/">
+            <img src="images/logo.png"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="https://mongle.io">몽글을 알고싶어 🤔</a>
+            </li>
+            <li class="active">
+              <a href="./original.html">몽글 오리지널 콘텐츠 💜</a>
+            </li>
+            <li>
+              <a href="./contact.html">이런게 궁금해요 ❓</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Desctop Navgation  End-->
+    <!-- Mobile Navgation -->
+    <div class="page-nav">
+      <div id="nav-container">
+        <div class="bg"></div>
+        <div class="button" tabindex="0">
+          <span class="icon-bar1"></span>
+          <span class="icon-bar2"></span>
+          <span class="icon-bar3"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+          <ul>
+            <li><img src="images/menu-logo.png" alt="" /></li>
+            <li><a href="https://mongle.io">몽글을 알고싶어 🤔</a></li>
+            <li><a href="./original.html">몽글 오리지널 콘텐츠 💜</a></li>
+            <li><a href="./contact.html">이런게 궁금해요 ❓</a></li>
+          </ul>
+        </div>
+      </div>
+      <header tabindex="0">
+        <a href="https://mongle.io"><img src="images/logo.png" /></a>
+      </header>
+      <div class="nav__right"></div>
+    </div>
+    <!-- Mobile Navgation End -->
+    <div class="container">
+      <div class="swipe-zone">
+        <div class="wrapper">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="place-main">
+                  <div class="title-point">
+                    <span>핫플</span>
+                  </div>
+                  <div class="title">
+                    내 분위기와<br />
+                    찰떡인 곳은?
+                  </div>
+                  <div class="descripstion">
+                    힙지로 · 홍대 · 압구정 · 성수
+                    <br />내가 바로 인간 OO이야!!
+                  </div>
+
+                  <img src="images/place/place_baner.png" />
+                  <div class="mongle-kakao">
+                    <a
+                      href="#placeGame"
+                      onclick="window.scrollTo(0,0);"
+                      class="swiper-button-next"
+                      >시작하기</a
+                    >
+                  </div>
+                  <div class="mongle-instagram">
+                    <a
+                      href="https://www.instagram.com/mongle.official/"
+                      target="_blank"
+                      >몽글 인스타그램</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_1">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.1</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      이 중 <br />내가 가고 싶은 카페는?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li class="swiper-button-next">
+                          세련된 분위기의 블랙 앤 화이트톤의 카페
+                        </li>
+                        <li class="swiper-button-next" onclick="countUp();">
+                          세상 키치&큐티한 분위기 컬러풀한 카페
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_2">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.2</span></div>
+                  </div>
+                  <div class="game-body">
+                    <div class="body-questions">
+                      내가 평소 즐겨입는<br />
+                      옷 스타일은?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li onclick="countUp();" class="swiper-button-next">
+                          후드티, 크롭티등 편하면서 예쁜 캐쥬얼로<br />
+                          꾸안꾸
+                        </li>
+                        <li class="swiper-button-next">
+                          심플 is best 셔츠와 블라우스로 단정한<br />
+                          매력up
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_3">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.3</span></div>
+                  </div>
+                  <div class="game-body">
+                    <div class="body-questions">내 인스타 피드는?</div>
+                    <div class="body-choice">
+                      <ul>
+                        <li onclick="countUp();" class="swiper-button-next">
+                          톤앤매너보단 편하게 내 일상 올리는 것에
+                          <br />집중!
+                        </li>
+                        <li class="swiper-button-next">
+                          딱딱 맞는 톤앤매너 인스타 피드 꾸미는
+                          <br />맛에 산다…
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_4">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.4</span></div>
+                  </div>
+                  <div class="game-body">
+                    <div class="body-questions">내가 선호하는 곳은?</div>
+                    <div class="body-choice">
+                      <ul>
+                        <li class="swiper-button-next">
+                          구석구석 숨겨진 아는 사람만 아는 핫플! <br />
+                          보물 찾기 시작합니다…
+                        </li>
+                        <li onclick="countUp();" class="swiper-button-next">
+                          놀러왔다!!!라는 기분 제대로 내는 사람 <br />
+                          많은 핫플
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_5">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.5</span></div>
+                  </div>
+                  <div class="game-body">
+                    <div class="body-questions">
+                      둘 중 하나 <br />꼭 선택해야한다면?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li class="swiper-button-next">
+                          많이 먹어본 평범한 맛이지만 뛰어난 <br />
+                          비쥬얼의 맛집
+                        </li>
+                        <li onclick="countUp();" class="swiper-button-next">
+                          비쥬얼은 그럭저럭이지만 <br />
+                          (아름다울)미(맛)미! 존맛 맛집
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_6">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.6</span></div>
+                  </div>
+                  <div class="game-body">
+                    <div class="body-questions">
+                      이 중
+                      <br />내가 선호하는 맛집은?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li onclick="countUp();" class="swiper-button-next">
+                          캐주얼한 분위기의 펍에서 맥주 한 잔!
+                        </li>
+                        <li class="swiper-button-next">
+                          로맨틱한 분위기의 내추럴 와인바에서 <br />
+                          분위기 잡기
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_7">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.7</span></div>
+                  </div>
+                  <div class="game-body">
+                    <div class="body-questions">
+                      이 중 <br />
+                      내가 노는 방식은?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li class="swiper-button-next">
+                          한 장소에서 오래 머물며 이것저것 <br />
+                          시켜먹고 놀기
+                        </li>
+                        <li class="swiper-button-next" onclick="countUp();">
+                          1차, 2차, 3차, 4차! <br />
+                          여러 장소 옮겨다니며 놀기
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_8">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.8</span></div>
+                  </div>
+                  <div class="game-body">
+                    <div class="body-questions">
+                      이 중 <br />내가 자주 가는 곳은?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li class="swiper-button-next">
+                          가격대는 조금 있지만 분위기 좋은 맛집과 <br />
+                          카페가 가득한 번화가
+                        </li>
+                        <li class="swiper-button-next" onclick="countUp();">
+                          대학생들의 활기가 느껴지는 대학가! <br />
+                          주변에 이것저것 놀거리가 많고 물가도 <br />
+                          저렴한 번화가
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_9">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.9</span></div>
+                  </div>
+                  <div class="game-body">
+                    <div class="body-questions">
+                      길을 걷다가 플리마켓 발견! <br />
+                      이 중에 내가 살 악세사리는?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li class="swiper-button-next" onclick="countUp();">
+                          빈티지한 멋이 있는 알록달록 귀여운 <br />
+                          비즈 반지
+                        </li>
+                        <li class="swiper-button-next">
+                          어디에나 잘 어울리는 심플한 실버링
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course_10">
+                  <div class="game-head">
+                    <div class="head-questions"><span>Q.10</span></div>
+                  </div>
+                  <div class="game-body">
+                    <div class="body-questions">
+                      밥먹고 난 후,<br />
+                      친구들과 갈 곳은?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="loadingf();countUp();"
+                        >
+                          이제 배부르니까 놀아야지 방탈출 카페ㄱㄱ<br />
+                          놀고 싶어서 드릉드릉!!
+                        </li>
+                        <li onclick="loadingf();" class="swiper-button-next">
+                          당연히 이제 카페 가서 수다 떨어야지! <br />
+                          근처 카페 찾아보자
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="type-zone is-hide">
+        <div class="wrapper" style="flex-direction: column">
+          <div class="loding-area">
+            <div class="loading-content">
+              <img class="shake-vertical" src="images/logo.png" />
+              <div class="loading-text">분 석 중...</div>
+            </div>
+          </div>
+          <div class="result type1 is-hide">
+            <div class="type-image">
+              <img src="images/place/result1.png" />
+            </div>
+            <div class="title">
+              개성 가득<br />
+              인간 합정·홍대
+            </div>
+            <ul class="discription">
+              <li>
+                당신은 자유로운 영혼의 소유자 인간 홍대! 이곳저곳 가보는 것을
+                좋아하는 타입이지 않나요? 놀거리가 많은 홍대와 딱 어울려요
+              </li>
+            </ul>
+
+            <ul class="discription">
+              <li>
+                꾸안꾸 스타일이 찰떡 같이 어울리는 당신 무신O 스트릿 패션
+                화보에서 본 것 같은 느낌!
+              </li>
+            </ul>
+          </div>
+          <div class="result type2 is-hide">
+            <div class="type-image">
+              <img src="images/place/result2.png" />
+            </div>
+            <div class="title">
+              세상 힙한<br />
+              인간 힙지로
+            </div>
+            <ul class="discription">
+              <li>
+                힙하다는 소리 한 번쯤은 들어봤을 것 같은 당신! 요즘 뜨는 핫플도
+                빠삭하게 다 알고 있지 않나요? 내가 바로 이 구역 핫플 박사
+              </li>
+            </ul>
+
+            <ul class="discription">
+              <li>
+                당신이라면 힙지로 구석구석에 숨겨진 핫플도 잘 찾아갈 수 있을 것
+                같아요! 핫플 찾기력 +30000
+              </li>
+            </ul>
+          </div>
+          <div class="result type3 is-hide">
+            <div class="type-image">
+              <img src="images/place/result3.png" />
+            </div>
+            <div class="title">
+              팔색조 매력<br />
+              인간 강남
+            </div>
+            <ul class="discription">
+              <li>
+                세련된 분위기도 세상 힙한 분위기도 모두 OK! 난 다 좋은데?! 여러
+                핫플, 놀거리가 모두 모인 강남이 당신과 딱 맞아요!
+              </li>
+            </ul>
+
+            <ul class="discription">
+              <li>
+                야 만났으면 인생 네컷은 국룰이지! 이번 주말, 친구와
+                맛집-카페-사진찍기 코스 어때요?
+              </li>
+            </ul>
+          </div>
+          <div class="result type4 is-hide">
+            <div class="type-image">
+              <img src="images/place/result4.png" />
+            </div>
+            <div class="title">요즘 뜨는<br />인간 성수</div>
+            <ul class="discription">
+              <li>
+                나를 보면 떠오르는 단어? 깔끔, 세련 차분하면서 세련된 분위기의
+                핫플이 많은 성수와 찰떡궁합인 유형!
+              </li>
+            </ul>
+
+            <ul class="discription">
+              <li>
+                수수하고 청량한 매력을 가진 당신 이번 주말, 루프탑 카페에서
+                인생샷 건지기 어때요?!
+              </li>
+            </ul>
+          </div>
+
+          <div class="bottom-default is-hide">
+            <div class="btn-reset" onclick="countRset();">테스트 다시하기</div>
+            <div class="btn-mongle" onclick="DownLoad() ">
+              더 많은 테스트 하기
+            </div>
+            <div class="share-text">친구에게 링크 공유하기</div>
+            <ul class="share-btn">
+              <li onclick="shareFacebook();">
+                <img src="images/share-facebook.png" />
+              </li>
+              <li>
+                <a id="kakaoLink" onclick="shareKakao();">
+                  <img src="images/share-kakao.png" />
+                </a>
+              </li>
+              <li onclick="shareCopy();" id="copy">
+                <img src="images/share-copy.png" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/place.js"></script>
+    <script
+      type="text/javascript"
+      src="./bootstrap-3.3.2-dist/js/bootstrap.min.js"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyD7-Vo_8DvdhuRC0-GfR9CNAUYYoga9ZpE",
+        authDomain: "mongle-mini.firebaseapp.com",
+        databaseURL: "https://mongle-mini.firebaseio.com",
+        projectId: "mongle-mini",
+        storageBucket: "mongle-mini.appspot.com",
+        messagingSenderId: "766276400309",
+        appId: "1:766276400309:web:3e4f884e3c13defce63afc",
+        measurementId: "G-P367933EVB",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="./swiper/swiper-bundle.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        allowTouchMove: false,
+      });
+    </script>
+  </body>
+</html>

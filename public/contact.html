@@ -45,7 +45,7 @@
     ></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script data-ad-client=“ca-pub-3989114371383675” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
+    <!-- <script data-ad-client=“ca-pub-3989114371383675” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script> -->
   </head>
   <body>
     <!-- Desctop Navgation -->
@@ -61,7 +61,7 @@
             <li>
               <a href="https://mongle.io">몽글을 알고싶어 🤔</a>
             </li>
-            <li >
+            <li>
               <a href="./original.html">몽글 오리지널 콘텐츠 💜</a>
             </li>
             <li class="active">
@@ -90,7 +90,9 @@
           </ul>
         </div>
       </div>
-      <header tabindex="0"><a href="https://mongle.io"><img src="images/logo.png" /></a></header>
+      <header tabindex="0">
+        <a href="https://mongle.io"><img src="images/logo.png" /></a>
+      </header>
       <div class="nav__right"></div>
     </div>
     <!-- Mobile Navgation End -->
@@ -123,12 +125,19 @@
           enctype="text/plain"
         >
           <label for="contactEmail">메일을 입력해주세요!</label>
-          <input class="email" id="contactEmail" type="email" placeholder="예) abcd@naver.com" />
+          <input
+            class="email"
+            id="contactEmail"
+            type="email"
+            placeholder="예) abcd@naver.com"
+          />
           <div>
             <label for="contactLetter">내용을 입력해주세요!!</label>
             <textarea id="contactLetter"> </textarea>
           </div>
-          <button class="contact-btn" type="submit" value="글 남기기">완료</button>
+          <button class="contact-btn" type="submit" value="글 남기기">
+            완료
+          </button>
         </form>
       </div>
     </div>
@@ -136,13 +145,11 @@
     <footer>
       <div class="container">
         <div class="row">
-          
           <div class="col-md-12">
-
             <div class="footer-menu">
               <div class="footer-logo">
-              <img src="images/footer-logo.png" />
-            </div>
+                <img src="images/footer-logo.png" />
+              </div>
               <div class="menu-link">
                 <a href="./privacy.html">개인정보 이용약관</a>
                 <!--a href="">서비스 이용약관</a-->

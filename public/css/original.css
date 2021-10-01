@@ -14,6 +14,8 @@
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transition: all 0.3s ease-in-out;
+  margin-right: 20px;
+  margin-bottom: 30px;
 }
 .original .original-list li:hover {
   transform: scale(1.1);
@@ -23,13 +25,13 @@
   -o-transform: scale(1.1);
 }
 .original .original-list li img {
-  width: 328px;
+  width: 350px;
   box-sizing: border-box;
   border-radius: 16px;
   margin-bottom: 24px;
 }
-.original .original-list li:nth-child(2n) {
-  margin: 0 60px;
+.original .original-list li:nth-child(3n) {
+  margin-right: 0px;
 }
 .original .original-list .content__title {
   font-weight: bold;
@@ -53,11 +55,9 @@
     justify-content: center;
   }
   .original .original-list li {
-    margin-bottom: 32px;
+    margin: 0 auto 20px;
   }
-  .original .original-list li:nth-child(2n) {
-    margin-bottom: 32px;
-  }
+
   .original .original-list li img {
     margin-bottom: 16px;
   }
