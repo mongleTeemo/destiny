@@ -1,6 +1,6 @@
 @font-face {
   font-family: cafe24;
-  src: url("../font/Cafe24SsurroundAir.ttf");
+  src: url("../font/Cafe24Ssurround.ttf");
 }
 @font-face {
   font-family: dangam;
@@ -31,30 +31,13 @@ li {
   list-style: none;
   padding: 0;
 }
-.course_1 .game-head .head-questions span,
-.course_5 .game-head .head-questions span,
-.course_9 .game-head .head-questions span {
-  background-color: #ff7676;
-}
-.course_2 .game-head .head-questions span,
-.course_6 .game-head .head-questions span,
-.course_10 .game-head .head-questions span {
-  background-color: #68bae6;
-}
-.course_3 .game-head .head-questions span,
-.course_7 .game-head .head-questions span {
-  background-color: #9968e6;
-}
-.course_4 .game-head .head-questions span,
-.course_8 .game-head .head-questions span {
-  background-color: #ffc36e;
-}
+
 .title-point span {
-  color: #fff;
+  color: #000;
   border-radius: 100%;
   padding: 10px 30px;
   background-color: #000;
-  font-family: dangam;
+  font-family: cafe24;
   font-size: 3rem;
 }
 .text-center {
@@ -98,11 +81,11 @@ li {
   width: 130px;
 }
 
-.place-main {
+.place2-main {
   text-align: center;
 }
 
-.place-main .title {
+.place2-main .title {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -110,36 +93,37 @@ li {
   text-align: center;
   margin-top: 20px;
   font-family: dangam;
-  color: #000;
+  color: #2a5e39;
 }
-.place-main .descripstion {
+.place2-main .descripstion {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
   margin-top: 20px;
-  font-family: gmarket;
+  font-family: cafe24;
+  color: #538663;
 }
 
-.place-main img {
+.place2-main img {
   margin-bottom: 20px;
   max-width: 80%;
 }
-.place-main .mongle-kakao {
+.place2-main .mongle-kakao {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 12px;
   outline: none;
   cursor: pointer;
 }
-.place-main .mongle-kakao a {
+.place2-main .mongle-kakao a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
-  background: #000;
+  background: #2a5e39;
   border-radius: 10px;
   width: 100%;
   padding: 17px 0;
@@ -148,25 +132,24 @@ li {
   font-family: gmarket;
   text-decoration: none;
 }
-.place-main .mongle-instagram {
+.place2-main .mongle-instagram {
   width: 100%;
   margin: 0 auto;
   outline: none;
 }
 
-.place-main .mongle-instagram a {
+.place2-main .mongle-instagram a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #000;
+  color: #2a5e39;
   background: #fff;
   font-family: gmarket;
   border-radius: 10px;
   width: 100%;
-  border: 1px solid #6916ff;
   padding: 17px 0;
-  border: 1px solid #000;
+  border: 1px solid #2a5e39;
   display: block;
   outline: none;
   text-decoration: none;
@@ -185,11 +168,10 @@ li {
   font-size: 28px;
   line-height: 33px;
   text-align: center;
-
-  font-family: dangam;
+  font-family: cafe24;
 }
 .swiper-slide .game-head .head-questions span {
-  color: #fff;
+  color: #000;
   border-radius: 100%;
   padding: 10px 30px;
 }
@@ -208,7 +190,7 @@ li {
   color: #000;
   text-align: center;
   margin-bottom: 80px;
-  font-family: gmarket;
+  font-family: cafe24;
   font-weight: bold;
 }
 .body-choice ul li {
@@ -218,15 +200,15 @@ li {
   font-size: 16px;
   line-height: 24px;
   padding: 15px 0;
-  color: #fff;
+  color: #000;
   text-align: center;
-  background: #000;
+  background: #b3dabe;
   border: 1px solid #5c5c5c;
   box-sizing: border-box;
   border-radius: 10px;
   margin-bottom: 12px;
   outline: none;
-  font-family: gmarket;
+  font-family: cafe24;
 }
 
 .body-choice ul li:active {
@@ -257,7 +239,7 @@ li {
   text-align: center;
   color: #000;
   line-height: 5rem;
-  font-family: dangam;
+  font-family: cafe24;
   margin-bottom: 20px;
 }
 .type-zone .point {
@@ -270,15 +252,15 @@ li {
 }
 .type-zone .type-image {
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 20px 0 30px 0;
 }
 .type-zone .type-image img {
-  width: 100%;
+  width: 50%;
 }
 .type-zone .discription {
   padding: 10px;
   border-radius: 20px;
-  font-family: gmarket;
+  font-family: cafe24;
   font-size: 2rem;
   color: #000;
 }
@@ -395,22 +377,13 @@ li {
   cursor: pointer;
 }
 .swiper-button-next:hover {
-  border: none;
   background-color: #6916ff;
   color: #fff;
 }
-.type1 .instagram {
-  background-color: #ff7676;
+.result .instagram {
+  background-color: #aadbb8;
 }
-.type2 .instagram {
-  background-color: #ffc36e;
-}
-.type3 .instagram {
-  background-color: #9968e6;
-}
-.type4 .instagram {
-  background-color: #68bae6;
-}
+
 .instagram {
   padding: 20px;
   border-radius: 30px;

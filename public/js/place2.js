@@ -46,11 +46,14 @@ function type() {
   } else if (typeCurrent == 3 || typeCurrent == 4) {
     result2.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 5 || typeCurrent == 6 || typeCurrent == 7) {
+  } else if (typeCurrent == 5 || typeCurrent == 6) {
     result3.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 8 || typeCurrent == 9 || typeCurrent == 10) {
+  } else if (typeCurrent == 7 || typeCurrent == 8) {
     result4.classList.remove(HIDE_CL);
+    bottomDefault.classList.remove(HIDE_CL);
+  } else if (typeCurrent == 9 || typeCurrent == 10) {
+    result5.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
   }
 }
