@@ -304,9 +304,10 @@ li {
 }
 
 .bottom-default {
-  margin-top: 60px;
+  margin: 60px auto;
   text-align: center;
   width: 100%;
+  max-width: 500px;
 }
 .bottom-default .btn-reset {
   font-weight: bold;
@@ -483,7 +484,7 @@ li {
     padding: 7px 15px !important;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .wrapper {
     margin: 100px auto;
   }

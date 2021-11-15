@@ -1,13 +1,14 @@
 {
-    "hosting": {
-        "cleanUrls": true,
-        "public": "public",
-        "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "*.cache"],
-        "rewrites": [
-            {
-                "source": "**",
-                "destination": "/index.html"
-            }
-        ]
-    }
+  "hosting": {
+    "target": "test",
+    "cleanUrls": true,
+    "public": "public",
+    "ignore": ["firebase.jsxon", "**/.*", "**/node_modules/**", "*.cache"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }

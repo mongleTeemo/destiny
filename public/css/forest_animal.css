@@ -1,6 +1,6 @@
 @font-face {
   font-family: cafe24;
-  src: url("../font/Cafe24SsurroundAir.ttf");
+  src: url("../font/Cafe24Ssurround.ttf");
 }
 @font-face {
   font-family: dangam;
@@ -10,6 +10,16 @@
   font-family: gmarket;
   src: url("../font/GmarketSansBold.otf");
   font-weight: bold;
+}
+@font-face {
+  font-family: gmarket;
+  src: url("../font/GmarketSansMedium.otf");
+  font-weight: medium;
+}
+@font-face {
+  font-family: gmarket;
+  src: url("../font/GmarketSansLight.otf");
+  font-weight: light;
 }
 
 img {
@@ -31,30 +41,13 @@ li {
   list-style: none;
   padding: 0;
 }
-.course_1 .game-head .head-questions span,
-.course_5 .game-head .head-questions span,
-.course_9 .game-head .head-questions span {
-  background-color: #ff7676;
-}
-.course_2 .game-head .head-questions span,
-.course_6 .game-head .head-questions span,
-.course_10 .game-head .head-questions span {
-  background-color: #68bae6;
-}
-.course_3 .game-head .head-questions span,
-.course_7 .game-head .head-questions span {
-  background-color: #9968e6;
-}
-.course_4 .game-head .head-questions span,
-.course_8 .game-head .head-questions span {
-  background-color: #ffc36e;
-}
+
 .title-point span {
-  color: #fff;
+  color: #000;
   border-radius: 100%;
   padding: 10px 30px;
   background-color: #000;
-  font-family: dangam;
+  font-family: cafe24;
   font-size: 3rem;
 }
 .text-center {
@@ -76,7 +69,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 00px;
+  margin-top: 0px;
   padding: 0 15px;
   max-width: 500px;
   margin-bottom: 30px;
@@ -88,7 +81,7 @@ li {
 .navbar-default .navbar-nav > li > a {
   color: #000;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: medium;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -98,100 +91,208 @@ li {
   width: 130px;
 }
 
-.place-main {
+.forest-main {
   text-align: center;
+  background-color: #b7cb87;
+  padding: 30px 0;
 }
 
-.place-main .title {
+.forest-main .title {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 44px;
   text-align: center;
   margin-top: 20px;
-  font-family: dangam;
-  color: #000;
+  font-family: gmarket;
+  color: #fff;
 }
-.place-main .descripstion {
+.forest-main .descripstion {
   font-style: normal;
-  font-weight: bold;
+  font-weight: medium;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
   margin-top: 20px;
   font-family: gmarket;
+  color: #fff;
+}
+.forest-main p {
+  font-family: gmarket;
+  font-size: 24px;
+  font-weight: medium;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.16px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-.place-main img {
-  margin-bottom: 20px;
-  max-width: 80%;
+.forest-main img {
+  margin: 20px 0;
+  max-width: 70%;
 }
-.place-main .mongle-kakao {
+.forest-main .mongle-kakao {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 12px;
   outline: none;
   cursor: pointer;
 }
-.place-main .mongle-kakao a {
+.forest-main .mongle-kakao a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
-  background: #000;
+  background: #2a5e39;
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
   padding: 17px 0;
   display: block;
   outline: none;
   font-family: gmarket;
   text-decoration: none;
+  margin: 0 auto;
 }
-.place-main .mongle-instagram {
+.forest-main .mongle-instagram {
   width: 100%;
   margin: 0 auto;
   outline: none;
 }
 
-.place-main .mongle-instagram a {
+.forest-main .mongle-instagram a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #000;
+  color: #2a5e39;
   background: #fff;
   font-family: gmarket;
   border-radius: 10px;
   width: 100%;
-  border: 1px solid #6916ff;
   padding: 17px 0;
-  border: 1px solid #000;
+  border: 1px solid #2a5e39;
+  display: block;
+  outline: none;
+  text-decoration: none;
+}
+
+.forest-main-sub {
+  text-align: center;
+  background-color: #c4d8ee;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.forest-main-sub .title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: gmarket;
+  color: #c4d8ee;
+}
+.forest-main-sub .descripstion {
+  font-style: normal;
+  font-weight: medium;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: gmarket;
+  color: #fff;
+}
+.forest-main-sub p {
+  font-family: gmarket;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.16px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.forest-main-sub img {
+  margin: 20px 0;
+  max-width: 60%;
+}
+.forest-main-sub .mongle-kakao {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  outline: none;
+  cursor: pointer;
+}
+.forest-main-sub .mongle-kakao a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  background: #2a5e39;
+  border-radius: 10px;
+  width: 80%;
+  padding: 17px 0;
+  display: block;
+  outline: none;
+  font-family: gmarket;
+  text-decoration: none;
+  margin: 0 auto;
+}
+.forest-main-sub .mongle-instagram {
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+}
+
+.forest-main-sub .mongle-instagram a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #2a5e39;
+  background: #fff;
+  font-family: gmarket;
+  border-radius: 10px;
+  width: 100%;
+  padding: 17px 0;
+  border: 1px solid #2a5e39;
   display: block;
   outline: none;
   text-decoration: none;
 }
 .swiper-slide {
-  padding-top: 30px;
 }
 .swiper-slide .game-head {
   margin-top: 60px;
-  margin-bottom: 30px;
   text-align: center;
 }
+.swiper-slide .game-head .q-icon {
+  max-width: 80px;
+}
 .swiper-slide .game-head .head-questions {
-  font-style: normal;
-  font-weight: bold;
   font-size: 28px;
   line-height: 33px;
   text-align: center;
-
-  font-family: dangam;
+  margin-bottom: 25px;
+  margin-top: 12px;
 }
 .swiper-slide .game-head .head-questions span {
-  color: #fff;
   border-radius: 100%;
-  padding: 10px 30px;
+  font-family: gmarket;
+  font-size: 27px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  text-align: center;
+  color: #b7cb87;
 }
 .swiper-slide .game-head .head-progress {
   font-style: normal;
@@ -207,9 +308,15 @@ li {
   line-height: 28px;
   color: #000;
   text-align: center;
-  margin-bottom: 80px;
-  font-family: gmarket;
+  font-family: cafe24;
   font-weight: bold;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.body-choice ul {
+  margin: 0 auto;
+  width: 90%;
 }
 .body-choice ul li {
   width: 100%;
@@ -217,16 +324,15 @@ li {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  padding: 15px 0;
-  color: #fff;
-  text-align: center;
-  background: #000;
-  border: 1px solid #5c5c5c;
+  padding: 11px 21px 7px 22px;
+  border-radius: 7px;
+  background-color: #b7cb87;
   box-sizing: border-box;
-  border-radius: 10px;
   margin-bottom: 12px;
   outline: none;
-  font-family: gmarket;
+  font-family: cafe24;
+  text-align: center;
+  color: #fff;
 }
 
 .body-choice ul li:active {
@@ -253,11 +359,10 @@ li {
 .type-zone .title {
   font-style: normal;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 36px;
   text-align: center;
   color: #000;
-  line-height: 5rem;
-  font-family: dangam;
+  font-family: cafe24;
   margin-bottom: 20px;
 }
 .type-zone .point {
@@ -270,15 +375,15 @@ li {
 }
 .type-zone .type-image {
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 20px 0 30px 0;
 }
 .type-zone .type-image img {
-  width: 100%;
+  width: 50%;
 }
 .type-zone .discription {
   padding: 10px;
   border-radius: 20px;
-  font-family: gmarket;
+  font-family: cafe24;
   font-size: 2rem;
   color: #000;
 }
@@ -290,6 +395,7 @@ li {
   color: #000;
   margin-bottom: 10px;
   padding-left: 12px;
+  font-family: cafe24;
 }
 .type-zone .discription li::after {
   content: "";
@@ -322,64 +428,24 @@ li {
 }
 
 .bottom-default {
-  margin: 60px auto;
+  margin: 25px auto;
   text-align: center;
   width: 100%;
   max-width: 500px;
+  padding: 0 20px;
 }
-.bottom-default .btn-reset {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #ffffff;
-  background: #000;
-  border-radius: 10px;
-  width: 100%;
-  padding: 17px 0;
-  display: block;
-  outline: none;
+.bottom-default p {
   font-family: gmarket;
-  text-decoration: none;
-  cursor: pointer;
-  margin-bottom: 16px;
-}
-.bottom-default .btn-mongle {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 24px;
+  font-weight: medium;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.16px;
   text-align: center;
   color: #000;
-  background: #fff;
-  font-family: gmarket;
-  border-radius: 10px;
-  width: 100%;
-  border: 1px solid #6916ff;
-  padding: 17px 0;
-  border: 1px solid #000;
-  display: block;
-  outline: none;
-  text-decoration: none;
-  cursor: pointer;
+  margin-bottom: 20px;
 }
-.bottom-default .share-text {
-  font-size: 14px;
-  line-height: 28px;
-  color: #000;
-  margin-top: 60px;
-}
-.bottom-default .share-btn {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 100px;
-}
-.bottom-default .share-btn img {
-  max-width: 70px;
-}
-.bottom-default .share-btn li {
-  cursor: pointer;
-}
+
 .emoji-title {
   font-size: 14px;
   font-weight: bold;
@@ -396,30 +462,64 @@ li {
   cursor: pointer;
 }
 .swiper-button-next:hover {
-  border: none;
   background-color: #6916ff;
   color: #fff;
 }
-.type1 .instagram {
-  background-color: #ff7676;
+
+.result.typeA .instagram {
+  background-color: #87753f;
 }
-.type2 .instagram {
-  background-color: #ffc36e;
+.result.typeB .instagram {
+  background-color: #f9b24a;
 }
-.type3 .instagram {
-  background-color: #9968e6;
+.result.typeC .instagram {
+  background-color: #f0ce57;
 }
-.type4 .instagram {
-  background-color: #68bae6;
+.result.typeD .instagram {
+  background-color: #a4a4a4;
 }
+
+.result .instagram p {
+  font-family: gmarket;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.96;
+  letter-spacing: -0.16px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.result .instagram .instagram-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+.result .instagram .instagram-img img {
+  width: 49%;
+}
+.result .instagram .conect {
+  padding: 7px 42.5px 8px 41.5px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 25px;
+  font-family: gmarket;
+  font-size: 18px;
+}
+
 .instagram {
   padding: 20px;
   border-radius: 30px;
   text-align: center;
 }
 .instagram a {
-  font-weight: bold;
-  font-family: GmarketSans;
+  font-weight: medium;
+  font-family: gmarket;
   font-size: 16px;
   color: #fff;
 }
@@ -431,6 +531,16 @@ li {
 }
 .instagram .instagram-title {
   margin-bottom: 20px;
+
+  font-family: gmarket;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.12px;
+  text-align: center;
+  color: #fff;
 }
 /* ----------------------------------------------
 * Generated by Animista on 2020-11-14 21:40:2
@@ -511,8 +621,8 @@ li {
     padding: 7px 15px !important;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .wrapper {
-    margin: 100px auto;
+    margin: 30px auto;
   }
 }

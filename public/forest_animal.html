@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width"
+    />
+    <meta property="og:url" content="https://mongle.io/forest_animal.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="몽글 - 내 성향과 비슷한 동물은?" />
+    <meta property="og:description" content="내 성향과 비슷한 동물은? " />
+    <meta
+      property="og:image"
+      content="images/forest_animal/forest_animal_og.png"
+    />
+    <title>몽글 - 내 성향과 비슷한 동물은?</title>
+    <link rel="apple-touch-icon" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="./css/base.css" />
+    <link type="text/css" rel="stylesheet" href="./css/forest_animal.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./bootstrap-3.3.2-dist/css/bootstrap.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="swiper-container swipe-zone">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="forest-main">
+            <div class="title">내 성향과<br />비슷한 동물은?</div>
+            <div class="descripstion">
+              테스트 하고 나와 어울리는<br />소품 추천받자!
+            </div>
+            <img src="images/forest_animal/forest_animal_baner.png" />
+            <p>mongle x oool</p>
+            <div class="mongle-kakao">
+              <a
+                href="#forestGame"
+                onclick="window.scrollTo(0,0);"
+                class="swiper-button-next"
+                >시작하기</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="forest-main-sub">
+            <img src="images/forest_animal/forest_animal_baner2.png" />
+            <p>꿈 속에서 숲속 동물로 살아가게<br />되었어요.</p>
+            <br />
+            <p>
+              거울을 보기 전에는 <br />
+              내가 어떤 동물인지 알 수 없어요.<br />
+              나는 어떤 동물일까요?
+            </p>
+            <div class="mongle-kakao">
+              <a
+                href="#forestGame"
+                onclick="window.scrollTo(0,0);"
+                class="swiper-button-next"
+                >다음</a
+              >
+            </div>
+          </div>
+        </div>
+        <section class="swiper-slide">
+          <div class="course_1">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.1</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                동물로 변한 지금, 가장 먼저 <br />어떤 일을 할까?
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li class="swiper-button-next" onclick="countUpTypeC();">
+                    이리저리 돌아다니며 변한 모습 만끽하기!
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeD();">
+                    일단 뭘 해야하지? 오늘 하루 계획부터
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeB();">
+                    여기가 어딘지부터 알아볼까? 다른 동물들을 찾아 떠나기
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeA();">
+                    혹시 모르니까 살금살금 다니자 총총총
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <div class="course_2">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.2</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                부스럭부스럭 가까이에서 작은 발소리가 들린다 이럴 때 나는?
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li class="swiper-button-next" onclick="countUpTypeB();">
+                    다른 동물인가? 궁금해! 먼저 가까이 가서 확인한다
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeD();">
+                    그냥 지나가겠지 뭐- 먼저 가지 않고 무시한다
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeA();">
+                    혹시 위험할지도 몰라! 조용히 숨는다
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeC();">
+                    내가 먼저 확 놀래켜야지 살금살금 다가간다
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <div class="course_3">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.3</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                부스럭 거린 소리는 날 데려다줄 동물이었다! 이 동물은
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li class="swiper-button-next" onclick="countUpTypeC();">
+                    조잘조잘 말 많은 동물
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeD();">
+                    날 보호해줄 수 있는 동물
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeA();">
+                    조용히 길을 안내해주는 동물
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeB();">
+                    필요한 정보만 전해주는 동물
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <div class="course_4">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.4</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                숲 속 안으로 걷다보니 내가 지낼 오두막을 발견했다! 이 오두막은?
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li class="swiper-button-next" onclick="countUpTypeA();">
+                    숲 한 구석의 아늑한 분위기의 오두막
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeC();">
+                    다른 동물친구들도 와글와글한 오두막
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeD();">
+                    여기가 바로 숲 속 핫플..? 숲 중심 오두막
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeB();">
+                    적당한 조명,온도,습도…평범한 오두막
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <div class="course_5">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.5</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                오두막 안에 연필, 종이가 있다. 뭘 하면 좋을까?
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li class="swiper-button-next" onclick="countUpTypeD();">
+                    오늘 하루 할 일을 정리한다
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeA();">
+                    오면서 있었던 일들을 적어야지! 일기쓰기
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeC();">
+                    종이가 있구나…슬쩍 보고 다른 일 하기
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeB();">
+                    끄적끄적 낙서하면서 멍 때리기
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <div class="course_6">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.6</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                오늘 저녁, 숲 속 축제가 열리는데 여기서 내 역할은 어떤 역할일까?
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li class="swiper-button-next" onclick="countUpTypeD();">
+                    성공적인 축제를 위해 계획을 꼼꼼하게 짜는 플래너
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeC();">
+                    동물친구들을 응대하는 사교적인 역할
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeA();">
+                    꼼지락꼼지락 축제에 필요한 소품 정리하기
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeB();">
+                    동물친구들에게 보낼 초대장 꾸미기
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <div class="course_7">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.7</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                드디어 시작된 축제! 축제에서 나는 보통
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li class="swiper-button-next" onclick="countUpTypeA();">
+                    구석에서 맛있는 음식 먹으며 조용히 즐기기
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeC();">
+                    내가 이 구역의 흥부자 주최자처럼 놀기
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeD();">
+                    친해지고 싶은 소수의 무리 틈에 끼어 적당히 놀기
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeB();">
+                    말거는 동물 친구들과만 가벼운 대화하며 즐기기
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <div class="course_8">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.8</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                축제 준비 진짜 잘했다! <br />쏟아지는 칭찬 속 내가 가장 뿌듯한
+                칭찬은
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li class="swiper-button-next" onclick="countUpTypeD();">
+                    와 디테일 뭐야?이 부분 너무 괜찮은데? 구체적인 부분을 콕콕
+                    칭찬
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeA();">
+                    진짜 너무 힘들었겠다! 덕분에 성공적인 축제가 되겠어 내
+                    노력에 공감해주는 칭찬
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeC();">
+                    ㅇㅇ이가 준비한거래! 모두의 관심을 받게 해주는 칭찬
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeB();">
+                    너가 최고야 완전 축제 마스터…☆ 무한 칭찬
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <div class="course_9">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.9</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                오두막에 돌아와 잠에 들기 전 책 한 권 읽어야지 이럴 때 내가 읽을
+                책은
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li class="swiper-button-next" onclick="countUpTypeD();">
+                    생활 꿀팁을 담은 책
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeA();">
+                    상상력을 자극하는 판타지 소설
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeC();">
+                    어릴 때 많이 읽어본 동화책
+                  </li>
+                  <li class="swiper-button-next" onclick="countUpTypeB();">
+                    힐링과 관련된 자기계발서
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swiper-slide">
+          <div class="course_10">
+            <div class="game-head">
+              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
+              <div class="head-questions"><span>Q.10</span></div>
+            </div>
+
+            <div class="game-body">
+              <div class="body-questions">
+                긴 꿈을 꾸고 난 후, <br />눈을 떴을 때 나는
+              </div>
+              <div class="body-choice">
+                <ul>
+                  <li
+                    class="swiper-button-next"
+                    onclick="countUpTypeC();loadingf();"
+                  >
+                    와 생생한 것 봐; 다른 친구들한테 말해줘야지 바로 카톡ㄱㄱ
+                  </li>
+                  <li
+                    class="swiper-button-next"
+                    onclick="countUpTypeD();loadingf();"
+                  >
+                    오랜만에 꿈꿨네…일어나서 할 일 하기
+                  </li>
+                  <li
+                    class="swiper-button-next"
+                    onclick="countUpTypeB();loadingf();"
+                  >
+                    이건 기억해놔야해 일기로 끄적끄적 남기기
+                  </li>
+                  <li
+                    class="swiper-button-next"
+                    onclick="countUpTypeA();loadingf();"
+                  >
+                    꿈 속에서 무슨 일이 있었더라? 한 번 더 생각해보기
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="type-zone is-hide">
+      <div class="wrapper" style="flex-direction: column">
+        <div class="loding-area">
+          <div class="loading-content">
+            <img class="shake-vertical" src="images/logo.png" />
+            <div class="loading-text">분 석 중...</div>
+          </div>
+        </div>
+        <div class="result typeA is-hide">
+          <div class="type-image">
+            <img src="images/forest_animal/result1.png" />
+          </div>
+          <div class="title">낯가리는 고슴도치</div>
+          <ul class="discription">
+            <li>
+              낯을 가리는 편이라 낯선 사람을 봤을 때 가시를 뾰족하게 세우고
+              경계하지만 내 사람이다 라는 확신이 들면 금방 다정해지는
+              타입이에요.
+            </li>
+            <li>조금 깐깐하고 예민해보일 수도 있지만 알고보면 여려요.</li>
+            <li>상상하는 걸 좋아하고 감성적인 면이 있어요.</li>
+            <li>한 번 싫은 건 끝까지 싫어요. 호불호가 명확해요.</li>
+          </ul>
+          <div class="instagram">
+            <div class="instagram-title">· 이 소품은 어때요? ·</div>
+
+            <img src="images/forest_animal/result1-1.png" />
+            <div class="instagram-img">
+              <img src="images/forest_animal/result1-2.png" />
+              <img src="images/forest_animal/result1-3.png" />
+            </div>
+            <p>고슴도치 나무화병</p>
+            <a
+              class="conect"
+              href="https://smartstore.naver.com/oool/products/5601713924"
+              >구경하기</a
+            >
+          </div>
+        </div>
+        <div class="result typeB is-hide">
+          <div class="type-image">
+            <img src="images/forest_animal/result2.png" />
+          </div>
+          <div class="title">둥글둥글 토끼</div>
+          <ul class="discription">
+            <li>순둥순둥 누구에게나 친절하고 다정한 편이에요.</li>
+            <li>배려심 넘치는 만큼 주변사람들의 평도 좋아요.</li>
+            <li>여러 사람들이 모인 자리는 조금 피곤해요.</li>
+            <li>
+              많은 사람을 만난 이후에는 나만의 공간에서 혼자만의 시간이
+              필요해요.
+            </li>
+            <li>평화주의자로 느긋한 성격을 가지고 있어요.</li>
+          </ul>
+
+          <div class="instagram">
+            <div class="instagram-title">· 이 소품은 어때요? ·</div>
+
+            <img src="images/forest_animal/result2-1.png" />
+            <div class="instagram-img">
+              <img src="images/forest_animal/result2-2.png" />
+              <img src="images/forest_animal/result2-3.png" />
+            </div>
+            <p>달토끼 나무화병</p>
+            <a
+              class="conect"
+              href="https://smartstore.naver.com/oool/products/5446840810"
+              >구경하기</a
+            >
+          </div>
+        </div>
+        <div class="result typeC is-hide">
+          <div class="type-image">
+            <img src="images/forest_animal/result3.png" />
+          </div>
+          <div class="title">숲 속의 셀럽 곰</div>
+          <ul class="discription">
+            <li>
+              어느 모임에나 쉽게 어울려요. 새로운 친구를 만나는 것에 두려움이
+              없어요.
+            </li>
+            <li>
+              낯선 곳에 가더라도 내가 먼저 말을 걸어요. 누구와나 티키타카가 잘
+              되는 타입!
+            </li>
+            <li>밝고 긍정적인 매력으로 사람들을 끌어요.</li>
+            <li>새로운 일에 쉽게 흥미를 가지지만 끈기는 좀 부족해요.</li>
+          </ul>
+
+          <div class="instagram">
+            <div class="instagram-title">· 이 소품은 어때요? ·</div>
+
+            <img src="images/forest_animal/result3-1.png" />
+            <div class="instagram-img">
+              <img src="images/forest_animal/result3-2.png" />
+              <img src="images/forest_animal/result3-3.png" />
+            </div>
+            <p>곰돌이 나무화병</p>
+            <a
+              class="conect"
+              href="https://smartstore.naver.com/oool/products/5527552688"
+              >구경하기</a
+            >
+          </div>
+        </div>
+        <div class="result typeD is-hide">
+          <div class="type-image">
+            <img src="images/forest_animal/result4.png" />
+          </div>
+          <div class="title">똑부러지는 코끼리</div>
+          <ul class="discription">
+            <li>
+              모든 건 계획대로! 일을 시작하기 전에 계획부터 세우는 게 편해요.
+              낭비하는 시간 없이 알차게 시간을 쓰고 싶어요.
+            </li>
+            <li>
+              현실적이고 과정보다는 결과가 더 중요해요. 가끔은 차갑다라는 평을
+              듣기도 해요.
+            </li>
+            <li>목표는 꼭 이루고야 말겠다는 불도저 같은 면이 있어요.</li>
+          </ul>
+
+          <div class="instagram">
+            <div class="instagram-title">· 이 소품은 어때요? ·</div>
+
+            <img src="images/forest_animal/result4-1.png" />
+            <div class="instagram-img">
+              <img src="images/forest_animal/result4-2.png" />
+              <img src="images/forest_animal/result4-3.png" />
+            </div>
+            <p>코끼리 나무화병</p>
+            <a
+              class="conect"
+              href="https://smartstore.naver.com/oool/products/5604269099"
+              >구경하기</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-default is-hide">
+        <p>mongle x oool</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/forest_animal.js"></script>
+    <script
+      type="text/javascript"
+      src="./bootstrap-3.3.2-dist/js/bootstrap.min.js"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyD7-Vo_8DvdhuRC0-GfR9CNAUYYoga9ZpE",
+        authDomain: "mongle-mini.firebaseapp.com",
+        databaseURL: "https://mongle-mini.firebaseio.com",
+        projectId: "mongle-mini",
+        storageBucket: "mongle-mini.appspot.com",
+        messagingSenderId: "766276400309",
+        appId: "1:766276400309:web:3e4f884e3c13defce63afc",
+        measurementId: "G-P367933EVB",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="./swiper/swiper-bundle.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        allowTouchMove: false,
+      });
+    </script>
+  </body>
+</html>

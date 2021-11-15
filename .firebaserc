@@ -1,5 +1,14 @@
 {
   "projects": {
-    "landing": "mongle-mini"
+    "default": "mongle-mini"
+  },
+  "targets": {
+    "mongle-mini": {
+      "hosting": {
+        "test": [
+          "mongle-original"
+        ]
+      }
+    }
   }
 }
