@@ -121,13 +121,14 @@ function checkMobile() {
 
 function DownLoad() {
   checkMobile();
-  console.log(checkMobile());
+
   const userOs = checkMobile();
   if (userOs === "android") {
-    window.location.href = "https://subway-snack.com/";
+    alert("준비중입니다.");
   } else if (userOs === "ios") {
-    window.location.href = "https://subway-snack.com/";
+    window.location.href =
+      "https://itunes.apple.com/kr/app/apple-store/1588402690";
   } else {
-    window.location.href = "https://subway-snack.com/";
+    alert("안드로이드, IOS에서만 이용이 가능합니다.");
   }
 }
