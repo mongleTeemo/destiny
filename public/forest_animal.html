@@ -43,368 +43,514 @@
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
   </head>
-  <body>
-    <div class="swiper-container swipe-zone">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="forest-main">
-            <div class="title">내 성향과<br />비슷한 동물은?</div>
-            <div class="descripstion">
-              테스트 하고 나와 어울리는<br />소품 추천받자!
-            </div>
-            <img src="images/forest_animal/forest_animal_baner.png" />
-            <p>mongle x oool</p>
-            <div class="mongle-kakao">
-              <a
-                href="#forestGame"
-                onclick="window.scrollTo(0,0);"
-                class="swiper-button-next"
-                >시작하기</a
-              >
+  <body class="body-color">
+    <div class="swipe-zone">
+      <div class="container">
+        <div class="wrapper">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="forest-main">
+                  <div class="title">내 성향과<br />비슷한 동물은?</div>
+                  <div class="descripstion">
+                    테스트 하고 나와 어울리는<br />소품 추천받자!
+                  </div>
+                  <img src="images/forest_animal/forest_animal_baner.png" />
+                  <p>mongle x oool</p>
+                  <div class="mongle-kakao">
+                    <a
+                      href="#forestGame"
+                      onclick="bgChange();"
+                      class="swiper-button-next"
+                      >시작하기</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="forest-main-sub">
+                  <img src="images/forest_animal/forest_animal_baner2.png" />
+                  <p>꿈 속에서 숲속 동물로 살아가게<br />되었어요.</p>
+                  <br />
+                  <p>
+                    거울을 보기 전에는 <br />
+                    내가 어떤 동물인지 알 수 없어요.<br />
+                    나는 어떤 동물일까요?
+                  </p>
+                  <div class="mongle-kakao">
+                    <a
+                      href="#forestGame"
+                      onclick="bgChangeWhite();window.scrollTo(0,0);"
+                      class="swiper-button-next"
+                      >다음</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <section class="swiper-slide">
+                <div class="course_1">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.1</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      동물로 변한 지금, 가장 먼저 <br />어떤 일을 할까?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();"
+                        >
+                          이리저리 돌아다니며 변한 모습 만끽하기!
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();"
+                        >
+                          일단 뭘 해야하지? 오늘 하루 계획부터
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();"
+                        >
+                          여기가 어딘지부터 알아볼까? 다른 동물들을 찾아 떠나기
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();"
+                        >
+                          혹시 모르니까 살금살금 다니자 총총총
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide">
+                <div class="course_2">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.2</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      부스럭부스럭 가까이에서 작은 발소리가 들린다 이럴 때 나는?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();"
+                        >
+                          다른 동물인가? 궁금해! 먼저 가까이 가서 확인한다
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();"
+                        >
+                          그냥 지나가겠지 뭐- 먼저 가지 않고 무시한다
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();"
+                        >
+                          혹시 위험할지도 몰라! 조용히 숨는다
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();"
+                        >
+                          내가 먼저 확 놀래켜야지 살금살금 다가간다
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide">
+                <div class="course_3">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.3</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      부스럭 거린 소리는 날 데려다줄 동물이었다! 이 동물은
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();"
+                        >
+                          조잘조잘 말 많은 동물
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();"
+                        >
+                          날 보호해줄 수 있는 동물
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();"
+                        >
+                          조용히 길을 안내해주는 동물
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();"
+                        >
+                          필요한 정보만 전해주는 동물
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide">
+                <div class="course_4">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.4</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      숲 속 안으로 걷다보니 내가 지낼 오두막을 발견했다! 이
+                      오두막은?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();"
+                        >
+                          숲 한 구석의 아늑한 분위기의 오두막
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();"
+                        >
+                          다른 동물친구들도 와글와글한 오두막
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();"
+                        >
+                          여기가 바로 숲 속 핫플..? 숲 중심 오두막
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();"
+                        >
+                          적당한 조명,온도,습도…평범한 오두막
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide">
+                <div class="course_5">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.5</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      오두막 안에 연필, 종이가 있다. 뭘 하면 좋을까?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();"
+                        >
+                          오늘 하루 할 일을 정리한다
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();"
+                        >
+                          오면서 있었던 일들을 적어야지! 일기쓰기
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();"
+                        >
+                          종이가 있구나…슬쩍 보고 다른 일 하기
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();"
+                        >
+                          끄적끄적 낙서하면서 멍 때리기
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide">
+                <div class="course_6">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.6</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      오늘 저녁, 숲 속 축제가 열리는데 여기서 내 역할은 어떤
+                      역할일까?
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();"
+                        >
+                          성공적인 축제를 위해 계획을 꼼꼼하게 짜는 플래너
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();"
+                        >
+                          동물친구들을 응대하는 사교적인 역할
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();"
+                        >
+                          꼼지락꼼지락 축제에 필요한 소품 정리하기
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();"
+                        >
+                          동물친구들에게 보낼 초대장 꾸미기
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide">
+                <div class="course_7">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.7</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      드디어 시작된 축제! 축제에서 나는 보통
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();"
+                        >
+                          구석에서 맛있는 음식 먹으며 조용히 즐기기
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();"
+                        >
+                          내가 이 구역의 흥부자 주최자처럼 놀기
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();"
+                        >
+                          친해지고 싶은 소수의 무리 틈에 끼어 적당히 놀기
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();"
+                        >
+                          말거는 동물 친구들과만 가벼운 대화하며 즐기기
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide">
+                <div class="course_8">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.8</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      축제 준비 진짜 잘했다! <br />쏟아지는 칭찬 속 내가 가장
+                      뿌듯한 칭찬은
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();"
+                        >
+                          와 디테일 뭐야?이 부분 너무 괜찮은데? 구체적인 부분을
+                          콕콕 칭찬
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();"
+                        >
+                          진짜 너무 힘들었겠다! 덕분에 성공적인 축제가 되겠어 내
+                          노력에 공감해주는 칭찬
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();"
+                        >
+                          ㅇㅇ이가 준비한거래! 모두의 관심을 받게 해주는 칭찬
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();"
+                        >
+                          너가 최고야 완전 축제 마스터…☆ 무한 칭찬
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide">
+                <div class="course_9">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.9</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      오두막에 돌아와 잠에 들기 전 책 한 권 읽어야지 이럴 때
+                      내가 읽을 책은
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();"
+                        >
+                          생활 꿀팁을 담은 책
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();"
+                        >
+                          상상력을 자극하는 판타지 소설
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();"
+                        >
+                          어릴 때 많이 읽어본 동화책
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();"
+                        >
+                          힐링과 관련된 자기계발서
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="swiper-slide">
+                <div class="course_10">
+                  <div class="game-head">
+                    <img
+                      class="q-icon"
+                      src="images/forest_animal/q_icon@3x.png"
+                    />
+                    <div class="head-questions"><span>Q.10</span></div>
+                  </div>
+
+                  <div class="game-body">
+                    <div class="body-questions">
+                      긴 꿈을 꾸고 난 후, <br />눈을 떴을 때 나는
+                    </div>
+                    <div class="body-choice">
+                      <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeC();loadingf();"
+                        >
+                          와 생생한 것 봐; 다른 친구들한테 말해줘야지 바로
+                          카톡ㄱㄱ
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeD();loadingf();"
+                        >
+                          오랜만에 꿈꿨네…일어나서 할 일 하기
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();loadingf();"
+                        >
+                          이건 기억해놔야해 일기로 끄적끄적 남기기
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();loadingf();"
+                        >
+                          꿈 속에서 무슨 일이 있었더라? 한 번 더 생각해보기
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="forest-main-sub">
-            <img src="images/forest_animal/forest_animal_baner2.png" />
-            <p>꿈 속에서 숲속 동물로 살아가게<br />되었어요.</p>
-            <br />
-            <p>
-              거울을 보기 전에는 <br />
-              내가 어떤 동물인지 알 수 없어요.<br />
-              나는 어떤 동물일까요?
-            </p>
-            <div class="mongle-kakao">
-              <a
-                href="#forestGame"
-                onclick="window.scrollTo(0,0);"
-                class="swiper-button-next"
-                >다음</a
-              >
-            </div>
-          </div>
-        </div>
-        <section class="swiper-slide">
-          <div class="course_1">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.1</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                동물로 변한 지금, 가장 먼저 <br />어떤 일을 할까?
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li class="swiper-button-next" onclick="countUpTypeC();">
-                    이리저리 돌아다니며 변한 모습 만끽하기!
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeD();">
-                    일단 뭘 해야하지? 오늘 하루 계획부터
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeB();">
-                    여기가 어딘지부터 알아볼까? 다른 동물들을 찾아 떠나기
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeA();">
-                    혹시 모르니까 살금살금 다니자 총총총
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swiper-slide">
-          <div class="course_2">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.2</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                부스럭부스럭 가까이에서 작은 발소리가 들린다 이럴 때 나는?
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li class="swiper-button-next" onclick="countUpTypeB();">
-                    다른 동물인가? 궁금해! 먼저 가까이 가서 확인한다
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeD();">
-                    그냥 지나가겠지 뭐- 먼저 가지 않고 무시한다
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeA();">
-                    혹시 위험할지도 몰라! 조용히 숨는다
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeC();">
-                    내가 먼저 확 놀래켜야지 살금살금 다가간다
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swiper-slide">
-          <div class="course_3">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.3</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                부스럭 거린 소리는 날 데려다줄 동물이었다! 이 동물은
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li class="swiper-button-next" onclick="countUpTypeC();">
-                    조잘조잘 말 많은 동물
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeD();">
-                    날 보호해줄 수 있는 동물
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeA();">
-                    조용히 길을 안내해주는 동물
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeB();">
-                    필요한 정보만 전해주는 동물
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swiper-slide">
-          <div class="course_4">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.4</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                숲 속 안으로 걷다보니 내가 지낼 오두막을 발견했다! 이 오두막은?
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li class="swiper-button-next" onclick="countUpTypeA();">
-                    숲 한 구석의 아늑한 분위기의 오두막
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeC();">
-                    다른 동물친구들도 와글와글한 오두막
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeD();">
-                    여기가 바로 숲 속 핫플..? 숲 중심 오두막
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeB();">
-                    적당한 조명,온도,습도…평범한 오두막
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swiper-slide">
-          <div class="course_5">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.5</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                오두막 안에 연필, 종이가 있다. 뭘 하면 좋을까?
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li class="swiper-button-next" onclick="countUpTypeD();">
-                    오늘 하루 할 일을 정리한다
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeA();">
-                    오면서 있었던 일들을 적어야지! 일기쓰기
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeC();">
-                    종이가 있구나…슬쩍 보고 다른 일 하기
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeB();">
-                    끄적끄적 낙서하면서 멍 때리기
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swiper-slide">
-          <div class="course_6">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.6</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                오늘 저녁, 숲 속 축제가 열리는데 여기서 내 역할은 어떤 역할일까?
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li class="swiper-button-next" onclick="countUpTypeD();">
-                    성공적인 축제를 위해 계획을 꼼꼼하게 짜는 플래너
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeC();">
-                    동물친구들을 응대하는 사교적인 역할
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeA();">
-                    꼼지락꼼지락 축제에 필요한 소품 정리하기
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeB();">
-                    동물친구들에게 보낼 초대장 꾸미기
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swiper-slide">
-          <div class="course_7">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.7</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                드디어 시작된 축제! 축제에서 나는 보통
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li class="swiper-button-next" onclick="countUpTypeA();">
-                    구석에서 맛있는 음식 먹으며 조용히 즐기기
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeC();">
-                    내가 이 구역의 흥부자 주최자처럼 놀기
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeD();">
-                    친해지고 싶은 소수의 무리 틈에 끼어 적당히 놀기
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeB();">
-                    말거는 동물 친구들과만 가벼운 대화하며 즐기기
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swiper-slide">
-          <div class="course_8">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.8</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                축제 준비 진짜 잘했다! <br />쏟아지는 칭찬 속 내가 가장 뿌듯한
-                칭찬은
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li class="swiper-button-next" onclick="countUpTypeD();">
-                    와 디테일 뭐야?이 부분 너무 괜찮은데? 구체적인 부분을 콕콕
-                    칭찬
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeA();">
-                    진짜 너무 힘들었겠다! 덕분에 성공적인 축제가 되겠어 내
-                    노력에 공감해주는 칭찬
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeC();">
-                    ㅇㅇ이가 준비한거래! 모두의 관심을 받게 해주는 칭찬
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeB();">
-                    너가 최고야 완전 축제 마스터…☆ 무한 칭찬
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swiper-slide">
-          <div class="course_9">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.9</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                오두막에 돌아와 잠에 들기 전 책 한 권 읽어야지 이럴 때 내가 읽을
-                책은
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li class="swiper-button-next" onclick="countUpTypeD();">
-                    생활 꿀팁을 담은 책
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeA();">
-                    상상력을 자극하는 판타지 소설
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeC();">
-                    어릴 때 많이 읽어본 동화책
-                  </li>
-                  <li class="swiper-button-next" onclick="countUpTypeB();">
-                    힐링과 관련된 자기계발서
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="swiper-slide">
-          <div class="course_10">
-            <div class="game-head">
-              <img class="q-icon" src="images/forest_animal/q_icon@3x.png" />
-              <div class="head-questions"><span>Q.10</span></div>
-            </div>
-
-            <div class="game-body">
-              <div class="body-questions">
-                긴 꿈을 꾸고 난 후, <br />눈을 떴을 때 나는
-              </div>
-              <div class="body-choice">
-                <ul>
-                  <li
-                    class="swiper-button-next"
-                    onclick="countUpTypeC();loadingf();"
-                  >
-                    와 생생한 것 봐; 다른 친구들한테 말해줘야지 바로 카톡ㄱㄱ
-                  </li>
-                  <li
-                    class="swiper-button-next"
-                    onclick="countUpTypeD();loadingf();"
-                  >
-                    오랜만에 꿈꿨네…일어나서 할 일 하기
-                  </li>
-                  <li
-                    class="swiper-button-next"
-                    onclick="countUpTypeB();loadingf();"
-                  >
-                    이건 기억해놔야해 일기로 끄적끄적 남기기
-                  </li>
-                  <li
-                    class="swiper-button-next"
-                    onclick="countUpTypeA();loadingf();"
-                  >
-                    꿈 속에서 무슨 일이 있었더라? 한 번 더 생각해보기
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
-
     <div class="type-zone is-hide">
       <div class="wrapper" style="flex-direction: column">
         <div class="loding-area">
@@ -549,7 +695,7 @@
         <p>mongle x oool</p>
       </div>
     </div>
-    <script type="text/javascript" src="./js/forest_animal.js"></script>
+    <script type="text/javascript" src="/js/forest.js"></script>
     <script
       type="text/javascript"
       src="./bootstrap-3.3.2-dist/js/bootstrap.min.js"

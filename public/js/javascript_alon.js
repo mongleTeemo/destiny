@@ -213,11 +213,13 @@ function checkMobile() {
 }
 
 function DownLoad() {
+  countRset();
   checkMobile();
 
   const userOs = checkMobile();
   if (userOs === "android") {
-    alert("준비중입니다.");
+    window.location.href =
+      "https://play.google.com/store/apps/details?id=com.mongle.mongle";
   } else if (userOs === "ios") {
     window.location.href =
       "https://itunes.apple.com/kr/app/apple-store/1588402690";

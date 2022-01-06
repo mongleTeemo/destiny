@@ -1,5 +1,6 @@
 const SHOW_CL = "is-show",
   HIDE_CL = "is-hide",
+  bodyColor = document.querySelector(".body-color"),
   swipeZone = document.querySelector(".swipe-zone"),
   typeZone = document.querySelector(".type-zone"),
   result1 = document.querySelector(".result.type1"),
@@ -10,11 +11,11 @@ const SHOW_CL = "is-show",
   result6 = document.querySelector(".result.type6"),
   bottomDefault = document.querySelector(".bottom-default"),
   loadingArea = document.querySelector(".loding-area");
+
 let count = 0;
 let loadingCount = 1;
 function countUp() {
   count = count + 1;
-  console.log(count);
 }
 
 function loadingf() {
@@ -30,10 +31,11 @@ function loadingf() {
     }
   }, 1000);
 }
-
+function bgChange() {
+  bodyColor.style.backgroundColor = "white";
+}
 function countRset() {
   count = 0;
-  console.log(count);
   location.reload();
 }
 
@@ -55,6 +57,9 @@ function type() {
   } else if (typeCurrent == 9 || typeCurrent == 10) {
     result5.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
+  } else {
+    result5.classList.remove(HIDE_CL);
+    bottomDefault.classList.remove(HIDE_CL);
   }
 }
 
@@ -70,8 +75,8 @@ function shareKakao() {
     if (navigator.share) {
       navigator
         .share({
-          title: "mongle - 취향저격 핫플 찾기 테스트",
-          url: "https://originals.mongle.io/place2",
+          title: "mongle - 내가 고양이라면 어떤 고양이일까?",
+          url: "https://originals.mongle.io/cats.html",
         })
         .then(() => {
           console.log("Thanks for sharing!");
@@ -90,7 +95,7 @@ function shareCopy(val) {
 }
 
 $("#copy").click(function () {
-  shareCopy("https://originals.mongle.io/place2");
+  shareCopy("https://originals.mongle.io/cats");
   alert("복사되었습니다.");
 });
 

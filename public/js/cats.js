@@ -1,34 +1,21 @@
 const SHOW_CL = "is-show",
   HIDE_CL = "is-hide",
+  bodyColor = document.querySelector(".body-color"),
   swipeZone = document.querySelector(".swipe-zone"),
   typeZone = document.querySelector(".type-zone"),
-  resultA = document.querySelector(".result.typeA"),
-  resultB = document.querySelector(".result.typeB"),
-  resultC = document.querySelector(".result.typeC"),
-  resultD = document.querySelector(".result.typeD"),
+  result1 = document.querySelector(".result.type1"),
+  result2 = document.querySelector(".result.type2"),
+  result3 = document.querySelector(".result.type3"),
+  result4 = document.querySelector(".result.type4"),
+  result5 = document.querySelector(".result.type5"),
+  result6 = document.querySelector(".result.type6"),
   bottomDefault = document.querySelector(".bottom-default"),
   loadingArea = document.querySelector(".loding-area");
-let countA = 0,
-  countB = 0,
-  countC = 0,
-  countD = 0;
-let loadingCount = 1;
 
-//고슴도치
-function countUpTypeA() {
-  countA = countA + 1;
-}
-//토끼
-function countUpTypeB() {
-  countB = countB + 1;
-}
-//곰
-function countUpTypeC() {
-  countC = countC + 1;
-}
-//코끼리
-function countUpTypeD() {
-  countD = countD + 1;
+let count = 0;
+let loadingCount = 1;
+function countUp() {
+  count = count + 1;
 }
 
 function loadingf() {
@@ -40,34 +27,38 @@ function loadingf() {
       loadingf();
     } else {
       loadingArea.classList.add(HIDE_CL);
-      typeCheck();
+      type();
     }
   }, 1000);
 }
-
+function bgChange() {
+  bodyColor.style.backgroundColor = "white";
+}
 function countRset() {
-  countA = 0;
-  countB = 0;
-  countC = 0;
-  countD = 0;
-
+  count = 0;
   location.reload();
 }
 
-function typeCheck() {
-  let typeCurrent = Math.max(countA, countB, countC, countD);
+function type() {
+  let typeCurrent = count;
 
-  if (typeCurrent == countA) {
-    resultA.classList.remove(HIDE_CL);
+  if (typeCurrent <= 2) {
+    result1.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == countB) {
-    resultB.classList.remove(HIDE_CL);
+  } else if (typeCurrent == 3 || typeCurrent == 4) {
+    result2.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == countC) {
-    resultC.classList.remove(HIDE_CL);
+  } else if (typeCurrent == 5 || typeCurrent == 6) {
+    result3.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == countD) {
-    resultD.classList.remove(HIDE_CL);
+  } else if (typeCurrent == 7 || typeCurrent == 8) {
+    result4.classList.remove(HIDE_CL);
+    bottomDefault.classList.remove(HIDE_CL);
+  } else if (typeCurrent == 9 || typeCurrent == 10) {
+    result5.classList.remove(HIDE_CL);
+    bottomDefault.classList.remove(HIDE_CL);
+  } else {
+    result5.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
   }
 }
@@ -84,8 +75,8 @@ function shareKakao() {
     if (navigator.share) {
       navigator
         .share({
-          title: "mongle - 칵테일로 알아보는 나의 연애 스타일",
-          url: "https://mongle.io/cocktail.html",
+          title: "mongle - 내가 고양이라면 어떤 고양이일까?",
+          url: "https://originals.mongle.io/cats.html",
         })
         .then(() => {
           console.log("Thanks for sharing!");
@@ -95,7 +86,7 @@ function shareKakao() {
   });
 }
 function shareCopy(val) {
-  var t = document.createElement("textarea");
+  let t = document.createElement("textarea");
   document.body.appendChild(t);
   t.value = val;
   t.select();
@@ -104,7 +95,7 @@ function shareCopy(val) {
 }
 
 $("#copy").click(function () {
-  shareCopy("https://mongle.io/cocktail.html");
+  shareCopy("https://originals.mongle.io/cats");
   alert("복사되었습니다.");
 });
 
@@ -126,13 +117,14 @@ function checkMobile() {
     return "other";
   }
 }
-
 function DownLoad() {
+  countRset();
   checkMobile();
 
   const userOs = checkMobile();
   if (userOs === "android") {
-    alert("준비중입니다.");
+    window.location.href =
+      "https://play.google.com/store/apps/details?id=com.mongle.mongle";
   } else if (userOs === "ios") {
     window.location.href =
       "https://itunes.apple.com/kr/app/apple-store/1588402690";

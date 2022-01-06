@@ -4,18 +4,24 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width"
+      content="user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width"
     />
-    <meta property="og:url" content="https://mongle.io/place2.html" />
+    <meta property="og:url" content="https://originals.mongle.io/cats.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="몽글 - 취향저격 핫플 찾기 테스트" />
-    <meta property="og:description" content="취향저격 핫플 찾기 테스트 " />
-    <meta property="og:image" content="images/place2/place2_og.png" />
-    <title>몽글 - 취향저격 핫플 찾기 테스트</title>
+    <meta
+      property="og:title"
+      content="몽글 - 내가 고양이라면 어떤 고양이일까?"
+    />
+    <meta
+      property="og:description"
+      content="내 성격과 맞는 고양이를 찾아보자!! "
+    />
+    <meta property="og:image" content="./images/cats_og.png" />
+    <title>몽글 - 내가 고양이라면 어떤 고양이일까?</title>
     <link rel="apple-touch-icon" href="./images/favicon.ico" />
     <link rel="icon" href="./images/favicon.ico" />
     <link type="text/css" rel="stylesheet" href="./css/base.css" />
-    <link type="text/css" rel="stylesheet" href="./css/place2.css" />
+    <link type="text/css" rel="stylesheet" href="./css/cats.css" />
     <link
       type="text/css"
       rel="stylesheet"
@@ -39,9 +45,10 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+    <!-- Kakao API -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
   </head>
-  <body>
-  
+  <body class="body-color">
     <div class="container">
       <div class="swipe-zone">
         <div class="wrapper">
@@ -49,28 +56,22 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="place2-main">
-                  <div class="title">취향저격<br />핫플 찾기 테스트</div>
-                  <div class="descripstion">
-                    나만의 핫플 200% 즐기는 방법<br />
-                    나에게 꼭 맞는 핫플 추천까지!
+              <div class="swiper-slide" style="padding: 0px">
+                <div class="cats-main">
+                  <div class="title">
+                    냥냥 내가 고양이라면
+                    <br />어떤 고양이일까?
                   </div>
-
-                  <img src="images/place2/place2_baner.png" />
+                  <div class="title-sub">
+                    내 성격과 맞는 고양이를 찾아보자!!
+                  </div>
+                  <img src="images/cats/cats_baner.png" />
                   <div class="mongle-kakao">
                     <a
-                      href="#place2Game"
-                      onclick="window.scrollTo(0,0);"
+                      href="#catsGame"
+                      onclick="bgChange() "
                       class="swiper-button-next"
-                      >시작하기</a
-                    >
-                  </div>
-                  <div class="mongle-instagram">
-                    <a
-                      href="https://www.instagram.com/mongle.official/"
-                      target="_blank"
-                      >몽글 인스타그램</a
+                      >테스트 시작하기</a
                     >
                   </div>
                 </div>
@@ -78,22 +79,31 @@
               <div class="swiper-slide">
                 <div class="course_1">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.1</span></div>
+                    <!--div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 15%"
+                      ></div>
+                    </div-->
+                    <div class="head-questions">Q1</div>
                   </div>
 
                   <div class="game-body">
                     <div class="body-questions">
-                      쉬는 날, <br />
-                      내가 할 일은?
+                      알람 울리기 15분 전에 깼다…<br />
+                      이럴 때 나의 반응은?
                     </div>
                     <div class="body-choice">
                       <ul>
-                        <li class="swiper-button-next">
-                          맛있는 거 먹으면서 쉬는 것만으로도 <br />
-                          힐링 그 자체! 그냥 가만히 있는게 최고야
-                        </li>
                         <li class="swiper-button-next" onclick="countUp();">
-                          쉬면서 취미 활동까지! 알차게 놀아줘야지
+                          15분?그냥 좀 일찍 일어나서 준비하지 뭐…
+                        </li>
+                        <li class="swiper-button-next cnt-plus">
+                          하…졸려 15분이면 좀 더 자도 괜찮아…zz
                         </li>
                       </ul>
                     </div>
@@ -103,22 +113,25 @@
               <div class="swiper-slide">
                 <div class="course_2">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.2</span></div>
+                    <div class="head-questions">Q2</div>
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      인스타에서 집 근처<br />핫한 카페 발견! <br />
-                      이럴 때 나는
+                      어쩌다보니 나가게 된 취미모임!<br />
+                      여기서 내 포지션은?
                     </div>
                     <div class="body-choice">
                       <ul>
-                        <li onclick="countUp();" class="swiper-button-next">
-                          여기 ㅇㅇ이랑 가면 딱이겠다! <br />
-                          동네 친구 당장 태그@@
-                        </li>
                         <li class="swiper-button-next">
-                          어? 집 근처면 혼자 놀기 좋지! <br />
-                          가서 맛있는 것도 먹고 놀다 와야겠다
+                          조용히 취미를 즐기며 누가 대화를 걸 때만 자연스럽게
+                          말하는 편
+                        </li>
+                        <li
+                          onclick="countUp();"
+                          class="swiper-button-next cnt-plus"
+                        >
+                          안녕하세요! 여러사람과 대화하며 친근감 뿜뿜!! 먼저
+                          다가가는 편
                         </li>
                       </ul>
                     </div>
@@ -128,23 +141,25 @@
               <div class="swiper-slide">
                 <div class="course_3">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.3</span></div>
+                    <div class="head-questions">Q3</div>
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      세상에는<br />가보고 싶은 곳이 너무 많아… <br />
-                      내가 가고 싶은 핫플은
+                      와 이게 얼마만에 쉬는거지?<br />
+                      오랜만의 휴가! 이럴 때 나는?
                     </div>
                     <div class="body-choice">
                       <ul>
-                        <li onclick="countUp();" class="swiper-button-next">
-                          멀리서 봐도 여기가 바로 핫플! <br />
-                          외관부터 존재감 뿜뿜 여기가 포토존?!
+                        <li
+                          onclick="countUp();"
+                          class="swiper-button-next cnt-plus"
+                        >
+                          배달어플 on! 넷플릭스도 on! <br />
+                          나만의 시간을 가지는게 최고
                         </li>
                         <li class="swiper-button-next">
-                          예약제로 운영되는 <br />
-                          고오급진 분위기의 핫플! <br />
-                          코시국에 맞게 친구와 놀기 좋은 핫플
+                          야 나 오늘 휴가야 당장 만나ㄱㄱ<br />
+                          친구들 만날 생각에 두근두근
                         </li>
                       </ul>
                     </div>
@@ -154,23 +169,25 @@
               <div class="swiper-slide">
                 <div class="course_4">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.4</span></div>
+                    <div class="head-questions">Q4</div>
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      핫플을 다녀온 후, <br />
-                      내 앨범엔
+                      어쩌다보니 나가게 된 취미모임!<br />
+                      여기서 내 포지션은?
                     </div>
                     <div class="body-choice">
                       <ul>
-                        <li class="swiper-button-next">
-                          혼신의 힘을 다 해서 찍은 디저트와 <br />
-                          음식 사진이 한가득! <br />
-                          난 먹는 거에 언제나 진심이야
+                        <li
+                          onclick="countUp();"
+                          class="swiper-button-next cnt-plus"
+                        >
+                          조용히 취미를 즐기며 누가 대화를<br />
+                          걸 때만 자연스럽게 말하는 편
                         </li>
-                        <li onclick="countUp();" class="swiper-button-next">
-                          야 너 에어드랍 켰어? <br />
-                          셀카와 서로 찍어준 사진 한바가지
+                        <li class="swiper-button-next">
+                          안녕하세요! 여러사람과 대화하며<br />
+                          친근감 뿜뿜!! 먼저 다가가는 편
                         </li>
                       </ul>
                     </div>
@@ -180,23 +197,25 @@
               <div class="swiper-slide">
                 <div class="course_5">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.5</span></div>
+                    <div class="head-questions">Q5</div>
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      뭐 먹지?! <br />
-                      신중한 메뉴 선택의 시간…<br />
-                      이럴 때 나는
+                      친구들과 떠나게 된 우정여행! <br />
+                      여기서 내 포지션은?
                     </div>
                     <div class="body-choice">
                       <ul>
                         <li class="swiper-button-next">
-                          아는 맛이야 말로 가장 안전하고 맛있지! <br />
-                          실패없는 메뉴로 주문할래
+                          가서 뭐먹지…칼국수나 먹고 싶다…<br />
+                          여행은 즉흥이지!
                         </li>
-                        <li onclick="countUp();" class="swiper-button-next">
-                          여기만의 시그니처 메뉴는 먹어봐야지 <br />
-                          조금 걱정되긴 하지만 도전 ㄱㄱ
+                        <li
+                          onclick="countUp();"
+                          class="swiper-button-next cnt-plus"
+                        >
+                          8시에 출발해서 9시30분에 도착하고 짐 찾는 시간은 10분
+                          걸리고~~ 꼼꼼하게 계획하고 가야지
                         </li>
                       </ul>
                     </div>
@@ -206,25 +225,24 @@
               <div class="swiper-slide">
                 <div class="course_6">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.6</span></div>
+                    <div class="head-questions">Q6</div>
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      친구와 만나기로 <br />
-                      약속 잡는 중, 우리 어디 갈까? <br />
-                      이럴 때 나는
+                      너무 가보고 싶었던 맛집에 도착!<br />
+                      앗 문이 안열려있네<br />
+                      이럴 때 나의 반응은?
                     </div>
                     <div class="body-choice">
                       <ul>
-                        <li onclick="countUp();" class="swiper-button-next">
-                          인스타 핫플 모음 계정으로 스캔 완료! <br />
-                          우리가 만나기로 한 곳 근처에는 5군데의 <br />
-                          핫플이 있고 그 중 한 곳은 웨이팅이 있지
+                        <li
+                          onclick="countUp();"
+                          class="swiper-button-next cnt-plus"
+                        >
+                          아 뭐야;; 일단 주변을 걸어다니며 다른 곳을 찾는다
                         </li>
                         <li class="swiper-button-next">
-                          천천히 찾아보지 뭐~ <br />
-                          나중에 먹고 싶은 게 생길 수도 있으니까 <br />
-                          만나서 근처 가게를 찾아보자!
+                          하…조용히 지도앱을 열어서 서치한다
                         </li>
                       </ul>
                     </div>
@@ -234,23 +252,27 @@
               <div class="swiper-slide">
                 <div class="course_7">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.7</span></div>
+                    <div class="head-questions">Q7</div>
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      친구와 만나서 핫플을 향해 <br />
-                      같이 걸어가는 중, <br />
-                      이럴 때 나는
+                      돌고 돌아온 맛집<br />
+                      그런데 남은 건 구석자리 뿐ㅠㅠ<br />
+                      이럴 때 나의 반응은?
                     </div>
                     <div class="body-choice">
                       <ul>
                         <li class="swiper-button-next">
-                          간판 없는 힙지로 거리 핫플도 <br />
-                          잘 찾아가는 내가 바로 길찾기 마스터
+                          자리가 마음에 안들긴 하지만 계속 돌아다니기도 그렇고
+                          그냥 앉자!!<br />
+                          맛만 있으면 뭐
                         </li>
-                        <li class="swiper-button-next" onclick="countUp();">
-                          어디로 가면 된다구?<br />
-                          길찾기마스터 친구를 따라 가는 중…총총
+                        <li
+                          onclick="countUp();"
+                          class="swiper-button-next cnt-plus"
+                        >
+                          자리 중요해 사진 찍을 때도, 앉을 때도 별로라구 한 곳만
+                          더 가보자!
                         </li>
                       </ul>
                     </div>
@@ -260,24 +282,24 @@
               <div class="swiper-slide">
                 <div class="course_8">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.8</span></div>
+                    <div class="head-questions">Q8</div>
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      인스타를 보다가 <br />
-                      내 취향의 핫플 발견! <br />
-                      이럴 때 나는
+                      친구와 헤어지고 집 도착! <br />
+                      내가 가장 먼저 할 일은?
                     </div>
                     <div class="body-choice">
                       <ul>
-                        <li class="swiper-button-next" onclick="countUp();">
-                          난 한 눈에 알아봤어. <br />
-                          주말에 당장 달려갈 곳이란 걸…<br />
-                          이미 가기로 마음 먹었어
+                        <li
+                          onclick="countUp();"
+                          class="swiper-button-next cnt-plus"
+                        >
+                          씻기 전에는 누울 수 없지 일단 먼저 씻은 다음에 쉬자
                         </li>
                         <li class="swiper-button-next">
-                          메뉴와 가격부터 평점까지 쭈르륵 <br />
-                          확인 후 갈지 말지 생각해본다
+                          에구 피곤해 씻을 힘이 없어 핸드폰 조금만 하고
+                          씻자…뒹굴뒹굴
                         </li>
                       </ul>
                     </div>
@@ -287,23 +309,25 @@
               <div class="swiper-slide">
                 <div class="course_9">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.9</span></div>
+                    <div class="head-questions">Q9</div>
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      오랜만에 놀러왔는데 <br />
-                      인스타에 사진이나 올려볼까?! <br />
-                      이럴 때 나는
+                      친구와 카톡 중…<br />
+                      갑자기 읽씹 당한 순간<br />
+                      이럴 때 내 반응은?
                     </div>
                     <div class="body-choice">
                       <ul>
-                        <li class="swiper-button-next" onclick="countUp();">
-                          짠메랑부터 음식사진, <br />
-                          내 사진 인스타 폭풍 업로드!!!!
-                        </li>
                         <li class="swiper-button-next">
-                          즐거웠으면 된거지! <br />
-                          가끔씩 1,2장 올리거나 안올려도 뭐~!
+                          잠들었나보네 나중에 연락하겠지 뭐~
+                        </li>
+                        <li
+                          onclick="countUp();"
+                          class="swiper-button-next cnt-plus"
+                        >
+                          헉 뭐지? 갑자기 왜 읽씹이지 내가 뭘 잘못했나? 속으로
+                          계속 생각 중
                         </li>
                       </ul>
                     </div>
@@ -313,26 +337,29 @@
               <div class="swiper-slide">
                 <div class="course_10">
                   <div class="game-head">
-                    <div class="head-questions"><span>Q.10</span></div>
+                    <div class="head-questions">Q10</div>
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      핫플을 다녀온 후, <br />
-                      나의 반응은
+                      만약에 내가 진짜 <br />
+                      고양이가 되면 어떨까…<br />
+                      내 상상의 끝은?
                     </div>
                     <div class="body-choice">
                       <ul>
-                        <li class="swiper-button-next" onclick="loadingf();">
-                          여기 괜찮은데? 앞으로 자주 와야지 <br />
-                          내 단골가게로 픽!
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUp();loadingf();"
+                        >
+                          고양이가 되면 이것도 해보고 저것도 해보고, 누구의
+                          고양이가 되고 싶고… 끝없는 상상의 나래를 펼치는 중
                         </li>
                         <li
-                          onclick="loadingf();countUp();"
-                          class="swiper-button-next"
+                          onclick="loadingf();"
+                          class="swiper-button-next cnt-plus"
                         >
-                          한 번 다녀왔으면 충분해! <br />
-                          세상에 내가 가볼 핫플은 많다 <br />
-                          다른 새로운 핫플을 찾아야지
+                          현실적으로 불가능한 일이야 고양이로 살아가는 법을
+                          터득해야겠지 뭐
                         </li>
                       </ul>
                     </div>
@@ -351,155 +378,124 @@
               <div class="loading-text">분 석 중...</div>
             </div>
           </div>
-          <div class="result type5 is-hide">
+          <div class="result type1 is-hide">
             <div class="type-image">
-              <img src="images/place2/result1.png" />
+              <img src="images/cats/type-1.png" />
             </div>
-            <div class="title">
-              킁킁 핫플 탐지견이세요? <br />
-              핫플 탐지견 유형
-            </div>
+            <div class="title">섬세한<br />흰냥이</div>
             <ul class="discription">
+              <li>섬세하고 얌전한 흰냥이 친구들!</li>
+              <li>당신은 좁지만 깊은 관계를 가지고 있는 흰냥이와 닮았어요!</li>
               <li>
-                핫플 추천 계정 하나쯤은 팔로우 하지 않았나요? 가보고 싶은 핫플은
-                이미 인스타에 저장해두거나 캡처 완료!
-              </li>
-            </ul>
-
-            <ul class="discription">
-              <li>
-                새로운 핫플을 가보는데 두려움이 없어요! 처음 보는 메뉴? 오히려
-                좋아
+                섬세한 성격 탓에 다른 사람들에게 쉽게 상처 받기도 해요. 하지만
+                섬세한 만큼 다른 사람들을 잘 배려한답니다!
               </li>
             </ul>
             <div class="instagram">
-              <a href="https://www.instagram.com/p/CUHtalEB3Ty/?utm_source=ig_web_copy_link">
+              <a
+                href="https://www.instagram.com/p/CS_zsdZB3G_/?utm_source=ig_web_copy_link"
+              >
                 <div class="instagram-title">
                   · 가본 적이 없다면 이런 핫플은 어때요? ·
                 </div>
-                <img src="images/place2/result1-1.png" />
-              </a>
-            </div>
-          </div>
-          <div class="result type4 is-hide">
-            <div class="type-image">
-              <img src="images/place2/result2.png" />
-            </div>
-            <div class="title">
-              새로운 핫플을 찾아 떠도는 <br />
-              방랑자 유형
-            </div>
-            <ul class="discription">
-              <li>
-                가오픈 카페, 가오픈 가게 모두모두 환영 새로운 핫플은 무조건이지~
-                신상 핫플에 언제나 빠삭한 유형!
-              </li>
-            </ul>
-
-            <ul class="discription">
-              <li>
-                핫플 소개 게시물에 친구를 태그 해본 적 여러 번 있지 않나요? 핫플
-                찾기에 난 언제나 진심이야…
-              </li>
-            </ul>
-            <div class="instagram">
-              <a href="https://www.instagram.com/p/CTMlI-ohjvb/?utm_source=ig_web_copy_link">
-                <div class="instagram-title">
-                  · 가본 적이 없다면 이런 핫플은 어때요? ·
-                </div>
-                <img src="images/place2/result2-1.png" />
-              </a>
-            </div>
-          </div>
-          <div class="result type3 is-hide">
-            <div class="type-image">
-              <img src="images/place2/result3.png" />
-            </div>
-            <div class="title">
-              평범한 건 싫어!<br />
-              개척자 유형
-            </div>
-            <ul class="discription">
-              <li>
-                평범한 곳은 가라! 새롭고 독특한 핫플 찾기에 맛들리지 않았나요?
-                쉬는 날에 어디갈 지 두근두근
-              </li>
-            </ul>
-
-            <ul class="discription">
-              <li>
-                인스타그램 둘러보기에 언제나 핫플 추천 게시글이 1-2개씩은 떠있는
-                유형
-              </li>
-            </ul>
-            <div class="instagram">
-              <a href="https://www.instagram.com/p/CP-mitRMD0z/?utm_source=ig_web_copy_link">
-                <div class="instagram-title">
-                  · 가본 적이 없다면 이런 핫플은 어때요? ·
-                </div>
-                <img src="images/place2/result3-1.png" />
+                <img src="images/cats/result1.png" />
               </a>
             </div>
           </div>
           <div class="result type2 is-hide">
             <div class="type-image">
-              <img src="images/place2/result4.png" />
+              <img src="images/cats/type-2.png" />
             </div>
-            <div class="title">
-              남는 건 사진 뿐이야<br />
-              포토그래퍼 유형
-            </div>
+            <div class="title">츤츤거리는<br />삼색냥</div>
             <ul class="discription">
+              <li>삼색이는 가장 고양이스러운 성격을 가지고 있어요.</li>
+              <li>츤츤거리는 츤데레 성격을 가진 당신과 닮았어요!</li>
               <li>
-                멈춰! 먹기 전에 사진부터 찍어야지 일단 사진부터 남겨둬야한다구
-                비쥬얼이 망가지기 전에 사진 촬영은 필수!
+                삼색냥이 중 수컷은 삼만마리 중 하나로 대부분 암컷이라는 사실을
+                아시나요?
               </li>
-            </ul>
-
-            <ul class="discription">
-              <li>
-                핫플에 다녀온 후 빵빵해진 내 앨범… 사진으로 다 남겨놔야지 이
-                날의 조명, 온도, 습도…
-              </li>
+              <li>삼색이는 자존심이 강하고 은근 변덕이 있는 성격이랍니다.</li>
             </ul>
             <div class="instagram">
-              <a href="https://www.instagram.com/p/CRJTNIns76l/?utm_source=ig_web_copy_link">
+              <a
+                href="https://www.instagram.com/p/CSWYBy1B-8H/?utm_source=ig_web_copy_link"
+              >
                 <div class="instagram-title">
                   · 가본 적이 없다면 이런 핫플은 어때요? ·
                 </div>
-                <img src="images/place2/result4-1.png" />
+                <img src="images/cats/result2.png" />
               </a>
             </div>
           </div>
-
-          <div class="result type1 is-hide">
+          <div class="result type3 is-hide">
             <div class="type-image">
-              <img src="images/place2/result4.png" />
+              <img src="images/cats/type-3.png" />
             </div>
-            <div class="title">
-              친구따라 핫플 간다~!<br />
-              팔로워 유형
-            </div>
+            <div class="title">붙임성 있는<br />검정냥</div>
             <ul class="discription">
+              <li>경계심 없는 검정냥 친구들!</li>
+              <li>당신은 붙임성 있고 착한 성격을 가진 검정냥이와 닮았어요!</li>
               <li>
-                친구를 따라 핫플 가기 총총총… 핫플 찾기에 진심인 친구들과
-                찰떡궁합인 유형!!
-              </li>
-            </ul>
-
-            <ul class="discription">
-              <li>
-                기존에 가봤던 핫플들 중에 괜찮은 곳이 있다? 그럼 거기 다시
-                가봐도 좋은 것 같아! 새롭고 독특한 핫플도 좋지만 익숙하고 잘
-                아는 핫플도 환영~
+                사람이나 주변환경에 대한 이해도가 높아서 눈치도 빠르고
+                대인관계가 좋은 편이지 않나요?
               </li>
             </ul>
             <div class="instagram">
-              <a href="https://www.instagram.com/p/CSoaF3QBWd5/?utm_source=ig_web_copy_link>
+              <a
+                href="https://www.instagram.com/p/CQYU8yeMtmT/?utm_source=ig_web_button_share_sheet"
+              >
                 <div class="instagram-title">
                   · 가본 적이 없다면 이런 핫플은 어때요? ·
                 </div>
-                <img src="images/place2/result4-1.png" />
+                <img src="images/cats/result3.png" />
+              </a>
+            </div>
+          </div>
+          <div class="result type4 is-hide">
+            <div class="type-image">
+              <img src="images/type-4.png" />
+            </div>
+            <div class="title">사교적인<br />턱시도냥</div>
+            <ul class="discription">
+              <li>털 무늬만큼이나 사교적인 턱시도냥 친구들!</li>
+              <li>당신은 살갑고 애교 있는 성격의 턱시도냥과 닮았어요!</li>
+              <li>
+                어느 모임에서나 자연스럽게 잘 스며드는 성격으로 자상하고
+                평화로운 타입이네요!
+              </li>
+            </ul>
+            <div class="instagram">
+              <a
+                href="https://www.instagram.com/p/CRlfjKqsfgt/?utm_source=ig_web_copy_link"
+              >
+                <div class="instagram-title">
+                  · 가본 적이 없다면 이런 핫플은 어때요? ·
+                </div>
+                <img src="images/cats/result4.png" />
+              </a>
+            </div>
+          </div>
+          <div class="result type5 is-hide">
+            <div class="type-image">
+              <img src="images/cats/type-5.png" />
+            </div>
+            <div class="title">발랄한<br />치즈냥</div>
+            <ul class="discription">
+              <li>밝고 명랑한 치즈냥 친구들!</li>
+              <li>당신은 활발한 장난꾸러기 치즈냥과 닮았어요!</li>
+              <li>
+                기분 상하는 일이 있더라도 금방금방 풀리는 쿨한 성격의 당신!
+              </li>
+              <li>함께 있으면 다른 사람들까지 즐거워지는 타입이네요.</li>
+            </ul>
+            <div class="instagram">
+              <a
+                href="https://www.instagram.com/p/CS1eWEwh94_/?utm_source=ig_web_copy_link"
+              >
+                <div class="instagram-title">
+                  · 가본 적이 없다면 이런 핫플은 어때요? ·
+                </div>
+                <img src="images/cats/result5.png" />
               </a>
             </div>
           </div>
@@ -531,7 +527,7 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="./js/place2.js"></script>
+    <script type="text/javascript" src="./js/cats.js"></script>
     <script
       type="text/javascript"
       src="./bootstrap-3.3.2-dist/js/bootstrap.min.js"

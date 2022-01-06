@@ -1,20 +1,42 @@
 const SHOW_CL = "is-show",
   HIDE_CL = "is-hide",
+  bodyColor = document.querySelector(".body-color"),
   swipeZone = document.querySelector(".swipe-zone"),
   typeZone = document.querySelector(".type-zone"),
-  result1 = document.querySelector(".result.type1"),
-  result2 = document.querySelector(".result.type2"),
-  result3 = document.querySelector(".result.type3"),
-  result4 = document.querySelector(".result.type4"),
-  result5 = document.querySelector(".result.type5"),
-  result6 = document.querySelector(".result.type6"),
+  resultA = document.querySelector(".result.typeA"),
+  resultB = document.querySelector(".result.typeB"),
+  resultC = document.querySelector(".result.typeC"),
+  resultD = document.querySelector(".result.typeD"),
   bottomDefault = document.querySelector(".bottom-default"),
   loadingArea = document.querySelector(".loding-area");
-let count = 0;
+let countA = 0,
+  countB = 0,
+  countC = 0,
+  countD = 0;
 let loadingCount = 1;
-function countUp() {
-  count = count + 1;
-  console.log(count);
+
+//고슴도치
+function countUpTypeA() {
+  countA = countA + 1;
+}
+//토끼
+function countUpTypeB() {
+  countB = countB + 1;
+}
+//곰
+function countUpTypeC() {
+  countC = countC + 1;
+}
+//코끼리
+function countUpTypeD() {
+  countD = countD + 1;
+}
+
+function bgChange() {
+  bodyColor.style.backgroundColor = "#c4d8ee";
+}
+function bgChangeWhite() {
+  bodyColor.style.backgroundColor = "#ffffff";
 }
 
 function loadingf() {
@@ -26,34 +48,34 @@ function loadingf() {
       loadingf();
     } else {
       loadingArea.classList.add(HIDE_CL);
-      type();
+      typeCheck();
     }
   }, 1000);
 }
 
 function countRset() {
-  count = 0;
-  console.log(count);
+  countA = 0;
+  countB = 0;
+  countC = 0;
+  countD = 0;
+
   location.reload();
 }
 
-function type() {
-  let typeCurrent = count;
+function typeCheck() {
+  let typeCurrent = Math.max(countA, countB, countC, countD);
 
-  if (typeCurrent <= 2) {
-    result1.classList.remove(HIDE_CL);
+  if (typeCurrent == countA) {
+    resultA.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 3 || typeCurrent == 4) {
-    result2.classList.remove(HIDE_CL);
+  } else if (typeCurrent == countB) {
+    resultB.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 5 || typeCurrent == 6) {
-    result3.classList.remove(HIDE_CL);
+  } else if (typeCurrent == countC) {
+    resultC.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 7 || typeCurrent == 8) {
-    result4.classList.remove(HIDE_CL);
-    bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 9 || typeCurrent == 10) {
-    result5.classList.remove(HIDE_CL);
+  } else if (typeCurrent == countD) {
+    resultD.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
   }
 }
@@ -70,8 +92,8 @@ function shareKakao() {
     if (navigator.share) {
       navigator
         .share({
-          title: "mongle - 취향저격 핫플 찾기 테스트",
-          url: "https://originals.mongle.io/place2",
+          title: "mongle - 숲속 동물 테스트",
+          url: "https://originals.mongle.io/forest_animal.html",
         })
         .then(() => {
           console.log("Thanks for sharing!");
@@ -81,7 +103,7 @@ function shareKakao() {
   });
 }
 function shareCopy(val) {
-  let t = document.createElement("textarea");
+  var t = document.createElement("textarea");
   document.body.appendChild(t);
   t.value = val;
   t.select();
@@ -90,7 +112,7 @@ function shareCopy(val) {
 }
 
 $("#copy").click(function () {
-  shareCopy("https://originals.mongle.io/place2");
+  shareCopy("https://originals.mongle.io/forest_animal.html");
   alert("복사되었습니다.");
 });
 
@@ -112,14 +134,13 @@ function checkMobile() {
     return "other";
   }
 }
+
 function DownLoad() {
-  countRset();
   checkMobile();
 
   const userOs = checkMobile();
   if (userOs === "android") {
-    window.location.href =
-      "https://play.google.com/store/apps/details?id=com.mongle.mongle";
+    alert("준비중입니다.");
   } else if (userOs === "ios") {
     window.location.href =
       "https://itunes.apple.com/kr/app/apple-store/1588402690";

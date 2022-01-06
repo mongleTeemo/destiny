@@ -428,6 +428,7 @@ li {
 }
 .instagram img {
   width: 100%;
+  max-width: 400px;
 }
 .instagram .instagram-title {
   margin-bottom: 20px;

@@ -77,7 +77,7 @@ function shareKakao() {
       navigator
         .share({
           title: "mongle - 카카오톡 유형 검사(KTTI)",
-          url: "https://mongle.io/ktti.html",
+          url: "https://originals.mongle.io/ktti",
         })
         .then(() => {
           console.log("Thanks for sharing!");
@@ -96,7 +96,7 @@ function shareCopy(val) {
 }
 
 $("#copy").click(function () {
-  shareCopy("https://mongle.io/destiny.html");
+  shareCopy("https://https://originals.mongle.io/ktti");
   alert("복사되었습니다.");
 });
 
@@ -120,11 +120,13 @@ function checkMobile() {
 }
 
 function DownLoad() {
+  countRset();
   checkMobile();
 
   const userOs = checkMobile();
   if (userOs === "android") {
-    alert("준비중입니다.");
+    window.location.href =
+      "https://play.google.com/store/apps/details?id=com.mongle.mongle";
   } else if (userOs === "ios") {
     window.location.href =
       "https://itunes.apple.com/kr/app/apple-store/1588402690";

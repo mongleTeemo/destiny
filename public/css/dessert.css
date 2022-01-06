@@ -21,7 +21,6 @@
   src: url("../font/GmarketSansLight.otf");
   font-weight: light;
 }
-
 img {
   image-rendering: -moz-;
   image-rendering: -o-;
@@ -46,18 +45,10 @@ li {
   height: 100vh;
 }
 .body-color {
-  background-color: #b7cb87;
+  background-color: #efadad;
   transition: ease-in-out;
 }
 
-.title-point span {
-  color: #000;
-  border-radius: 100%;
-  padding: 10px 30px;
-  background-color: #000;
-  font-family: cafe24;
-  font-size: 3rem;
-}
 .text-center {
   text-align: center;
 }
@@ -84,261 +75,169 @@ li {
   height: 100%;
   margin: 0 auto;
 }
+.swipe-zone {
+  height: 100%;
+}
 .navbar-default {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1) !important;
 }
 .navbar-default .navbar-nav > li > a {
   color: #000;
   font-size: 16px;
-  font-weight: medium;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
 }
-.navbar-brand img {
+.navbar-brand {
   width: 130px;
 }
 
-.forest-main {
+.dessert-main {
   text-align: center;
-  padding: 30px 0;
+
+  padding: 50px 15px;
 }
 
-.forest-main .title {
+.dessert-main .title {
   font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 44px;
+
+  font-size: 45px;
+  line-height: 1.11;
   text-align: center;
-  margin-top: 20px;
-  font-family: gmarket;
+  font-family: dangam;
   color: #fff;
+  margin-bottom: 18px;
+
+  /* margin-top: 50px; */
 }
-.forest-main .descripstion {
-  font-style: normal;
-  font-weight: medium;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  margin-top: 20px;
-  font-family: gmarket;
-  color: #fff;
-}
-.forest-main p {
-  font-family: gmarket;
-  font-size: 24px;
-  font-weight: medium;
+.dessert-main .title-sub {
+  font-family: cafe24;
+  font-size: 20px;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  letter-spacing: -0.16px;
+  line-height: 1.25;
+  letter-spacing: -0.13px;
   text-align: center;
   color: #fff;
-  margin-bottom: 20px;
 }
 
-.forest-main img {
-  margin: 20px 0;
-  max-width: 70%;
+.dessert-main .cake {
+  width: 38px;
+  margin-bottom: 7px;
 }
-.forest-main .mongle-kakao {
+.dessert-main .cake_baner {
+  max-width: 414px;
   width: 100%;
+  margin: 40px 0px;
+}
+.dessert-main .mongle-kakao {
+  width: 242px;
   margin: 0 auto;
   margin-bottom: 12px;
   outline: none;
   cursor: pointer;
 }
-.forest-main .mongle-kakao a {
+.dessert-main .mongle-kakao a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
-  background: #2a5e39;
-  border-radius: 10px;
-  width: 80%;
+  background: #6916ff;
+  border-radius: 50px;
+  width: 100%;
   padding: 17px 0;
   display: block;
   outline: none;
-  font-family: gmarket;
   text-decoration: none;
-  margin: 0 auto;
 }
-.forest-main .mongle-instagram {
-  width: 100%;
+.dessert-main .mongle-instagram {
+  width: 242px;
   margin: 0 auto;
   outline: none;
 }
 
-.forest-main .mongle-instagram a {
+.dessert-main .mongle-instagram a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #2a5e39;
-  background: #fff;
-  font-family: gmarket;
-  border-radius: 10px;
+  color: #6916ff;
+  background: #ffffff;
+  border-radius: 50px;
   width: 100%;
+  border: 1px solid #6916ff;
   padding: 17px 0;
-  border: 1px solid #2a5e39;
   display: block;
   outline: none;
   text-decoration: none;
 }
-
-.forest-main-sub {
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 30px;
+.swiper-slide {
+  padding: 0 15px;
 }
-
-.forest-main-sub .title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 44px;
-  text-align: center;
-  margin-top: 20px;
-  font-family: gmarket;
-  color: #c4d8ee;
-}
-.forest-main-sub .descripstion {
-  font-style: normal;
-  font-weight: medium;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  margin-top: 20px;
-  font-family: gmarket;
-  color: #fff;
-}
-.forest-main-sub p {
-  font-family: gmarket;
-  font-size: 24px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: -0.16px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.forest-main-sub img {
-  margin: 20px 0;
-  max-width: 60%;
-}
-.forest-main-sub .mongle-kakao {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 12px;
-  outline: none;
-  cursor: pointer;
-}
-.forest-main-sub .mongle-kakao a {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #ffffff;
-  background: #2a5e39;
-  border-radius: 10px;
-  width: 80%;
-  padding: 17px 0;
-  display: block;
-  outline: none;
-  font-family: gmarket;
-  text-decoration: none;
-  margin: 0 auto;
-}
-.forest-main-sub .mongle-instagram {
-  width: 100%;
-  margin: 0 auto;
-  outline: none;
-}
-
-.forest-main-sub .mongle-instagram a {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #2a5e39;
-  background: #fff;
-  font-family: gmarket;
-  border-radius: 10px;
-  width: 100%;
-  padding: 17px 0;
-  border: 1px solid #2a5e39;
-  display: block;
-  outline: none;
-  text-decoration: none;
-}
-
 .swiper-slide .game-head {
   margin-top: 60px;
+  margin-bottom: 30px;
   text-align: center;
 }
-.swiper-slide .game-head .q-icon {
-  max-width: 80px;
+.swiper-slide .game-head .head-bg {
+  width: 240px;
+  margin-bottom: 56px;
 }
 .swiper-slide .game-head .head-questions {
-  font-size: 28px;
-  line-height: 33px;
-  text-align: center;
-  margin-bottom: 25px;
-  margin-top: 12px;
-}
-.swiper-slide .game-head .head-questions span {
-  border-radius: 100%;
-  font-family: gmarket;
+  font-family: dangam;
   font-size: 27px;
   font-weight: bold;
+  font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.18px;
   text-align: center;
-  color: #b7cb87;
+  color: #efadad;
 }
 .swiper-slide .game-head .head-progress {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 28px;
-  color: #000;
+  color: #3c3c3c;
+}
+.swiper-slide .game-body {
+  text-align: center;
+}
+.swiper-slide .game-body .body-bg {
+  width: 240px;
+  margin-top: 56px;
 }
 .swiper-slide .game-body .body-questions {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 28px;
-  color: #000;
-  text-align: center;
   font-family: cafe24;
+  font-size: 25px;
   font-weight: bold;
-  width: 90%;
-  margin: 0 auto;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+  color: #000;
   margin-bottom: 80px;
-}
-.body-choice ul {
-  margin: 0 auto;
-  width: 90%;
 }
 .body-choice ul li {
   width: 100%;
   font-style: normal;
-  font-weight: normal;
+  font-family: gmaket;
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  padding: 11px 21px 7px 22px;
-  border-radius: 7px;
-  background-color: #b7cb87;
+  padding: 15px 15px;
+  color: #fff;
+  text-align: center;
+  background-color: #efadad;
   box-sizing: border-box;
+  border-radius: 7px;
   margin-bottom: 12px;
   outline: none;
-  font-family: cafe24;
-  text-align: center;
-  color: #fff;
+  word-break: keep-all;
 }
 
 .body-choice ul li:active {
@@ -354,7 +253,7 @@ li {
 
 .type-zone .question {
   margin-top: 50px;
-  color: #000;
+  color: #3c3c3c;
   font-family: Noto Sans KR;
   font-style: normal;
   font-weight: normal;
@@ -366,10 +265,11 @@ li {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  line-height: 36px;
   text-align: center;
   color: #000;
   font-family: cafe24;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 .type-zone .point {
   color: #6916ff;
@@ -381,27 +281,34 @@ li {
 }
 .type-zone .type-image {
   text-align: center;
-  margin: 20px 0 30px 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.type-zone .type-image img {
-  width: 50%;
+.type-zone .type-image .type-image-main {
+  width: 70%;
+  margin-bottom: 16px;
+}
+.type-zone .type-image .type-image-sub {
+  width: 100%;
+  max-width: 38px;
 }
 .type-zone .discription {
   padding: 10px;
   border-radius: 20px;
   font-family: cafe24;
-  font-size: 2rem;
-  color: #000;
+  font-weight: medium;
+  font-size: 16px;
 }
 
 .type-zone .discription li {
   position: relative;
   text-align: justify;
   letter-spacing: -0.03em;
-  color: #000;
+  color: #3c3c3c;
   margin-bottom: 10px;
   padding-left: 12px;
-  font-family: cafe24;
 }
 .type-zone .discription li::after {
   content: "";
@@ -412,6 +319,9 @@ li {
   top: 7px;
 
   background-color: #6916ff;
+}
+.result {
+  padding: 15px;
 }
 .loading-content {
   text-align: center;
@@ -434,24 +344,53 @@ li {
 }
 
 .bottom-default {
-  margin: 25px auto;
+  margin-top: 60px;
   text-align: center;
-  width: 100%;
-  max-width: 500px;
-  padding: 0 20px;
 }
-.bottom-default p {
-  font-family: gmarket;
-  font-size: 24px;
-  font-weight: medium;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: -0.16px;
-  text-align: center;
-  color: #000;
-  margin-bottom: 20px;
+.bottom-default .btn-reset {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  width: 242px;
+  background: #6916ff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 50px;
+  padding: 14px 0;
+  margin-bottom: 12px;
+  cursor: pointer;
 }
-
+.bottom-default .btn-mongle {
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6916ff;
+  border-radius: 50px;
+  padding: 14px 0;
+  border: 1px solid #6916ff;
+  cursor: pointer;
+}
+.bottom-default .share-text {
+  font-size: 14px;
+  line-height: 28px;
+  color: #3c3c3c;
+  margin-top: 60px;
+}
+.bottom-default .share-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.bottom-default .share-btn img {
+  max-width: 70px;
+}
+.bottom-default .share-btn li {
+  cursor: pointer;
+}
 .emoji-title {
   font-size: 14px;
   font-weight: bold;
@@ -459,7 +398,7 @@ li {
   font-style: normal;
   line-height: 1.86;
   letter-spacing: -0.42px;
-  color: #000;
+  color: #3c3c3c;
 }
 .emoji-title span {
   padding-left: 5px;
@@ -468,98 +407,65 @@ li {
   cursor: pointer;
 }
 .swiper-button-next:hover {
+  border: none;
   background-color: #6916ff;
   color: #fff;
 }
-
-.result.typeA .instagram {
-  background-color: #87753f;
+.type1 .recommended {
+  background-color: #aedfc4;
 }
-.result.typeB .instagram {
-  background-color: #f9b24a;
+.type2 .recommended {
+  background-color: #bbc2ff;
 }
-.result.typeC .instagram {
-  background-color: #f0ce57;
+.type3 .recommended {
+  background-color: #bbe8ff;
 }
-.result.typeD .instagram {
-  background-color: #a4a4a4;
+.type4 .recommended {
+  background-color: #ffc07f;
 }
-
-.result .instagram p {
-  font-family: gmarket;
-  font-size: 24px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.96;
-  letter-spacing: -0.16px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 16px;
+.type5 .recommended {
+  background-color: #ffbbbb;
 }
-
-.result .instagram .instagram-img {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  margin-top: 10px;
-  margin-bottom: 16px;
-}
-.result .instagram .instagram-img img {
-  width: 49%;
-}
-.result .instagram .conect {
-  padding: 7px 42.5px 8px 41.5px;
-  color: #000;
-  background-color: #fff;
-  border-radius: 25px;
-  font-family: gmarket;
-  font-size: 18px;
-}
-
-.instagram {
+.recommended {
   padding: 20px;
   border-radius: 30px;
   text-align: center;
 }
-.instagram a {
-  font-weight: medium;
+.recommended a {
+  font-weight: bold;
   font-family: gmarket;
   font-size: 16px;
   color: #fff;
 }
-.instagram a:hover {
+.recommended a:hover {
   color: #fff;
 }
-.instagram img {
+.recommended img {
   width: 100%;
 }
-.instagram .instagram-title {
+.recommended .recommended-title {
   margin-bottom: 20px;
-
   font-family: gmarket;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
   letter-spacing: -0.12px;
   text-align: center;
   color: #fff;
 }
 /* ----------------------------------------------
-* Generated by Animista on 2020-11-14 21:40:2
-* Licensed under FreeBSD License.
-* See http://animista.net/license for more info. 
-* w: http://animista.net, t: @cssanimista
-* ---------------------------------------------- */
+ * Generated by Animista on 2020-11-14 21:40:2
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
 
 /**
-* ----------------------------------------
-* animation shake-vertical
-* ----------------------------------------
-*/
+ * ----------------------------------------
+ * animation shake-vertical
+ * ----------------------------------------
+ */
 .shake-vertical {
   -webkit-animation: shake-vertical 3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
     both;
