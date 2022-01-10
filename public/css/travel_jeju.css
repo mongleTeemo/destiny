@@ -45,10 +45,9 @@ li {
   height: 100vh;
 }
 .body-color {
-  background-color: #efadad;
+  background-color: #fff;
   transition: ease-in-out;
 }
-
 .text-center {
   text-align: center;
 }
@@ -94,53 +93,65 @@ li {
   width: 130px;
 }
 
-.dessert-main {
+.travel_jeju-main {
   text-align: center;
-
   padding: 50px 15px;
 }
 
-.dessert-main .title {
+.travel_jeju-main .title {
   font-style: normal;
-
   font-size: 45px;
   line-height: 1.11;
   text-align: center;
-  font-family: dangam;
-  color: #fff;
+  font-weight: bold;
+  font-family: gmarket;
+  color: #000;
   margin-bottom: 18px;
-
-  /* margin-top: 50px; */
 }
-.dessert-main .title-sub {
-  font-family: cafe24;
-  font-size: 20px;
+.travel_jeju-main .title span {
+  color: #acc131;
+}
+.travel_jeju-main .title-sub {
+  font-family: gmarket;
+  font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.25;
   letter-spacing: -0.13px;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
-.dessert-main .cake {
+.travel_jeju-main .cake {
   width: 38px;
   margin-bottom: 7px;
 }
-.dessert-main .cake_baner {
-  max-width: 414px;
+.travel_jeju-main .travel_jeju_baner {
+  max-width: 260px;
   width: 100%;
-  margin: 40px 0px;
+  margin: 40px 0px 10px 0px;
 }
-.dessert-main .mongle-kakao {
+.travel_jeju-main .mongle-word {
+  font-family: gmarket;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.16px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+.travel_jeju-main .mongle-kakao {
   width: 242px;
   margin: 0 auto;
   margin-bottom: 12px;
   outline: none;
   cursor: pointer;
 }
-.dessert-main .mongle-kakao a {
+.travel_jeju-main .mongle-kakao a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -154,13 +165,13 @@ li {
   outline: none;
   text-decoration: none;
 }
-.dessert-main .mongle-instagram {
+.travel_jeju-main .mongle-instagram {
   width: 242px;
   margin: 0 auto;
   outline: none;
 }
 
-.dessert-main .mongle-instagram a {
+.travel_jeju-main .mongle-instagram a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -188,7 +199,7 @@ li {
   margin-bottom: 56px;
 }
 .swiper-slide .game-head .head-questions {
-  font-family: dangam;
+  font-family: gmarket;
   font-size: 27px;
   font-weight: bold;
   font-stretch: normal;
@@ -196,14 +207,64 @@ li {
   line-height: normal;
   letter-spacing: -0.18px;
   text-align: center;
-  color: #efadad;
+  color: #89afe4;
 }
-.swiper-slide .game-head .head-progress {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 28px;
-  color: #3c3c3c;
+.swiper-slide .game-head .progress {
+  height: 9px;
+  position: relative;
+  overflow: inherit;
+}
+.course_1 .game-head .progress::after,
+.course_2 .game-head .progress::after,
+.course_3 .game-head .progress::after,
+.course_4 .game-head .progress::after,
+.course_5 .game-head .progress::after,
+.course_6 .game-head .progress::after,
+.course_7 .game-head .progress::after,
+.course_8 .game-head .progress::after,
+.course_9 .game-head .progress::after,
+.course_10 .game-head .progress::after {
+  content: "";
+  background: url("../images/travel_jeju/progress_icon.png");
+  background-size: cover;
+  width: 52px;
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translateY(-50%);
+  display: inline;
+}
+.swiper-slide .course_2 .game-head .progress::after {
+  left: 16%;
+}
+.swiper-slide .course_3 .game-head .progress::after {
+  left: 26%;
+}
+.swiper-slide .course_4 .game-head .progress::after {
+  left: 36%;
+}
+.swiper-slide .course_5 .game-head .progress::after {
+  left: 46%;
+}
+.swiper-slide .course_6 .game-head .progress::after {
+  left: 56%;
+}
+.swiper-slide .course_7 .game-head .progress::after {
+  left: 66%;
+}
+.swiper-slide .course_8 .game-head .progress::after {
+  left: 76%;
+}
+.swiper-slide .course_9 .game-head .progress::after {
+  left: 83%;
+}
+.swiper-slide .course_10 .game-head .progress::after {
+  left: 89%;
+}
+.swiper-slide .game-head .progress .progress-bar {
+  background-color: #89afe4;
+  border-radius: 60px;
 }
 .swiper-slide .game-body {
   text-align: center;
@@ -213,7 +274,7 @@ li {
   margin-top: 56px;
 }
 .swiper-slide .game-body .body-questions {
-  font-family: cafe24;
+  font-family: gmarket;
   font-size: 25px;
   font-weight: bold;
   font-stretch: normal;
@@ -221,18 +282,19 @@ li {
   text-align: center;
   color: #000;
   margin-bottom: 80px;
+  word-break: keep-all;
 }
 .body-choice ul li {
   width: 100%;
   font-style: normal;
-  font-family: gmaket;
-  font-weight: bold;
+  font-family: gmarket;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   padding: 15px 15px;
   color: #fff;
   text-align: center;
-  background-color: #efadad;
+  background-color: #89afe4;
   box-sizing: border-box;
   border-radius: 7px;
   margin-bottom: 12px;
@@ -268,9 +330,36 @@ li {
   line-height: 36px;
   text-align: center;
   color: #000;
-  font-family: cafe24;
-  margin: 10px 0;
+  font-family: gmarket;
+  margin-bottom: 30px;
 }
+.type-zone .title span {
+  position: relative;
+}
+.type-zone .title span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  bottom: -14px;
+}
+.type1 .title span::after {
+  background-color: #96d0ee;
+}
+.type2 .title span::after {
+  background-color: #f7a28c;
+}
+.type3 .title span::after {
+  background-color: #c5da51;
+}
+.type4 .title span::after {
+  background-color: #d9bdf7;
+}
+.type5 .title span::after {
+  background-color: #80bb80;
+}
+
 .type-zone .point {
   color: #6916ff;
   font-style: normal;
@@ -309,6 +398,7 @@ li {
   color: #3c3c3c;
   margin-bottom: 10px;
   padding-left: 12px;
+  word-break: keep-all;
 }
 .type-zone .discription li::after {
   content: "";
@@ -317,11 +407,22 @@ li {
   height: 3px;
   left: 0px;
   top: 7px;
-
   background-color: #6916ff;
 }
 .result {
   padding: 15px;
+}
+.type-discription {
+  margin-bottom: 14px;
+  font-family: gmarket;
+  font-size: 30px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #000;
+  margin-top: 74px;
 }
 .loading-content {
   text-align: center;
@@ -412,23 +513,22 @@ li {
   color: #fff;
 }
 .type1 .recommended {
-  background-color: #aedfc4;
+  background-color: #96d0ee;
 }
 .type2 .recommended {
-  background-color: #bbc2ff;
+  background-color: #f7a28c;
 }
 .type3 .recommended {
-  background-color: #bbe8ff;
+  background-color: #c5da51;
 }
 .type4 .recommended {
-  background-color: #ffc07f;
+  background-color: #d9bdf7;
 }
 .type5 .recommended {
-  background-color: #ffbbbb;
+  background-color: #80bb80;
 }
 .recommended {
   padding: 20px;
-  border-radius: 30px;
   text-align: center;
 }
 .recommended a {
@@ -453,6 +553,37 @@ li {
   letter-spacing: -0.12px;
   text-align: center;
   color: #fff;
+}
+.recommended .recommended-detail {
+  text-align: center;
+  margin-top: 20px;
+}
+.recommended .recommended-detail span {
+  font-family: gmarket;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.12px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 12px 44px;
+  border-radius: 5px;
+}
+.type1 .recommended .recommended-detail span {
+  color: #96d0ee;
+}
+.type2 .recommended .recommended-detail span {
+  color: #f7a28c;
+}
+.type3 .recommended .recommended-detail span {
+  color: #c5da51;
+}
+.type4 .recommended .recommended-detail span {
+  color: #d9bdf7;
+}
+.type5 .recommended .recommended-detail span {
+  color: #80bb80;
 }
 /* ----------------------------------------------
  * Generated by Animista on 2020-11-14 21:40:2

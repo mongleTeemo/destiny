@@ -3,21 +3,45 @@ const SHOW_CL = "is-show",
   bodyColor = document.querySelector(".body-color"),
   swipeZone = document.querySelector(".swipe-zone"),
   typeZone = document.querySelector(".type-zone"),
-  result1 = document.querySelector(".result.type1"),
-  result2 = document.querySelector(".result.type2"),
-  result3 = document.querySelector(".result.type3"),
-  result4 = document.querySelector(".result.type4"),
-  result5 = document.querySelector(".result.type5"),
-  result6 = document.querySelector(".result.type6"),
+  resultA = document.querySelector(".result.type1"),
+  resultB = document.querySelector(".result.type2"),
+  resultC = document.querySelector(".result.type3"),
+  resultD = document.querySelector(".result.type4"),
+  resultE = document.querySelector(".result.type5"),
   bottomDefault = document.querySelector(".bottom-default"),
   loadingArea = document.querySelector(".loding-area");
-
-let count = 0;
+let countA = 0,
+  countB = 0,
+  countC = 0,
+  countD = 0,
+  countE = 0;
 let loadingCount = 1;
-function countUp() {
-  count = count + 1;
-}
 
+//킥보드
+function countUpTypeA() {
+  countA = countA + 1;
+  console.log("킥보드", countA);
+}
+//자전거
+function countUpTypeB() {
+  countB = countB + 1;
+  console.log("자전거", countB);
+}
+//맛집
+function countUpTypeC() {
+  countC = countC + 1;
+  console.log("맛집", countC);
+}
+//당근
+function countUpTypeD() {
+  countD = countD + 1;
+  console.log("당근", countD);
+}
+//숲길
+function countUpTypeE() {
+  countE = countE + 1;
+  console.log("숲길", countE);
+}
 function loadingf() {
   swipeZone.classList.add(HIDE_CL);
   typeZone.classList.remove(HIDE_CL);
@@ -27,38 +51,32 @@ function loadingf() {
       loadingf();
     } else {
       loadingArea.classList.add(HIDE_CL);
-      type();
+      typeCheck();
     }
   }, 1000);
 }
-function bgChange() {
-  bodyColor.style.backgroundColor = "white";
-}
+
 function countRset() {
   count = 0;
   location.reload();
 }
+function typeCheck() {
+  let typeCurrent = Math.max(countA, countB, countC, countD, countE);
 
-function type() {
-  let typeCurrent = count;
-
-  if (typeCurrent <= 2) {
-    result1.classList.remove(HIDE_CL);
+  if (typeCurrent == countA) {
+    resultA.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 3 || typeCurrent == 4) {
-    result2.classList.remove(HIDE_CL);
+  } else if (typeCurrent == countB) {
+    resultB.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 5 || typeCurrent == 6) {
-    result3.classList.remove(HIDE_CL);
+  } else if (typeCurrent == countC) {
+    resultC.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 7 || typeCurrent == 8) {
-    result4.classList.remove(HIDE_CL);
+  } else if (typeCurrent == countD) {
+    resultD.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
-  } else if (typeCurrent == 9 || typeCurrent == 10) {
-    result5.classList.remove(HIDE_CL);
-    bottomDefault.classList.remove(HIDE_CL);
-  } else {
-    result5.classList.remove(HIDE_CL);
+  } else if (typeCurrent == countE) {
+    resultE.classList.remove(HIDE_CL);
     bottomDefault.classList.remove(HIDE_CL);
   }
 }
@@ -75,8 +93,8 @@ function shareKakao() {
     if (navigator.share) {
       navigator
         .share({
-          title: "mongle - 내가 고양이라면 어떤 고양이일까?",
-          url: "https://originals.mongle.io/cats.html",
+          title: "mongle - 제주 여행코스 추천 테스트",
+          url: "https://originals.mongle.io/travel_jeju.html",
         })
         .then(() => {
           console.log("Thanks for sharing!");
@@ -95,7 +113,7 @@ function shareCopy(val) {
 }
 
 $("#copy").click(function () {
-  shareCopy("https://originals.mongle.io/cats");
+  shareCopy("https://originals.mongle.io/travel_jeju");
   alert("복사되었습니다.");
 });
 
