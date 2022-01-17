@@ -14,7 +14,7 @@
 @font-face {
   font-family: gmarket;
   src: url("../font/GmarketSansMedium.otf");
-  font-weight: medium;
+  font-weight: 500;
 }
 @font-face {
   font-family: gmarket;
@@ -93,14 +93,14 @@ li {
 .navbar-brand {
   width: 130px;
 }
-.travel-daegu-deco {
+.style_sunmi-deco {
   width: 100%;
   padding: 40px 30px;
 }
-.travel_daegu-main {
+.style_sunmi-main {
   text-align: center;
   padding: 0px 15px;
-  background-image: url("../images/travel_daegu/bg.png");
+
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -108,25 +108,37 @@ li {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.travel_daegu-main::-webkit-scrollbar {
+.style_sunmi-main::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
-.travel_daegu-main .title {
+.style_sunmi-main .title {
   font-style: normal;
-  font-size: 45px;
+  font-size: 43px;
   line-height: 1.11;
   text-align: center;
   font-weight: bold;
   font-family: gmarket;
-  color: #c268cf;
-  margin-bottom: 18px;
+  color: #000;
+  margin-bottom: 30px;
 }
 
-.travel_daegu-main .title-sub {
+.style_sunmi-main .title span {
+  position: relative;
+}
+.style_sunmi-main .title span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  bottom: -14px;
+  background-color: #ff8ccc;
+}
+.style_sunmi-main .title-sub {
   font-family: gmarket;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.25;
@@ -134,17 +146,25 @@ li {
   text-align: center;
   color: #000;
 }
-
-.travel_daegu-main .cake {
-  width: 38px;
-  margin-bottom: 7px;
+.style_sunmi-main p {
+  font-family: gmarket;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.13px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
 }
-.travel_daegu-main .travel_daegu_baner {
+
+.style_sunmi-main .style_sunmi_baner {
   max-width: 380px;
   width: 100%;
-  margin: 40px 0px 60px 0px;
+  margin: 40px 0px 40px 0px;
 }
-.travel_daegu-main .mongle-word {
+.style_sunmi-main .mongle-word {
   font-family: gmarket;
   font-size: 24px;
   font-weight: 500;
@@ -156,34 +176,33 @@ li {
   color: #000;
   margin-bottom: 10px;
 }
-.travel_daegu-main .mongle-kakao {
-  width: 242px;
+.style_sunmi-main .mongle-kakao {
   margin: 0 auto;
   margin-bottom: 12px;
   outline: none;
   cursor: pointer;
 }
-.travel_daegu-main .mongle-kakao a {
+.style_sunmi-main .mongle-kakao a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
-  background: #6916ff;
-  border-radius: 50px;
+  background: #ff8ccb;
+  border-radius: 20px;
   width: 100%;
   padding: 17px 0;
   display: block;
   outline: none;
   text-decoration: none;
 }
-.travel_daegu-main .mongle-instagram {
+.style_sunmi-main .mongle-instagram {
   width: 242px;
   margin: 0 auto;
   outline: none;
 }
 
-.travel_daegu-main .mongle-instagram a {
+.style_sunmi-main .mongle-instagram a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -219,7 +238,7 @@ li {
   line-height: normal;
   letter-spacing: -0.18px;
   text-align: center;
-  color: #c268cf;
+  color: #f48ec7;
 }
 .swiper-slide .game-head .progress {
   height: 9px;
@@ -239,7 +258,7 @@ li {
 .course_9 .game-head .progress::after,
 .course_10 .game-head .progress::after {
   content: "";
-  background: url("../images/travel_daegu/progress_icon.png");
+  background: url("../images/style_sunmi/progress_icon.png");
   background-size: contain;
   width: 45px;
   height: 33px;
@@ -275,10 +294,10 @@ li {
   left: 83%;
 }
 .swiper-slide .course_10 .game-head .progress::after {
-  left: 89%;
+  left: 95%;
 }
 .swiper-slide .game-head .progress .progress-bar {
-  background-color: #e7acef;
+  background-color: #f48ec7;
   border-radius: 60px;
 }
 .swiper-slide .game-body {
@@ -309,7 +328,7 @@ li {
   padding: 15px 15px;
   color: #fff;
   text-align: center;
-  background-color: #c268cf;
+  background-color: #f48ec7;
   box-sizing: border-box;
   border-radius: 7px;
   margin-bottom: 12px;
@@ -360,19 +379,19 @@ li {
   bottom: -14px;
 }
 .type1 .title span::after {
-  background-color: #c268cf;
+  background-color: #f48ec7;
 }
 .type2 .title span::after {
-  background-color: #c268cf;
+  background-color: #a0d5c0;
 }
 .type3 .title span::after {
-  background-color: #c268cf;
+  background-color: #f7abab;
 }
 .type4 .title span::after {
-  background-color: #c268cf;
+  background-color: #8c9cdf;
 }
 .type5 .title span::after {
-  background-color: #c268cf;
+  background-color: #e6bc8c;
 }
 
 .type-zone .point {
@@ -399,33 +418,24 @@ li {
   max-width: 38px;
 }
 .type-zone .discription {
-  padding: 10px;
+  padding: 16px 0;
   border-radius: 20px;
   font-family: gmarket;
-  font-weight: medium;
+  font-weight: 500;
   font-size: 16px;
 }
 
 .type-zone .discription li {
-  position: relative;
-  text-align: justify;
+  text-align: center;
   letter-spacing: -0.03em;
   color: #3c3c3c;
   margin-bottom: 10px;
-  padding-left: 12px;
+  padding-left: 0px;
   word-break: keep-all;
-  font-weight: medium;
+  font-weight: 500;
   font-family: gmarket;
 }
-.type-zone .discription li::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 3px;
-  left: 0px;
-  top: 7px;
-  background-color: #6916ff;
-}
+
 .result {
   padding: 15px;
 }
@@ -441,7 +451,7 @@ li {
   color: #000;
   margin-top: 14px;
 }
-.recmmended-title {
+.recommended-title {
   margin-bottom: 20px;
 }
 .loading-content {
@@ -533,23 +543,24 @@ li {
   color: #fff;
 }
 .type1 .recommended {
-  background-color: #c268cf;
+  background-color: #f48ec7;
 }
 .type2 .recommended {
-  background-color: #c268cf;
+  background-color: #a0d5c0;
 }
 .type3 .recommended {
-  background-color: #c268cf;
+  background-color: #f7abab;
 }
 .type4 .recommended {
-  background-color: #c268cf;
+  background-color: #8c9cdf;
 }
 .type5 .recommended {
-  background-color: #c268cf;
+  background-color: #e6bc8c;
 }
 .recommended {
   padding: 20px;
   text-align: center;
+  border-radius: 7px;
 }
 .recommended a {
   font-weight: bold;
@@ -589,7 +600,31 @@ li {
   text-align: center;
   color: #fff;
 }
-.recommended .recommended-detail span {
+.reccommended-text ul li {
+}
+.reccommended-text li {
+  position: relative;
+  text-align: left;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  word-break: keep-all;
+  font-weight: 500;
+  font-family: gmarket;
+}
+.reccommended-text li::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  left: 0px;
+  top: 7px;
+  background-color: #fff;
+}
+.recommended-detail {
+  text-align: center;
+  width: 242px;
   font-family: gmarket;
   font-size: 18px;
   font-weight: bold;
@@ -597,28 +632,29 @@ li {
   font-style: normal;
   letter-spacing: -0.12px;
   margin: 0 auto;
-  background-color: #fff;
+  margin-top: 16px;
   padding: 12px 44px;
   border-radius: 5px;
+  color: #fff;
 }
-.type1 .recommended .recommended-detail span {
-  color: #96d0ee;
+.type1 .recommended-detail {
+  background-color: #f48ec7;
 }
-.type2 .recommended .recommended-detail span {
-  color: #ff9393;
+.type2 .recommended-detail {
+  background-color: #a0d5c0;
 }
-.type3 .recommended .recommended-detail span {
-  color: #c5da51;
+.type3 .recommended-detail {
+  background-color: #f7abab;
 }
-.type4 .recommended .recommended-detail span {
-  color: #dbbfa9;
+.type4 .recommended-detail {
+  background-color: #8c9cdf;
 }
-.type5 .recommended .recommended-detail span {
-  color: #aa9bd5;
+.type5 .recommended-detail {
+  background-color: #e6bc8c;
 }
 .result .type-image {
   padding: 0px;
-  margin-top: 74px;
+  margin-top: 14px;
 }
 /* ----------------------------------------------
  * Generated by Animista on 2020-11-14 21:40:2
