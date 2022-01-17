@@ -93,11 +93,14 @@ li {
 .navbar-brand {
   width: 130px;
 }
-
-.travel_busan-main {
+.travel-daggu-deco {
+  width: 100%;
+  padding: 40px 30px;
+}
+.travel_daegu-main {
   text-align: center;
-  padding: 50px 15px;
-  background-image: url("../images/travel_busan/bg.png");
+  padding: 0px 15px;
+  background-image: url("../images/travel_daegu/bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -105,24 +108,22 @@ li {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.travel_busan-main::-webkit-scrollbar {
+.travel_daegu-main::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
-.travel_busan-main .title {
+.travel_daegu-main .title {
   font-style: normal;
   font-size: 45px;
   line-height: 1.11;
   text-align: center;
   font-weight: bold;
   font-family: gmarket;
-  color: #000;
+  color: #c268cf;
   margin-bottom: 18px;
 }
-.travel_busan-main .title span {
-  color: #2567af;
-}
-.travel_busan-main .title-sub {
+
+.travel_daegu-main .title-sub {
   font-family: gmarket;
   font-size: 24px;
   font-weight: normal;
@@ -134,16 +135,16 @@ li {
   color: #000;
 }
 
-.travel_busan-main .cake {
+.travel_daegu-main .cake {
   width: 38px;
   margin-bottom: 7px;
 }
-.travel_busan-main .travel_busan_baner {
+.travel_daegu-main .travel_daegu_baner {
   max-width: 380px;
   width: 100%;
   margin: 40px 0px 60px 0px;
 }
-.travel_busan-main .mongle-word {
+.travel_daegu-main .mongle-word {
   font-family: gmarket;
   font-size: 24px;
   font-weight: 500;
@@ -155,14 +156,14 @@ li {
   color: #000;
   margin-bottom: 10px;
 }
-.travel_busan-main .mongle-kakao {
+.travel_daegu-main .mongle-kakao {
   width: 242px;
   margin: 0 auto;
   margin-bottom: 12px;
   outline: none;
   cursor: pointer;
 }
-.travel_busan-main .mongle-kakao a {
+.travel_daegu-main .mongle-kakao a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -176,13 +177,13 @@ li {
   outline: none;
   text-decoration: none;
 }
-.travel_busan-main .mongle-instagram {
+.travel_daegu-main .mongle-instagram {
   width: 242px;
   margin: 0 auto;
   outline: none;
 }
 
-.travel_busan-main .mongle-instagram a {
+.travel_daegu-main .mongle-instagram a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -218,19 +219,15 @@ li {
   line-height: normal;
   letter-spacing: -0.18px;
   text-align: center;
-  color: #2567af;
+  color: #c268cf;
 }
 .swiper-slide .game-head .progress {
   height: 9px;
   position: relative;
   overflow: inherit;
+  margin-bottom: 80px;
 }
-.swiper-container {
-  background-image: url(../images/travel_busan/bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: bottom;
-}
+
 .course_1 .game-head .progress::after,
 .course_2 .game-head .progress::after,
 .course_3 .game-head .progress::after,
@@ -242,14 +239,14 @@ li {
 .course_9 .game-head .progress::after,
 .course_10 .game-head .progress::after {
   content: "";
-  background: url("../images/travel_busan/progress_icon.png");
+  background: url("../images/travel_daegu/progress_icon.png");
   background-size: contain;
   width: 45px;
-  height: 51px;
+  height: 33px;
   position: absolute;
-  top: -31px;
+  top: 50%;
   left: 6%;
-  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
   background-repeat: no-repeat;
   display: inline;
 }
@@ -281,7 +278,7 @@ li {
   left: 89%;
 }
 .swiper-slide .game-head .progress .progress-bar {
-  background-color: #2567af;
+  background-color: #e7acef;
   border-radius: 60px;
 }
 .swiper-slide .game-body {
@@ -312,7 +309,7 @@ li {
   padding: 15px 15px;
   color: #fff;
   text-align: center;
-  background-color: #2567af;
+  background-color: #c268cf;
   box-sizing: border-box;
   border-radius: 7px;
   margin-bottom: 12px;
@@ -363,19 +360,19 @@ li {
   bottom: -14px;
 }
 .type1 .title span::after {
-  background-color: #96d0ee;
+  background-color: #c268cf;
 }
 .type2 .title span::after {
-  background-color: #ff9393;
+  background-color: #c268cf;
 }
 .type3 .title span::after {
-  background-color: #c5da51;
+  background-color: #c268cf;
 }
 .type4 .title span::after {
-  background-color: #dbbfa9;
+  background-color: #c268cf;
 }
 .type5 .title span::after {
-  background-color: #aa9bd5;
+  background-color: #c268cf;
 }
 
 .type-zone .point {
@@ -442,7 +439,7 @@ li {
   letter-spacing: -0.2px;
   text-align: center;
   color: #000;
-  margin-top: 74px;
+  margin-top: 14px;
 }
 .recmmended-title {
   margin-bottom: 20px;
@@ -536,19 +533,19 @@ li {
   color: #fff;
 }
 .type1 .recommended {
-  background-color: #96d0ee;
+  background-color: #c268cf;
 }
 .type2 .recommended {
-  background-color: #ff9393;
+  background-color: #c268cf;
 }
 .type3 .recommended {
-  background-color: #c5da51;
+  background-color: #c268cf;
 }
 .type4 .recommended {
-  background-color: #dbbfa9;
+  background-color: #c268cf;
 }
 .type5 .recommended {
-  background-color: #aa9bd5;
+  background-color: #c268cf;
 }
 .recommended {
   padding: 20px;
@@ -618,6 +615,10 @@ li {
 }
 .type5 .recommended .recommended-detail span {
   color: #aa9bd5;
+}
+.result .type-image {
+  padding: 0px;
+  margin-top: 74px;
 }
 /* ----------------------------------------------
  * Generated by Animista on 2020-11-14 21:40:2
