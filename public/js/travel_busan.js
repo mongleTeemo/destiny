@@ -17,23 +17,23 @@ let countA = 0,
   countE = 0;
 let loadingCount = 1;
 
-//킥보드
+//폴마레
 function countUpTypeA() {
   countA = countA + 1;
 }
-//자전거
+//앨리스 도넛
 function countUpTypeB() {
   countB = countB + 1;
 }
-//맛집
+//아일드 블루
 function countUpTypeC() {
   countC = countC + 1;
 }
-//당근
+//미포집
 function countUpTypeD() {
   countD = countD + 1;
 }
-//숲길
+//금샘다방
 function countUpTypeE() {
   countE = countE + 1;
 }
@@ -88,8 +88,8 @@ function shareKakao() {
     if (navigator.share) {
       navigator
         .share({
-          title: "mongle - 제주 여행코스 추천 테스트",
-          url: "https://originals.mongle.io/travel_jeju.html",
+          title: "mongle - 경주 여행코스 추천 테스트",
+          url: "https://originals.mongle.io/travel_gyeongju.html",
         })
         .then(() => {
           console.log("Thanks for sharing!");
@@ -108,7 +108,7 @@ function shareCopy(val) {
 }
 
 $("#copy").click(function () {
-  shareCopy("https://originals.mongle.io/travel_jeju");
+  shareCopy("https://originals.mongle.io/travel_gyeongju");
   alert("복사되었습니다.");
 });
 
