@@ -17,23 +17,23 @@ let countA = 0,
   countE = 0;
 let loadingCount = 1;
 
-//마고플레인
+//케이크
 function countUpTypeA() {
   countA = countA + 1;
 }
-//야외돼지
+//유화
 function countUpTypeB() {
   countB = countB + 1;
 }
-//대구활공랜드
+//칵테일
 function countUpTypeC() {
   countC = countC + 1;
 }
-//라움아틀리에
+//유리컵
 function countUpTypeD() {
   countD = countD + 1;
 }
-//이월드 별빛축제
+//반지
 function countUpTypeE() {
   countE = countE + 1;
 }
@@ -89,7 +89,7 @@ function shareKakao() {
       navigator
         .share({
           title: "mongle - 경주 여행코스 추천 테스트",
-          url: "https://originals.mongle.io/travel_daegu.html",
+          url: "https://originals.mongle.io/hobby_class.html",
         })
         .then(() => {
           console.log("Thanks for sharing!");
@@ -108,7 +108,7 @@ function shareCopy(val) {
 }
 
 $("#copy").click(function () {
-  shareCopy("https://originals.mongle.io/travel_daegu");
+  shareCopy("https://originals.mongle.io/hobby_class");
   alert("복사되었습니다.");
 });
 

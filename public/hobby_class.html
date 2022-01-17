@@ -8,24 +8,24 @@
     />
     <meta
       property="og:url"
-      content="https://originals.mongle.io/travel_gyeongju.html"
+      content="https://originals.mongle.io/hobby_class.html"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="몽글 - 경주 여행코스 추천 테스트" />
+    <meta property="og:title" content="몽글 - 취미클래스 추천 테스트" />
     <meta
       property="og:description"
       content="테스트 하고 나와 잘 맞는
-      여행방법 추천받기! "
+      취미클래스 추천받기! "
     />
     <meta
       property="og:image"
-      content="./images/travel_gyeongju/travel_gyeongju_og.png"
+      content="./images/hobby_class/hobby_class_og.png"
     />
-    <title>몽글 - 경주 여행코스 추천 테스트</title>
+    <title>몽글 - 취미클래스 추천 테스트</title>
     <link rel="apple-touch-icon" href="./images/favicon.ico" />
     <link rel="icon" href="./images/favicon.ico" />
     <link type="text/css" rel="stylesheet" href="./css/base.css" />
-    <link type="text/css" rel="stylesheet" href="./css/travel_gyeongju.css" />
+    <link type="text/css" rel="stylesheet" href="./css/hobby_class.css" />
     <link
       type="text/css"
       rel="stylesheet"
@@ -61,29 +61,37 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide" style="padding: 0px">
-                <div class="travel_gyeongju-main">
+                <img
+                  class="travel-daggu-deco"
+                  src="./images/hobby_class/bg@3x.png"
+                />
+                <div class="hobby_class-main">
                   <div class="title">
-                    <span>경주 여행코스</span><br />
+                    <span>취미클래스 </span><br />
                     추천 테스트
                   </div>
                   <div class="title-sub">
                     테스트 하고 나와 잘 맞는<br />
-                    여행방법 추천받기!
+                    취미 추천받기!
                   </div>
                   <img
-                    class="travel_gyeongju_baner"
-                    src="images/travel_gyeongju/travel_gyeongju_baner.png"
+                    class="hobby_class_baner"
+                    src="images/hobby_class/hobby_class.png"
                   />
 
                   <div class="mongle-kakao">
                     <a
-                      href="#travel_gyeongjuGame"
+                      href="#hobby_classGame"
                       class="swiper-button-next"
                       onclick="window.scrollTo(0,0);"
                       >테스트 시작하기</a
                     >
                   </div>
                 </div>
+                <img
+                  class="travel-daggu-deco"
+                  src="./images/hobby_class/bg@3x.png"
+                />
               </div>
               <div class="swiper-slide">
                 <div class="course_1">
@@ -102,27 +110,32 @@
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      여행에서 가장 중요한 건 뭐라고 생각하나요?
+                      직장, 학교에서 받는 스트레스…<br />나만의 해소 방법은
                     </div>
                     <div class="body-choice">
                       <ul>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeA();
+                          countUpTypeC();"
+                        >
+                          당 떨어져서 현기증 나요;;<br />
+                          맛있는 거 먹기
+                        </li>
                         <li
                           class="swiper-button-next"
                           onclick="countUpTypeB();
                           countUpTypeD();
                           countUpTypeE();"
                         >
-                          같이 가는 친구! 너랑은 다 좋아
-                        </li>
-                        <li
-                          class="swiper-button-next"
-                          onclick="countUpTypeA();
-                          countUpTypeC();"
-                        >
-                          여행지! 친구도 중요하지만 여행지가 별로면 서로 짜증…
+                          운동/노래등 활동적인 일 하면서 스트레스 해소
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -143,28 +156,31 @@
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      신나게 놀다보니 어느새 저녁-밤으로 넘어가는 시간대!<br />이럴
-                      때 나는
+                      서프라이즈! 친구를 위한 깜짝 선물을 고른다면
                     </div>
                     <div class="body-choice">
                       <ul>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeD();
-                          countUpTypeE();"
+                          onclick="countUpTypeA();
+                          countUpTypeC();"
                         >
-                          숙소로 돌아가서 뒹굴뒹굴하면서<br />친구랑 놀기
+                          아기자기 귀여운 주문제작 케이크
                         </li>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeA();
-                          countUpTypeB();
-                          countUpTypeC();"
+                          onclick="countUpTypeB();
+                          countUpTypeD();
+                          countUpTypeE();"
                         >
-                          여행 왔는데 뽕뽑아야지<br />밖에서 계속 놀기
+                          오래 간직할 수 있는 악세사리 선물
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -185,7 +201,7 @@
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      이 중 더 땡기는<br />경주 핫플은 어디인가요?
+                      취미 생활을 고를 때<br />가장 중요한 것은
                     </div>
                     <div class="body-choice">
                       <ul>
@@ -194,7 +210,7 @@
                           onclick="countUpTypeB();
                           countUpTypeC();"
                         >
-                          경주하면 뭐다?<br />한국적인 느낌 뿜뿜 핫플
+                          다른 사람들이 잘 안하는 이색 취미
                         </li>
                         <li
                           class="swiper-button-next"
@@ -202,10 +218,14 @@
                           countUpTypeD();
                           countUpTypeE();"
                         >
-                          지역 특색이 있지는 않지만 경주에만 있는 새로운 핫플
+                          인스타에 올리기 좋은 갬성 취미
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -226,30 +246,34 @@
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      여행장소를 선택하는 방법 중<br />
-                      내 스타일은 어디에 가깝나요?
+                      자유롭게 vs 틀이 정해져있는<br />
+                      이 중 내가 더 끌리는 취미는
                     </div>
                     <div class="body-choice">
                       <ul>
                         <li
                           class="swiper-button-next"
                           onclick="countUpTypeA();
-                          countUpTypeD();
                           countUpTypeE();"
                         >
-                          많은 놀거리가 있는 장소를 찾아<br />
-                          한 곳에 오래있기
+                          결과물이 정해져있는 취미<br />
+                          (ex. 베이킹)
                         </li>
                         <li
                           class="swiper-button-next"
                           onclick="countUpTypeB();
-                          countUpTypeC();"
+                          countUpTypeC();
+                          countUpTypeD();"
                         >
-                          여기저기 돌아다니면서 <br />
-                          여행지 제대로 투어하기
+                          창의적이게 내맘대로 하는 취미<br />
+                          (ex. 그림)
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -270,28 +294,33 @@
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      여행의 묘미는 이거지!! <br />
-                      내가 생각하는 여행의 묘미는
+                      친구의 집들이날! <br />
+                      내가 준비할 선물은
                     </div>
                     <div class="body-choice">
                       <ul>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeA();
-                          countUpTypeB();"
+                          onclick="countUpTypeD();
+                          countUpTypeE();"
                         >
-                          두근두근 스릴 넘치는 액티비티
+                          자취생을 위한 실용만점 자취용품
                         </li>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeC();
-                          countUpTypeD();
-                          countUpTypeE();"
+                          onclick="countUpTypeA();
+                          countUpTypeB();
+                          countUpTypeC();"
                         >
-                          맛있는 것도 먹고 숙소에서 푹 쉬면서 힐링하기
+                          오늘의 집에서 본듯한 <br />
+                          감성 낭낭한 소품
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -312,27 +341,34 @@
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      평소 내가 여행을 기록하는 방법은
+                      오우 좀 즐길 줄 아는 놈인가?<br />
+                      나의 취미 레벨은
                     </div>
                     <div class="body-choice">
                       <ul>
                         <li
                           class="swiper-button-next"
                           onclick="countUpTypeA();
-                          countUpTypeC();
-                          countUpTypeE()"
+                          countUpTypeB();"
                         >
-                          인스타그램 스토리 백만개…<br />모든 것을 sns로 기록
+                          정확한 취미가 있고 자주 하는 <br />
+                          취미생활 만렙러
                         </li>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeB();
-                          countUpTypeD();"
+                          onclick="countUpTypeC();
+                          countUpTypeD();
+                          countUpTypeE();"
                         >
-                          잘 나온 사진 몇개만 올리고<br />여행에 집중하기
+                          음 아직 내 취미가 뭔지 모르겠어! <br />
+                          취미 초보
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -353,29 +389,32 @@
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      두가지 여행지 중 내가 선호하는 타입은 어떤 곳인가요?
+                      혼자vs 함께<br />이 중 더 끌리는 취미는
                     </div>
                     <div class="body-choice">
                       <ul>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeC();
-                          countUpTypeD();
+                          onclick="countUpTypeA();
                           countUpTypeE();"
                         >
-                          친구와 오붓하게 놀 수 있는 <br />
-                          프라이빗한 공간
+                          혼자, 하나의 결과물을 만드는 취미
                         </li>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeA();
-                          countUpTypeB();"
+                          onclick="countUpTypeB();
+                          countUpTypeC();
+                          countUpTypeD();"
                         >
-                          사람들도 좀 모여있어야 신나지! <br />
-                          북적북적 핫플
+                          함께, 이건 마치 팀플…? 친구와 하나의 결과물을 만드는
+                          취미
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -395,10 +434,7 @@
                     <div class="head-questions">Q8</div>
                   </div>
                   <div class="game-body">
-                    <div class="body-questions">
-                      여행지에 도착한 후 <br />
-                      내가 가장 먼저 할 일은?
-                    </div>
+                    <div class="body-questions">내가 선호하는 취미 종류는</div>
                     <div class="body-choice">
                       <ul>
                         <li
@@ -407,19 +443,21 @@
                           countUpTypeB();
                           countUpTypeC();"
                         >
-                          가방은 픽업 서비스로 숙소에 보내고<br />당장
-                          돌아다니기
+                          집에서도 할 수 있는 가벼운 취미
                         </li>
                         <li
                           class="swiper-button-next"
                           onclick="countUpTypeD();
                           countUpTypeE();"
                         >
-                          휴 일단 숙소로 가서<br />
-                          짐정리부터 해야지
+                          전문적인 도구/장소가 필요한 취미
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -440,30 +478,32 @@
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      여행지에서<br />
-                      내가 살 기념선물은?
+                      한가롭게 즐기는 취미타임! <br />
+                      내가 틀어놓은 플레이리스트는
                     </div>
                     <div class="body-choice">
                       <ul>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeB();
-                          countUpTypeC();
-                          countUpTypeE();"
-                        >
-                          실용성은 떨어지지만<br />
-                          지역특색이 돋보이는 선물
-                        </li>
-                        <li
-                          class="swiper-button-next"
                           onclick="countUpTypeA();
                           countUpTypeD();"
                         >
-                          받는 사람이 유용하게<br />
-                          쓸 것 같은 선물
+                          세상 평화로운 잔잔한 로파이 재즈
+                        </li>
+                        <li
+                          class="swiper-button-next"
+                          onclick="countUpTypeB();
+                          countUpTypeC();
+                          countUpTypeE();;"
+                        >
+                          둠칫둠칫 내적댄스를 부르는 힙합
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -484,28 +524,32 @@
                   </div>
                   <div class="game-body">
                     <div class="body-questions">
-                      이제 슬슬 배고프다 뭐 좀 먹자! 이럴 때 나는
+                      음 오늘은 뭘해볼까? <br />
+                      나에게 취미 생활이란
                     </div>
                     <div class="body-choice">
                       <ul>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeC()
-                          countUpTypeD();loadingf();"
+                          onclick="countUpTypeA();
+                          countUpTypeD();
+                          countUpTypeE();loadingf();"
                         >
-                          근처 맛집 이미 다 알아봤지<br />
-                          이 중 하나 가자
+                          각잡고 준비해서 하는거지
                         </li>
                         <li
                           class="swiper-button-next"
-                          onclick="countUpTypeA();
-                          countUpTypeB();
-                          countUpTypeE();loadingf();"
+                          onclick="countUpTypeB();
+                          countUpTypeC();loadingf();"
                         >
-                          음 일단 좀 걸으면서 돌아다녀볼까?
+                          그냥 대애충 생각날 때 하는거지
                         </li>
                       </ul>
                     </div>
+                    <img
+                      class="travel-daggu-deco"
+                      src="./images/hobby_class/bg@3x.png"
+                    />
                   </div>
                 </div>
               </div>
@@ -522,32 +566,34 @@
             </div>
           </div>
           <div class="result type1 is-hide">
-            <div class="type-discription">나와 찰떡인 여행코스는</div>
+            <img
+              class="travel-daggu-deco"
+              src="./images/hobby_class/bg@3x.png"
+            />
+            <div class="type-discription">나와 찰떡인 취미는</div>
             <div class="type-image">
               <img
                 class="type-image-main"
-                src="images/travel_gyeongju/result1.png"
+                src="images/hobby_class/result1.png"
               />
             </div>
-            <div class="title"><span>경주월드</span></div>
+            <div class="title"><span>빈티지케이크 만들기</span></div>
             <ul class="discription">
-              <li>짜릿한 90도 수직하강 드라켄 정도는 타줘야지~</li>
+              <li>연말은 뭐다? 파티!</li>
               <li>
-                스릴 넘치는 어트랙션이 가득한 경주월드에서 스트레스 풀기를
-                추천해요!
+                파티에서 빠질 수 없는 달콤한 라즈베리 빈티지 케이크 만들기 어때?
               </li>
               <li>
-                평일에는 사람이 많지 않기 때문에 놀이공원 전체 대여한 기분내기도
-                가능!
+                따뜻한 갬성의 케이크 만들면서 추억도 쌓고, 가져가서 친구들한테
+                생색도 내보자구
               </li>
-              <li>*야간개장 때 가서 야경 보면서 인생샷 건지기도 추천해요.</li>
             </ul>
             <div class="recommended">
-              <a href="http://naver.me/5ncPcBFS">
+              <a href="https://www.sssd.co.kr/m/class/detail/23711">
                 <div class="recmmended-title">· 여기 어때요? ·</div>
                 <img
                   class="recommended-image"
-                  src="images/travel_gyeongju/recommended1.png"
+                  src="images/hobby_class/recommended1.png"
                 />
                 <div class="recommended-source">
                   *사진 출처: 업체 네이버 등록이미지
@@ -557,31 +603,30 @@
             </div>
           </div>
           <div class="result type2 is-hide">
-            <div class="type-discription">나와 찰떡인 여행코스는</div>
+            <img
+              class="travel-daggu-deco"
+              src="./images/hobby_class/bg@3x.png"
+            />
+            <div class="type-discription">나와 찰떡인 취미는</div>
             <div class="type-image">
               <img
                 class="type-image-main"
-                src="images/travel_gyeongju/result2.png"
+                src="images/hobby_class/result2.png"
               />
             </div>
-            <div class="title"><span>황리단길 오황남</span></div>
+            <div class="title"><span>꾸덕꾸덕 유화</span></div>
             <ul class="discription">
-              <li>
-                짭쪼름한 오징어채 튀김과 몽글몽글 구름맥주를 파는 요즘 핫한
-                가게! 길맥하기 딱 조타…
-              </li>
-              <li>황리단길 구경하면서 먹는 건 어때요?</li>
-              <li>
-                근처에 중독성 있는 황남 쫀드기와 각종 길거리 음식들이 가득하니
-                꼭 둘러보기를 추천!
-              </li>
+              <li>이 유화 감성 모야모야</li>
+              <li>세상 힙한 분위기의 화실에서 유화 그리기 어때?</li>
+              <li>커피, 와인, 칵테일등 음료 or 주류도 제공하는 곳!</li>
+              <li>공간도 하이틴 느낌 낭낭해서 사진 찍을 맛 난다구요…</li>
             </ul>
             <div class="recommended">
-              <a href="http://naver.me/5B1T05DA">
+              <a href="https://www.sssd.co.kr/m/class/detail/12161">
                 <div class="recmmended-title">· 여기 어때요? ·</div>
                 <img
                   class="recommended-image"
-                  src="images/travel_gyeongju/recommended2.png"
+                  src="images/hobby_class/recommended2.png"
                 />
                 <div class="recommended-source">
                   *사진 출처: 업체 네이버 등록이미지
@@ -591,29 +636,32 @@
             </div>
           </div>
           <div class="result type3 is-hide">
-            <div class="type-discription">나와 찰떡인 여행코스는</div>
+            <img
+              class="travel-daggu-deco"
+              src="./images/hobby_class/bg@3x.png"
+            />
+            <div class="type-discription">나와 찰떡인 취미는</div>
             <div class="type-image">
               <img
                 class="type-image-main"
-                src="images/travel_gyeongju/result3.png"
+                src="images/hobby_class/result3.png"
               />
             </div>
-            <div class="title"><span>경주 카페솔</span></div>
+            <div class="title"><span>칵테일 만들기</span></div>
             <ul class="discription">
-              <li>경주하면 뭐다? 한국적인 거 아닌지…</li>
-              <li>넓은 한옥과 연못이 있어서 인생샷 건지기도 딱!</li>
+              <li>Hoxy…칵테일 만들기 취미 들어보셨는지?</li>
               <li>
-                오두막처럼 되어있는 단독 테이블 자리도 있어서 친구와 오붓하게
-                있기 좋은 카페!
+                독특한 취미 생활을 하고 싶다면 칵테일 만들기 추천! 나만의 칵테일
+                만들고 호로록 마셔보자
               </li>
-              <li>넓고 탁 트인 카페를 찾는다면 당장 여기로 ㄱㄱ</li>
+              <li>무알콜 칵테일 만들기도 있어서 알쓰 친구들도 완전 가능!!</li>
             </ul>
             <div class="recommended">
-              <a href="http://naver.me/GRO1doyo">
+              <a href="http://naver.me/5IFSRNzk">
                 <div class="recmmended-title">· 여기 어때요? ·</div>
                 <img
                   class="recommended-image"
-                  src="images/travel_gyeongju/recommended3.png"
+                  src="images/hobby_class/recommended3.png"
                 />
                 <div class="recommended-source">
                   *사진 출처: 업체 네이버 등록이미지
@@ -623,28 +671,34 @@
             </div>
           </div>
           <div class="result type4 is-hide">
-            <div class="type-discription">나와 찰떡인 여행코스는</div>
+            <img
+              class="travel-daggu-deco"
+              src="./images/hobby_class/bg@3x.png"
+            />
+            <div class="type-discription">나와 찰떡인 취미는</div>
             <div class="type-image">
               <img
                 class="type-image-main"
-                src="images/travel_gyeongju/result4.png"
+                src="images/hobby_class/result4.png"
               />
             </div>
-            <div class="title"><span>독채팬션 래태리</span></div>
+            <div class="title"><span>유리컵 만들기</span></div>
             <ul class="discription">
-              <li>친구와 뒹굴뒹굴 숙소 안에서 노는 것도 좋다면?</li>
-              <li>프라이빗한 독채 펜션! 래태리를 추천해요.</li>
               <li>
-                따끈한 노천탕도 즐기고 저녁에는 바베큐도 해먹고~ 숙소 안에서
-                모든 걸 해결하기 완전 가능. *조식도 있어요!
+                초보자들도 쉽게 만들 수 있는 유리 전사지로 컵 꾸미기! 똥손이라고
+                걱정 ㄴㄴ
               </li>
+              <li>
+                커플사진, 인물사진으로 하고 싶다면 클래스 이틀 전에 연락드리기!
+              </li>
+              <li>예쁜 컵 만들고 홈카페나 해볼까??</li>
             </ul>
             <div class="recommended">
-              <a href="http://naver.me/x2PvNmb8">
+              <a href="http://naver.me/GOuQtE8U">
                 <div class="recommended-title">· 여기 어때요? ·</div>
                 <img
                   class="recommended-image"
-                  src="images/travel_gyeongju/recommended4.png"
+                  src="images/hobby_class/recommended4.png"
                 />
                 <div class="recommended-source">
                   *사진 출처: 업체 네이버 등록이미지
@@ -655,29 +709,31 @@
           </div>
           <div class="result type5 is-hide">
             <div class="type-image">
-              <div class="type-discription">나와 찰떡인 여행코스는</div>
+              <img
+                class="travel-daggu-deco"
+                src="./images/hobby_class/bg@3x.png"
+              />
+              <div class="type-discription">나와 찰떡인 취미는</div>
               <img
                 class="type-image-main"
-                src="images/travel_gyeongju/result5.png"
+                src="images/hobby_class/result5.png"
               />
             </div>
-            <div class="title"><span>토모노야</span></div>
+            <div class="title"><span>실버반지 만들기</span></div>
             <ul class="discription">
+              <li>친구랑 우정링으로 탄생화 반지 만들기 어때?</li>
+              <li>따뜻하고 감성적인 공간에서 연말맞이 악세사리 선물 만들자!</li>
               <li>
-                여기가 한국이야 일본이야? 이국적인 분위기의 료칸 호텔 토모노야
+                원하는 펜던트, 체인 굵기를 고를 수 있고 초보자 곰손들도 손쉽게
+                만들 수 있는 취미!!
               </li>
-              <li>색다른 핫플을 찾는다면 여기 어때요?</li>
-              <li>
-                히노끼욕조탕과 야외 노천탕에서 노곤노곤하게 피로 풀기 딱 조타…
-              </li>
-              <li>코시국에 해외도 못가는데 여기 가서 즐기자구!</li>
             </ul>
             <div class="recommended">
-              <a href="http://naver.me/5X9Dk5kU">
+              <a href="http://naver.me/GPrFFX84">
                 <div class="recmmended-title">· 여기 어때요? ·</div>
                 <img
                   class="recommended-image"
-                  src="images/travel_gyeongju/recommended5.png"
+                  src="images/hobby_class/recommended5.png"
                 />
                 <div class="recommended-source">
                   *사진 출처: 업체 네이버 등록이미지
@@ -714,7 +770,7 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="./js/travel_gyeongju.js"></script>
+    <script type="text/javascript" src="./js/hobby_class.js"></script>
     <script
       type="text/javascript"
       src="./bootstrap-3.3.2-dist/js/bootstrap.min.js"

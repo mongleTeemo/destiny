@@ -89,7 +89,7 @@ function shareKakao() {
       navigator
         .share({
           title: "mongle - 경주 여행코스 추천 테스트",
-          url: "https://originals.mongle.io/travel_gyeongju.html",
+          url: "https://originals.mongle.io/travel_busan.html",
         })
         .then(() => {
           console.log("Thanks for sharing!");
@@ -108,7 +108,7 @@ function shareCopy(val) {
 }
 
 $("#copy").click(function () {
-  shareCopy("https://originals.mongle.io/travel_gyeongju");
+  shareCopy("https://originals.mongle.io/travel_busan");
   alert("복사되었습니다.");
 });
 
